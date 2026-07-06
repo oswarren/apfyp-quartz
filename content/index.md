@@ -26,5 +26,6 @@ This site is for looking, reading, and choosing. **Buying happens on Shopify** �
 
 ## Follow the process
 
+- [Techniques & details](techniques/) — handbuilding, crackle glaze, speckled surfaces, and the numbered bases that carry each piece's price
 - [[production-june-2026|Production notes]] — what was made, when
 - More writing on process, materials, and the reasoning behind the pennies is coming to this section as the site grows.

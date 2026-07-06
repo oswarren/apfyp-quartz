@@ -34,6 +34,10 @@ Piece-page frontmatter schema (see `content/pieces/2250.md` for the reference ex
 
 Buy links: `https://apennyforyourpottery.com/products/{shopify_handle}`; handles are stable `pottery-piece-N`.
 
+## Taxonomy (discovery funnel)
+
+`docs/taxonomy.md` is the registry of allowed tags — **a tag not listed there may not be used on any page**; add the term to the registry first (reviewable diff, 2-piece rule). Nested tags (`surface/crackle-glaze`, `mark/incised-number`, `batch/YYYY-MM-DD`) are the taxonomy carrier; Quartz auto-generates `/tags/...` listing pages. Visual tags only on pages with `visual_status: real_images_reviewed` — never on `images_unreviewed` generated pages. Technique explainers live in `content/techniques/` and carry their matching tag so they appear beside their pieces on tag pages. Funnel: piece page (tags + inline wikilinks) → technique/tag page → related pieces → Shopify.
+
 ## Workflow
 
 - `main` = live site. Work on short-lived branches (`content/…`, `config/…`, `fix/…`), preview locally, merge.
