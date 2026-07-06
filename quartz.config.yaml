@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: A Penny For Your Pottery — Catalog Pilot
+  pageTitle: A Penny For Your Pottery
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -225,8 +225,8 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        Shop on Shopify: https://apennyforyourpottery.com
+        Instagram: https://www.instagram.com/apennyforyourpottery/
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer

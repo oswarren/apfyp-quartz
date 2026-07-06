@@ -14,7 +14,7 @@ Quartz v5 site for A Penny For Your Pottery (APFYP): a 10,000-piece numbered cer
 ## Hard rules
 
 1. **Never commit**: CSV exports, `.env`, tokens (`shpat_`/`shpss_`), customer/order data, revenue figures, contact names, or anything from the vault's private notes. Pre-push check: `git diff origin/main | grep -E 'shpat_|shpss_|@gmail|\.csv'`.
-2. **Never edit `quartz/` internals** (or other upstream-tracked code). Customize via `quartz.config.yaml`, `quartz.layout.ts`, and custom components — keeps `git merge upstream/v5` cheap. `upstream` = jackyzha0/quartz.
+2. **Never edit `quartz/` internals** (or other upstream-tracked code). Customize via `quartz.config.yaml` (theme, plugins, and the `layout:` section — Quartz v5 has no quartz.layout.ts) and custom components — keeps `git merge upstream/v5` cheap. `upstream` = jackyzha0/quartz.
 3. **Never state live price/availability/inventory as fact.** Pages say "listed at $N" + link to the Shopify product. Inventory quantity in exports is unreliable by design (conflates sold with unmade).
 4. **Don't create pages for unphotographed/reserve pieces** (~93% of the catalog). Piece pages exist only for photographed pieces.
 5. **Ask before deleting, renaming, or moving existing content pages.**

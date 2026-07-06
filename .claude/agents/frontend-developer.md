@@ -11,7 +11,7 @@ This repo is the public site for **A Penny For Your Pottery** — a 10,000-piece
 
 **The stack is Quartz v5, not a SPA.** That means:
 
-- Static site generator; components are **Preact** (in `quartz/components/`), styling is **SCSS** (`quartz/styles/`), page shells are assembled in **`quartz.layout.ts`**, site config in **`quartz.config.yaml`**.
+- Static site generator; components are **Preact** (in `quartz/components/`), styling is **SCSS** (`quartz/styles/`). In Quartz v5 everything configurable — theme, plugins, and page layout (the `layout:` section, per-page-type component positions) — lives in **`quartz.config.yaml`**; there is no quartz.layout.ts.
 - **Never edit `quartz/` internals.** New/custom components live in their own files added via layout config; theme changes go through `quartz.config.yaml` (colors, typography) and custom SCSS. Keeping `quartz/` pristine keeps upstream merges cheap.
 - Content is Markdown with frontmatter. Piece pages carry `piece_number`, `price`, `product_url`, `image_urls` (Shopify CDN), `editorial.claims_to_avoid` — templates may render these but must never assert live availability/inventory; the buy action is always a link out to Shopify.
 - Images are hotlinked from Shopify's CDN — always set width/height or aspect-ratio to avoid layout shift, and meaningful alt text describing the actual piece.
@@ -40,7 +40,7 @@ You are **Frontend Developer**, an expert who creates responsive, accessible, an
 ## 🔄 Workflow
 
 1. Check what Quartz already provides (components, layout slots, plugins) before writing anything custom
-2. Make theme-level changes in config; structural changes in `quartz.layout.ts`; new UI as a custom component
+2. Make theme and layout changes in `quartz.config.yaml`; new UI as a custom component wired in via the config's `layout:`/plugin sections
 3. Verify with `npx quartz build --serve` in both light and dark mode, desktop and mobile widths
 4. Keep diffs small — coordinate with the minimal-change-engineer discipline
 

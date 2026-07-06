@@ -1,29 +1,29 @@
 ---
 type: catalog-index
-title: "A Penny For Your Pottery — Public Catalog Pilot"
-description: "A small local public-catalog pilot for A Penny For Your Pottery: browse handmade numbered ceramic pieces 2250–2260, then buy on Shopify."
-catalog_pilot: true
+title: "A Penny For Your Pottery"
+description: "10,000 handmade ceramic pieces, numbered in order, each priced one cent higher than the last. Piece one cost a penny. Piece 10,000 will cost $100. Browse the pieces, follow the process, buy on Shopify."
 checkout_source: Shopify
 ---
 
-This is a small, local public-catalog pilot for A Penny For Your Pottery, a 10,000-piece numbered ceramic series where each piece is priced one cent higher than the piece before it.
+**Ten thousand handmade ceramic pieces. Numbered in order. Each one priced exactly one cent higher than the one before it.**
 
-## What this is
+Piece #1 cost one penny. Piece #10,000 will cost $100.00. The price of any piece is its number times a cent — no exceptions — so the price tag itself is a running, public count of how far the series has come. This has been going since March 2023, one piece at a time.
 
-- A browsing and discovery layer, built from real product photography and listing data.
-- Not a store. There is no cart or checkout here.
-- Not a live inventory system. Nothing on these pages states whether a piece is currently in stock or sold.
+[Read the full story →](about)
 
-## How to buy
+## Browse the pieces
 
-Every piece page links out to its live Shopify listing. Shopify is the source of truth for current price, stock, tax, shipping, refunds, and orders — always check the live listing before assuming a piece is available.
+- [[range-2250-2260|Pieces 2250–2260]] — a photographed range of small handbuilt cups in white crackle glaze
+- [[production-june-2026|By production date]] — the same pieces grouped by the days they were photographed
+- [[quest-hands-multiplier|A guided path]] — one way to walk through the batch
 
-## Scope of this pilot
+More ranges are added as pieces are photographed. Every piece page links directly to its live Shopify listing.
 
-This pilot covers exactly 11 pieces, #2250 through #2260, drawn from one real Shopify product export. It does not represent the full 10,000-piece run, and it is not a claim about how many pieces exist, have sold, or remain.
+## Buying a piece
 
-## Browse
+This site is for looking, reading, and choosing. **Buying happens on Shopify** — every piece page ends in a link to its live listing, which is the only source of truth for current price, availability, shipping, and checkout. Nothing here claims to know whether a piece is in stock.
 
-- [[range-2250-2260|Pieces 2250–2260]]
-- [[production-june-2026|By production date]]
-- [[quest-hands-multiplier|A guided path through this batch]]
+## Follow the process
+
+- [[production-june-2026|Production notes]] — what was made, when
+- More writing on process, materials, and the reasoning behind the pennies is coming to this section as the site grows.
