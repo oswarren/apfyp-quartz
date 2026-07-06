@@ -9,5 +9,11 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
+
+# APFYP: never commit secrets or raw data exports
+.env
+.env.*
+*.csv
+.claude/settings.local.json
 .quartz/
 quartz/cli/tui/dist/
