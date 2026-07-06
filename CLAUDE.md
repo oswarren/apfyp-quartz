@@ -39,6 +39,7 @@ Buy links: `https://apennyforyourpottery.com/products/{shopify_handle}`; handles
 - `main` = live site. Work on short-lived branches (`content/…`, `config/…`, `fix/…`), preview locally, merge.
 - Local preview: `npx quartz build --serve` (default port 8080). Plain build check: `npx quartz build`.
 - Content-only changes: build locally → merge. Config/layout/workflow/script changes: run the `code-reviewer` agent on the diff first.
+- Piece-page generation: `node scripts/generate-pieces.mjs <csv-path> --survey` to audit an export, `--range A-B [--write]` to generate a reviewable batch. The CSV lives in the vault's `.raw/`, never in this repo. Pages without `generated: true` are curated and never touched by the script. When extending the catalog, start the new range one piece before the previous boundary (e.g. after 2261-2263, next batch is 2263-2400) so the boundary page's Next link refreshes.
 - Conventional commits; `content:` prefix for page-only changes.
 
 ## Project agents (`.claude/agents/`)
