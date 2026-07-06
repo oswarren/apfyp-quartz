@@ -18,6 +18,7 @@ Quartz v5 site for A Penny For Your Pottery (APFYP): a 10,000-piece numbered cer
 3. **Never state live price/availability/inventory as fact.** Pages say "listed at $N" + link to the Shopify product. Inventory quantity in exports is unreliable by design (conflates sold with unmade).
 4. **Don't create pages for unphotographed/reserve pieces** (~93% of the catalog). Piece pages exist only for photographed pieces.
 5. **Ask before deleting, renaming, or moving existing content pages.**
+6. **Content generation (Substack/Instagram/blurbs) lives in the private vault, not here** — its drafts and editorial system never enter this public repo.
 
 ## Content model
 
