@@ -13,6 +13,7 @@ Piece #1 cost one penny. Piece #10,000 will cost $100.00. The price of any piece
 
 ## Browse the pieces
 
+- [The Ledger — every photographed piece, by number](pieces/)
 - [[range-2250-2260|Pieces 2250–2260]] — a photographed range of small handbuilt cups in white crackle glaze
 - [[production-june-2026|By production date]] — the same pieces grouped by the days they were photographed
 - [[quest-hands-multiplier|A guided path]] — one way to walk through the batch
