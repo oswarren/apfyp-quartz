@@ -65,7 +65,7 @@ for (const file of mdFiles(CONTENT)) {
   const tags = [...fm.matchAll(/^\s{2}- ([a-z0-9/-]+)\s*$/gm)]
     .map((m) => m[1])
     .filter((t) => t.includes("/")) // taxonomy tags are always nested
-  const reviewed = /^visual_status:\s*['"]?real_images_reviewed['"]?\s*\r?$/m.test(fm)
+  const reviewed = /^visual_status:\s*['"]?(real_images_reviewed|ai_visual_reviewed)['"]?\s*\r?$/m.test(fm)
   const isTechniquePage = rel.startsWith("techniques/")
   const isPiece = /^pieces\/\d+\.md$/.test(rel)
   pages.push({ rel, file, text, tags, reviewed, isTechniquePage, isPiece })

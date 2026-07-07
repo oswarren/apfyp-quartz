@@ -177,7 +177,7 @@ if (fs.existsSync(PIECES_DIR)) {
     // Safety net: a reviewed page is curated even if its generated flag was
     // never removed — visual review promotes a page out of generator control.
     const flaggedGenerated = /^generated:\s*true\s*\r?$/m.test(head)
-    const reviewed = /^visual_status:\s*['"]?real_images_reviewed['"]?\s*\r?$/m.test(head)
+    const reviewed = /^visual_status:\s*['"]?(real_images_reviewed|ai_visual_reviewed)['"]?\s*\r?$/m.test(head)
     if (flaggedGenerated && reviewed) {
       console.warn(`WARN: ${f} is reviewed but still flagged generated: true — treating as curated; remove the flag`)
     }
