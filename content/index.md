@@ -7,6 +7,11 @@ checkout_source: Shopify
 
 **Ten thousand handmade ceramic pieces. Numbered in order. Each one priced exactly one cent higher than the one before it.**
 
+<img src="https://cdn.shopify.com/s/files/1/0628/8434/8065/files/PXL-20260616_153554583.jpg?v=1782220356" alt="Handmade ceramic cup, piece 2253 of 10,000, held in hand — white crackle glaze with heavy dark speckling." width="560" height="744" style="max-width: 100%; height: auto;" />
+
+
+*[[2253|Piece 2,253]] — a palm-sized handbuilt cup, listed at $22.53 because it is piece 2,253.*
+
 Piece #1 cost one penny. Piece #10,000 will cost $100.00. The price of any piece is its number times a cent — no exceptions — so the price tag itself is a running, public count of how far the series has come. This has been going since March 2023, one piece at a time.
 
 [Read the full story →](about)
