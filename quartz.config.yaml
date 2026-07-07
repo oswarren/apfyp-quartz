@@ -158,11 +158,10 @@ plugins:
       position: left
       priority: 50
   - source: github:quartz-community/graph
-    # local-graph experiment (scale plan D4): depth-1 neighborhood only —
-    # piece ↔ range ↔ techniques ↔ tags. Global graph remains opt-in via the
-    # component's globe icon (no disable option exists); note it will still
-    # show ~650 piece nodes chained by prev/next — evaluate THAT view, not
-    # tags, in the keep-or-kill review.
+    # local graph, depth-1 neighborhood: piece ↔ range ↔ techniques ↔ tags.
+    # KEPT by Warren's decision 2026-07-07 ("it fits the archive metaphor").
+    # Global graph remains opt-in via the component's globe icon (no disable
+    # option exists).
     enabled: true
     options:
       localGraph:
