@@ -250,7 +250,9 @@ plugins:
         - tags
         - aliases
       excludedProperties: []
-      hidePropertiesView: false
+      # panel hidden but the plugin stays enabled: it is also the site's
+      # frontmatter transformer — disabling it entirely breaks tag parsing
+      hidePropertiesView: true
       delimiters: ---
       language: yaml
     order: 5
