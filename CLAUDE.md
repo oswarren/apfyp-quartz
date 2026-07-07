@@ -33,6 +33,8 @@ content/
 
 Piece-page frontmatter schema (see `content/pieces/2250.md` for the reference example): `type: catalog-piece`, `piece_number`, `title`, `description`, `price`, `shopify_handle`, `product_url`, `image_urls` (Shopify CDN), `production_date`, `visual_status`, `checkout_source`, `editorial.claims_to_avoid` (list of claims this page must NOT make — respect it when editing).
 
+`visual_status` values: `images_unreviewed` (generated, no visual claims allowed) · `ai_visual_reviewed` (Claude inspected the actual listing photos; page carries `visual_reviewed_by` + `visual_review_date`; treated as curated/frozen by the generator) · `real_images_reviewed` (human-checked — the gold standard; promote an AI-reviewed page by flipping the field after looking yourself). Visual review is report-first: no page gains visual metadata without its images having actually been viewed, and new taxonomy terms are proposed as candidates, never applied silently.
+
 Buy links: `https://apennyforyourpottery.com/products/{shopify_handle}`; handles are stable `pottery-piece-N`.
 
 ## Taxonomy (discovery funnel)
