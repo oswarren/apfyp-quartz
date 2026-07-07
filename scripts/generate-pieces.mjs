@@ -239,14 +239,17 @@ function renderPage(n, p, willExist) {
   // Store titles often embed "Ceramic Piece N" at the start or end — strip it
   // so appending "— Piece N" never doubles the number.
   // Strip only THIS piece's number from the store title — a title genuinely
-  // ending in some other number ("Conversation Piece 3") must survive.
+  // ending in some other number ("Conversation Piece 3") must survive. Also
+  // strip the site name itself (some store titles embed it, e.g.
+  // "Piece #1708 – Penny for Your Pottery") — the pageTitleSuffix supplies it.
   const bespokeCore = bespoke
     ? sanitizeText(p.title)
-        .replace(new RegExp(`^\\s*(?:ceramic|pottery)?\\s*piece\\s*${n}\\s*[:\\-–—]\\s*`, "i"), "")
-        .replace(new RegExp(`[:\\-–—]?\\s*(?:ceramic|pottery)?\\s*piece\\s*${n}\\s*$`, "i"), "")
+        .replace(/\b(?:a\s+)?penny\s+for\s+your\s+pottery\b/gi, "")
+        .replace(new RegExp(`^\\s*(?:ceramic|pottery)?\\s*piece\\s*#?\\s*${n}\\s*[:\\-–—]?\\s*`, "i"), "")
+        .replace(new RegExp(`[:\\-–—]?\\s*(?:ceramic|pottery)?\\s*piece\\s*#?\\s*${n}\\s*$`, "i"), "")
         // trailing bare piece number ("Handmade Abstract Cup - 2086")
-        .replace(new RegExp(`[:\\-–—]\\s*${n}\\s*$`), "")
-        .replace(/[.,;:\s]+$/, "")
+        .replace(new RegExp(`[:\\-–—]\\s*#?\\s*${n}\\s*$`), "")
+        .replace(/^[.,;:\s–—-]+|[.,;:\s–—-]+$/g, "")
         .trim()
     : ""
   const title = bespokeCore ? `${bespokeCore} — Piece ${n}` : `Piece ${n}`

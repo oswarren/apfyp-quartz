@@ -1,6 +1,6 @@
 ---
 type: catalog-index
-title: "A Penny For Your Pottery"
+title: "10,000 pieces, one cent at a time"
 description: "10,000 handmade ceramic pieces, numbered in order, each priced one cent higher than the last. Piece one cost a penny. Piece 10,000 will cost $100. Browse the pieces, follow the process, buy on Shopify."
 checkout_source: Shopify
 ---
