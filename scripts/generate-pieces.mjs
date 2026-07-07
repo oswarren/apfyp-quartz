@@ -28,6 +28,17 @@ const PIECES_DIR = path.join(path.dirname(fileURLToPath(import.meta.url)), "..",
 const HANDLE_RE = /^pottery-piece-(\d+)$/
 const RESERVE_RE = /not yet made/i
 const STORE_BASE = "https://apennyforyourpottery.com/products/"
+// Store titles matching this are the bulk template names; anything else is a
+// bespoke title Warren wrote himself and may be used as the page title.
+const TEMPLATE_TITLE_RE = /^(ceramic|pottery) piece \d+$/i
+// Store-tag → taxonomy-tag allowlist. Must mirror docs/taxonomy.md — the CSV
+// may only ever set tags listed there (plus batch/ dates).
+const CSV_TAG_ALLOWLIST = new Map([
+  ["black clay", "color/black-clay"],
+  ["wild clay pottery", "material/wild-clay"],
+  ["vase", "form/vase"],
+  ["cone 10", "process/cone-10"],
+])
 
 // ---------- CLI ----------
 
@@ -83,6 +94,7 @@ for (const row of rows) {
     p.body = row["Body (HTML)"] ?? ""
     p.status = row["Status"] ?? ""
     p.published = row["Published"] ?? ""
+    p.storeTags = (row["Tags"] ?? "").split(",").map((t) => t.trim().toLowerCase()).filter(Boolean)
   }
   if (row["Variant Price"]) {
     p.variantRows++
@@ -112,11 +124,20 @@ const pieces = [] // numbered pieces, qualified or not
 const anomalies = []
 let reserveCount = 0
 let madeTemplateCount = 0
+// Store tags that are neither generic nor allowlisted — surfaced in --survey
+// so new Shopify tags become visible candidates instead of vanishing silently.
+const GENERIC_STORE_TAGS = new Set(["apfyp", "ceramics", "pottery"])
+const unknownStoreTags = new Map() // tag -> count
 
 for (const p of products.values()) {
   const m = HANDLE_RE.exec(p.handle)
   if (!m) continue
   const n = Number(m[1])
+  for (const st of p.storeTags ?? []) {
+    if (!GENERIC_STORE_TAGS.has(st) && !CSV_TAG_ALLOWLIST.has(st)) {
+      unknownStoreTags.set(st, (unknownStoreTags.get(st) ?? 0) + 1)
+    }
+  }
   const isReserve = RESERVE_RE.test(p.body)
   if (isReserve) reserveCount++
   else if (/more used to the touch of clay/i.test(p.body)) madeTemplateCount++
@@ -153,7 +174,14 @@ if (fs.existsSync(PIECES_DIR)) {
     const m = /^(\d+)\.md$/.exec(f)
     if (!m) continue
     const head = frontmatterOf(path.join(PIECES_DIR, f))
-    localPages.set(Number(m[1]), { file: f, generated: /^generated: true\r?$/m.test(head), head })
+    // Safety net: a reviewed page is curated even if its generated flag was
+    // never removed — visual review promotes a page out of generator control.
+    const flaggedGenerated = /^generated:\s*true\s*\r?$/m.test(head)
+    const reviewed = /^visual_status:\s*['"]?real_images_reviewed['"]?\s*\r?$/m.test(head)
+    if (flaggedGenerated && reviewed) {
+      console.warn(`WARN: ${f} is reviewed but still flagged generated: true — treating as curated; remove the flag`)
+    }
+    localPages.set(Number(m[1]), { file: f, generated: flaggedGenerated && !reviewed, head })
   }
 }
 
@@ -182,19 +210,71 @@ if (survey) {
   if (missing.length) console.log(`local pages MISSING from CSV: ${missing.join(", ")}`)
   console.log(`anomalies (${anomalies.length}):`)
   for (const a of anomalies) console.log(`  ${a}`)
+  if (unknownStoreTags.size) {
+    console.log(`store tags not in allowlist (candidates for docs/taxonomy.md):`)
+    const sorted = [...unknownStoreTags.entries()].sort((a, b) => b[1] - a[1]).slice(0, 15)
+    for (const [t, c] of sorted) console.log(`  ${t} (x${c})`)
+  }
   process.exit(0)
 }
 
 // ---------- page rendering ----------
 
+function sanitizeText(s) {
+  return (s ?? "").replace(/[\r\n]+/g, " ").replace(/[[\]()<>{}]/g, "").trim()
+}
+
+function monthName(isoDate) {
+  const [y, m] = isoDate.split("-").map(Number)
+  const names = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+  return `${names[m - 1]} ${y}`
+}
+
 function renderPage(n, p, willExist) {
   const price = (p.priceCents / 100).toFixed(2)
-  const title = `Ceramic Piece ${n} — A Penny For Your Pottery`
-  const description = `Piece ${n} of 10,000 in A Penny For Your Pottery's numbered ceramic series, listed at $${price}.`
+  // Site name comes from pageTitleSuffix in quartz.config.yaml — never baked
+  // into page titles. Bespoke store titles (Warren's own public copy) are
+  // used when present; otherwise the honest minimum.
+  const bespoke = p.title && !TEMPLATE_TITLE_RE.test(p.title.trim())
+  // Store titles often embed "Ceramic Piece N" at the start or end — strip it
+  // so appending "— Piece N" never doubles the number.
+  // Strip only THIS piece's number from the store title — a title genuinely
+  // ending in some other number ("Conversation Piece 3") must survive.
+  const bespokeCore = bespoke
+    ? sanitizeText(p.title)
+        .replace(new RegExp(`^\\s*(?:ceramic|pottery)?\\s*piece\\s*${n}\\s*[:\\-–—]\\s*`, "i"), "")
+        .replace(new RegExp(`[:\\-–—]?\\s*(?:ceramic|pottery)?\\s*piece\\s*${n}\\s*$`, "i"), "")
+        // trailing bare piece number ("Handmade Abstract Cup - 2086")
+        .replace(new RegExp(`[:\\-–—]\\s*${n}\\s*$`), "")
+        .replace(/[.,;:\s]+$/, "")
+        .trim()
+    : ""
+  const title = bespokeCore ? `${bespokeCore} — Piece ${n}` : `Piece ${n}`
   const firstImage = p.images[0]
-  const alt = firstImage.alt || `Handmade ceramic piece ${n} from A Penny For Your Pottery, photographed for its listing.`
-  const productionDate = extractDate(firstImage.src)
+  const alt = firstImage.alt || `Listing photo of handmade ceramic piece ${n} from A Penny For Your Pottery.`
   const productUrl = `${STORE_BASE}${p.handle}`
+
+  // A piece's photo date comes from its image filenames — but only when the
+  // dated images all agree. Mixed dates (e.g. a later re-shoot inserted at
+  // position 1) would make both the month claim and the batch tag wrong, so
+  // they void the date instead (reported by the caller as an anomaly).
+  const dates = [...new Set(p.images.map((img) => extractDate(img.src)).filter(Boolean))]
+  const productionDate = dates.length === 1 ? dates[0] : null
+  if (dates.length > 1) p.mixedDates = dates
+
+  // Unique description: varies on price, photo month, and image count —
+  // the axes the export actually provides. No visual adjectives.
+  const imgClause = `${p.images.length} photo${p.images.length === 1 ? "" : "s"} on its listing`
+  const photoClause = productionDate ? `photographed ${monthName(productionDate)}, ` : ""
+  const description = `Piece ${n} of 10,000 in A Penny For Your Pottery's numbered ceramic series — listed at $${price}, ${photoClause}${imgClause}.`
+
+  // Tags the CSV is allowed to set: batch date + registry-allowlisted store tags.
+  const tags = []
+  if (productionDate) tags.push(`batch/${productionDate}`)
+  for (const st of p.storeTags ?? []) {
+    const mapped = CSV_TAG_ALLOWLIST.get(st)
+    if (mapped && !tags.includes(mapped)) tags.push(mapped)
+  }
 
   const nav = []
   if (willExist.has(n - 1)) nav.push(`Previous: [[${n - 1}]]`)
@@ -215,6 +295,7 @@ function renderPage(n, p, willExist) {
     "visual_status: images_unreviewed",
     "checkout_source: Shopify",
     "generated: true",
+    ...(tags.length ? ["tags:", ...tags.map((t) => `  - ${t}`)] : []),
     "editorial:",
     "  claims_to_avoid:",
     "    - clay body composition, glaze recipe, or firing method",
@@ -227,7 +308,7 @@ function renderPage(n, p, willExist) {
     "",
     `![${alt}](${firstImage.src})`,
     "",
-    `This is handmade piece ${n} of 10,000 in the series — individually numbered on its base and listed at $${price}. The photographs above come straight from the live listing and haven't been editorially reviewed yet.`,
+    `This is handmade piece ${n} of 10,000 in the series — individually numbered on its base and listed at $${price}. The photographs come straight from its listing on the store.`,
     "",
     ...(nav.length ? [nav.join(" · "), ""] : []),
     `**[View / Buy on Shopify →](${productUrl})**`,
@@ -238,7 +319,10 @@ function renderPage(n, p, willExist) {
 
 function extractDate(src) {
   const m = /PXL[-_](\d{4})(\d{2})(\d{2})/.exec(src ?? "")
-  return m ? `${m[1]}-${m[2]}-${m[3]}` : null
+  if (!m) return null
+  const [mo, day] = [Number(m[2]), Number(m[3])]
+  if (mo < 1 || mo > 12 || day < 1 || day > 31) return null
+  return `${m[1]}-${m[2]}-${m[3]}`
 }
 
 // ---------- generate ----------
@@ -288,6 +372,9 @@ console.log(`  updated:         ${updated}`)
 console.log(`  unchanged:       ${unchanged}`)
 console.log(`  skipped curated: ${skippedCurated.length}${skippedCurated.length ? ` (${skippedCurated.join(", ")})` : ""}`)
 for (const d of drift) console.log(`  drift: ${d}`)
+for (const t of targets.filter((t) => t.product.mixedDates)) {
+  console.log(`  mixed photo dates #${t.n}: ${t.product.mixedDates.join(", ")} — date claim and batch tag omitted`)
+}
 const disqualified = inRange.filter((p) => !p.qualified)
 if (disqualified.length) {
   console.log(`  not qualified in range:`)

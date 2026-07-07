@@ -27,7 +27,7 @@ The single source of allowed taxonomy tags for piece pages. **A tag may not be u
 | `condition/hairline-crack` | Fine hairline crack(s) visible on body, rim, or base — observed only, never characterized as defect or hazard | 2253, 2254, 2258, 2259 |
 | `batch/YYYY-MM-DD` | Photography date from image filenames (not a making/firing date) | `batch/2026-06-16`: 2250–2255 · `batch/2026-06-22`: 2256–2260 |
 
-## CSV tag allowlist (for the generator, future phase — not yet active)
+## CSV tag allowlist (active — generator v2 maps these; mirror of CSV_TAG_ALLOWLIST in scripts/generate-pieces.mjs)
 
 | Shopify store tag | Maps to |
 |---|---|

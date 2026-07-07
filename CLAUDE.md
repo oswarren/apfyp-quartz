@@ -49,7 +49,7 @@ Buy links: `https://apennyforyourpottery.com/products/{shopify_handle}`; handles
 
 ## Project agents (`.claude/agents/`)
 
-Adapted from [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) — only these four are installed by design; don't add more without asking.
+Adapted from [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) — only these five are installed by design; don't add more without asking.
 
 | Agent | Use for |
 |---|---|
@@ -57,5 +57,6 @@ Adapted from [msitarzewski/agency-agents](https://github.com/msitarzewski/agency
 | `git-workflow-master` | Branching, upstream syncs, deploy/rollback questions |
 | `code-reviewer` | Pre-merge review of non-content changes (read-only) |
 | `frontend-developer` | Layout/component/SCSS work, page templates |
+| `data-engineer` | Generator/schema/lint work — CSV parsing, frontmatter contract, data-quality gates |
 
-Planned later (not yet): data-engineer (Shopify CSV → piece-page generator), technical-writer, SEO/AEO and content agents once the MVP is live.
+Planned later (not yet): technical-writer, SEO/AEO agents once organic-performance work starts. Content generation agents live in the private vault, not here.
