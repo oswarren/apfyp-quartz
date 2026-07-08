@@ -37,6 +37,16 @@ Piece-page frontmatter schema (see `content/pieces/2250.md` for the reference ex
 
 Buy links: `https://apennyforyourpottery.com/products/{shopify_handle}`; handles are stable `pottery-piece-N`.
 
+### Reviewed-page standard (every `ai_visual_reviewed` / `real_images_reviewed` page)
+
+1. Hero image with observed alt text.
+2. Observed prose with a wikilink on each visible feature that has a `content/techniques/` explainer page.
+3. One short bespoke Q&A block (bold question + 1–2 sentence answer ending with number and price) — drawn from that piece's own review evidence, never boilerplate.
+4. Footer nav: `Previous/Next (where neighbor pages exist) · [[range-…|Full range]]` plus a discover/date link when one exists.
+5. Full registry tags + per-piece `editorial.claims_to_avoid`.
+
+Explainer slugs = the tag leaf verbatim (`surface/scored-marks` → `techniques/scored-marks.md`). When a review batch approves new feature terms, they get explainer pages in the same pass so piece prose has link targets, and the run gets a `ranges/range-A-B.md` page as its grouping path (photography-date grouping is impossible when image filenames carry no timestamps).
+
 ## Taxonomy (discovery funnel)
 
 `docs/taxonomy.md` is the registry of allowed tags — **a tag not listed there may not be used on any page**; add the term to the registry first (reviewable diff, 2-piece rule). Nested tags (`surface/crackle-glaze`, `mark/incised-number`, `batch/YYYY-MM-DD`) are the taxonomy carrier; Quartz auto-generates `/tags/...` listing pages. Visual tags only on pages with `visual_status: real_images_reviewed` — never on `images_unreviewed` generated pages. Technique explainers live in `content/techniques/` and carry their matching tag so they appear beside their pieces on tag pages. Funnel: piece page (tags + inline wikilinks) → technique/tag page → related pieces → Shopify.
