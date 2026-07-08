@@ -1,7 +1,7 @@
 ---
 type: catalog-discover-index
 title: "Discover"
-description: "Ways to browse A Penny For Your Pottery beyond the number line: the store-named runs, photography dates, and guided paths through the 10,000-piece numbered ceramic series."
+description: "Ways to browse A Penny For Your Pottery beyond the number line: photography dates, ranges, and guided paths through the 10,000-piece numbered ceramic series."
 checkout_source: Shopify
 ---
 
@@ -9,7 +9,6 @@ The [Ledger](../pieces/) lists every photographed piece by number. These pages c
 
 ## Browse paths
 
-- [[named-pieces|The named pieces]] — the runs the store gave full titles: wild clay, black stoneware, abstract cups
 - [[by-photography-date|By photography date]] — pieces grouped by the day their listing photos were taken
 - [Ranges](../ranges/) — hand-curated stretches of the number line
 
