@@ -19,6 +19,7 @@ Pages here never claim a piece is in stock or sold — every page links to its l
 - [[1763|The black stoneware vessels]] — a run of raw, sculptural black-clay forms around #1763–1769
 - [[2085|The abstract cups]] — functional cups inside the sequence, around #2085–2092
 - [[range-2250-2260|Pieces 2250–2260]] — a fully documented range of white crackle-glaze cups, with production notes
+- [[by-photography-date|By photography date]] — 15 photography dates, April 2025 to June 2026
 - [[2335|The newest photographed piece]]
 - [Techniques & details](../techniques/) — what to look for: handbuilding, crackle glaze, speckling, numbered bases
 
