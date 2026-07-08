@@ -15,13 +15,26 @@ The single source of allowed taxonomy tags for piece pages. **A tag may not be u
 | Tag | Definition | Member pieces (evidence) |
 |---|---|---|
 | `form/cup` | Small drinking-cup form | all of 2250–2260; 1571, 1574, 1576, 1577, 1578 |
-| `technique/handbuilt` | Formed by hand (pinch/coil), not wheel-thrown — visible in uneven rims and walls | all of 2250–2260; 1571, 1574, 1576, 1577, 1578, 1579, 1580, 1583, 1587, 1588, 1589, 1591, 1592, 1593, 1594, 1597 |
+| `form/bowl` | Open bowl form | 1580, 1588, 1592, 1593; 1729 |
+| `form/faceted` | Angular faceted silhouette (deliberateness never asserted — see member claims_to_avoid) | 2256, 1733 |
+| `technique/handbuilt` | Formed by hand (pinch/coil), not wheel-thrown — visible in uneven rims and walls | all of 2250–2260; 1571, 1574, 1576, 1577, 1578, 1579, 1580, 1583, 1587, 1588, 1589, 1591, 1592, 1593, 1594, 1597; 1727, 1728, 1729, 1730, 1731, 1733, 1734, 1735, 1737, 1739, 1740, 1741, 1742, 1743, 1744, 1745, 1746, 1747, 1748, 1749, 1750, 1751, 1752, 1753, 1754, 1755, 1756, 1757, 1758, 1759, 1760, 1761, 1762, 1763, 1764, 1765, 1766, 1767, 1768, 1769 |
 | `surface/crackle-glaze` | Fine crack network (crazing) in the glaze surface | all of 2250–2260 |
 | `surface/speckled` | Dark speckling in or under the glaze | all of 2250–2260 |
+| `surface/bare-clay` | Unglazed exterior as the dominant surface | 1583, 1587, 1588, 1589, 1591, 1592, 1593, 1594, 1597; 1727, 1728, 1729, 1730, 1731, 1733, 1734, 1735, 1737, 1739, 1740, 1741, 1742, 1743, 1744, 1745, 1746, 1747, 1749, 1750, 1751, 1752, 1753, 1754, 1755, 1756, 1757, 1758, 1759, 1760, 1761, 1762, 1764, 1765, 1766, 1767 |
+| `surface/marbled-clay` | Two clays visibly marbled/folded together | 1579, 1580, 1583, 1592 |
+| `surface/pale-wash` | Thin pale wash-like coating or mottling over a dark body — material never asserted (use over `surface/glaze-wash`-type names unless the image clearly proves glaze) | 1748, 1763, 1764, 1768, 1769 |
+| `surface/scored-marks` | Scored/hatched scratch marks across the body, method not asserted — clear cases only; faint scoring is described in prose, never tagged (2026-07-08 ruling) | 1756 |
 | `color/cream` | White/cream dominant glaze color | all of 2250–2260 |
+| `color/terracotta-red` | Warm red-brown clay-body color as photographed — a color name only, not a material or provenance claim | 1571, 1574, 1578 |
+| `color/white-buff` | Pale white-buff clay-body color as photographed — a color name only, not a material or provenance claim | 1587, 1588, 1589, 1591 |
 | `mark/painted-number` | Piece number hand-painted on the base in dark pigment | 2250, 2251, 2252, 2253 |
-| `mark/incised-number` | Piece number incised/carved into the base clay | 2254, 2255, 2256, 2257, 2258, 2259, 2260; 1571, 1577, 1591 |
+| `mark/incised-number` | Piece number incised/carved into the base clay | 2254, 2255, 2256, 2257, 2258, 2259, 2260; 1571, 1577, 1591; 1748 |
 | `detail/pooled-interior-glaze` | Glossy glaze pooled in the interior | 2250, 2255, 2257 |
+| `detail/glazed-rim-band` | Glaze band along the rim over an otherwise bare body | 1571, 1574, 1576, 1577, 1578, 1579, 1580 |
+| `detail/embedded-particles` | Pale grog-like particles visible in the clay body ("grog" not lab-confirmed — see member claims_to_avoid) | 2259; 1759, 1760, 1761, 1762 |
+| `detail/surface-nodules` | Small dark nodules protruding from the clay surface — material never asserted (some store titles call it shale; quoted only) | 1729, 1730, 1733, 1735, 1737, 1739, 1741, 1742, 1744, 1745, 1746 |
+| `detail/blue-flecks` | Small blue glassy flecks or patches on the surface — "glaze" not asserted unless stated by the store | 1750, 1751 |
+| `detail/fabric-impression` | Woven-cloth impression pressed into the clay surface | 1757, 1758 |
 | `detail/interior-line-mark` | Thin abstract line mark/drawing visible on the interior glaze | 2252, 2254, 2258 |
 | `detail/pink-blush` | Pinkish-tan blush patch on the exterior | 2256, 2257, 2260 |
 | `condition/hairline-crack` | Fine hairline crack(s) visible on body, rim, or base — observed only, never characterized as defect or hazard | 2253, 2254, 2258, 2259; 1576 |
@@ -38,21 +51,14 @@ The single source of allowed taxonomy tags for piece pages. **A tag may not be u
 
 Generic store tags (`apfyp`, `ceramics`, `pottery`) are never mapped.
 
-## Candidates from the 1571–1597 visual-review batch (2026-07-07 — meet the 2-piece rule, awaiting Warren's approval before entering Active terms)
+## Candidate rulings (Warren, 2026-07-08 — with the 1727–1769 batch-2 review)
 
-- `color/red-clay` — rough bare red-brown clay body (1571, 1574, 1578; marbled variants 1579, 1580)
-- `color/white-clay` — pale white clay body (1587, 1588, 1589, 1591)
-- `detail/glazed-rim-band` — glaze band along the rim over an otherwise bare body (1571, 1574, 1576, 1577, 1578, 1579, 1580)
-- `surface/bare-clay` — unglazed exterior as the dominant surface (1583, 1587, 1588, 1589, 1591, 1592, 1593, 1594, 1597)
-- `surface/marbled-clay` — two clays visibly marbled/folded together (1579, 1580, 1583, 1592)
-- `form/bowl` — open bowl form (1580, 1588, 1592, 1593)
+All batch-1 candidates approved into Active terms, with two renames to keep color names free of provenance/material connotations: `color/red-clay` → **`color/terracotta-red`**, `color/white-clay` → **`color/white-buff`**. Promoted with batch-2 members: `detail/embedded-particles`, `form/faceted`. New batch-2 terms approved: `detail/surface-nodules`, `surface/pale-wash` (chosen over `surface/glaze-wash` — never name glaze unless the image proves it), `detail/blue-flecks` (renamed from proposed `detail/blue-glaze-flecks` for the same reason), `detail/fabric-impression`, `surface/scored-marks`. Standing rule from the ruling: **faint/uncertain feature cases are never tagged — describe them in prose instead** (applied: 1744/1767 scored-marks, 1745 faceted, 1769 surface-nodules, 1748 blue-flecks).
 
 ## Candidates (1 member so far — waiting on the 2-piece rule)
 
-- `detail/embedded-particles` — white grog-like particles (2259 only; note its claims_to_avoid: "grog" not lab-confirmed)
 - `condition/rim-crack` — crack from rim into interior, more pronounced than hairline (2256 only; its claims_to_avoid forbids characterizing it)
 - `surface/speckle-cluster` — star-like speckle cluster (2255 only)
-- `form/faceted` — angular faceted silhouette (2256 only; claims_to_avoid forbids asserting deliberateness)
 - `technique/kurinuki`, `material/wild-clay-slip` — known from the project's history but no reviewed piece pages carry them yet
 
 ## Technique pages
