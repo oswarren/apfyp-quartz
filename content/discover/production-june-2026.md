@@ -20,4 +20,4 @@ Four of these pieces (2250–2253) have their base number hand-painted in dark p
 
 All five of these pieces have their base number incised into the clay, continuing the style the June 16 session ended on. No visual difference (glaze, form, or speckling style) cleanly tracks the date split itself.
 
-Other ways to browse: [[range-2250-2260|By piece number / price]] · [[quest-hands-multiplier|A guided path through this batch]]
+Other ways to browse: [[range-2250-2260|By piece number / price]] · [[quest-hands-multiplier|A guided path through this batch]] · [All browse paths](../discover/)

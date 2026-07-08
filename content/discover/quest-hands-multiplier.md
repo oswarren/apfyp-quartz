@@ -26,4 +26,4 @@ This trail walks through the pilot's 11 pieces in order, using that line as the 
 
 Each stop links to its own page for the full visual description and a direct link to buy on Shopify.
 
-Other ways to browse: [[range-2250-2260|By piece number / price]] · [[production-june-2026|By production date]]
+Other ways to browse: [[range-2250-2260|By piece number / price]] · [[production-june-2026|By production date]] · [All browse paths](../discover/)

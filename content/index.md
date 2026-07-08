@@ -19,11 +19,11 @@ Piece #1 cost one penny. Piece #10,000 will cost $100.00. The price of any piece
 ## Browse the pieces
 
 - [The Ledger — every photographed piece, by number](pieces/)
-- [[range-2250-2260|Pieces 2250–2260]] — a photographed range of small handbuilt cups in white crackle glaze
-- [[production-june-2026|By production date]] — the same pieces grouped by the days they were photographed
-- [[quest-hands-multiplier|A guided path]] — one way to walk through the batch
+- [[named-pieces|The named pieces]] — the runs the store gave full titles: wild clay, black stoneware, abstract cups
+- [[by-photography-date|By photography date]] — pieces grouped by the day their listing photos were taken
+- [Ranges](ranges/) — hand-curated stretches of the number line, documented piece by piece
 
-More ranges are added as pieces are photographed. Every piece page links directly to its live Shopify listing.
+New browse paths are added as pieces are photographed and reviewed. Every piece page links directly to its live Shopify listing.
 
 ## Buying a piece
 
@@ -32,5 +32,5 @@ This site is for looking, reading, and choosing. **Buying happens on Shopify** �
 ## Follow the process
 
 - [Techniques & details](techniques/) — handbuilding, crackle glaze, speckled surfaces, and the numbered bases that carry each piece's price
-- [[production-june-2026|Production notes]] — what was made, when
+- [Discover](discover/) — named runs, photography dates, production notes, and guided paths through the catalog
 - More writing on process, materials, and the reasoning behind the pennies is coming to this section as the site grows.
