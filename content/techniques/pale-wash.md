@@ -8,7 +8,7 @@ tags:
 
 **What's the light coating on these dark pots?** A thin pale layer sitting over the dark clay — mottled on [[1748]], cracked patches on [[1763]] and [[1764]], near-total veining on [[1768]] and [[1769]]. In close-ups it reads as a crust *on* the surface, with dark clay showing through the fissures.
 
-What it's made of, the photos can't say — a wash, a slip, a thin glaze all look alike at this scale, so these pages call it a pale wash and leave the recipe alone. It's the closest this [[bare-clay|bare-clay]] run comes to a glazed look.
+What it's made of, the photos alone can't say — but the maker can, and does: it's glaze, after a fashion. The glaze had settled and caked at the bottom of its bucket, and the thin liquid that never fully mixed back in is what went onto these pots. The pages keep the visual name — pale wash — and let that description stand as the maker's own account rather than something read off a photo.
 
 ## See it on real pieces
 
