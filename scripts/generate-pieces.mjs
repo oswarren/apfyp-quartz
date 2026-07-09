@@ -230,6 +230,12 @@ function monthName(isoDate) {
   return `${names[m - 1]} ${y}`
 }
 
+function longDate(isoDate) {
+  const [y, m, d] = isoDate.split("-").map(Number)
+  const names = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+  return `${names[m - 1]} ${d}, ${y}`
+}
+
 function renderPage(n, p, willExist) {
   const price = (p.priceCents / 100).toFixed(2)
   // Site name comes from pageTitleSuffix in quartz.config.yaml — never baked
@@ -282,6 +288,26 @@ function renderPage(n, p, willExist) {
   const nav = []
   if (willExist.has(n - 1)) nav.push(`Previous: [[${n - 1}]]`)
   if (willExist.has(n + 1)) nav.push(`Next: [[${n + 1}]]`)
+  nav.push(`[The Ledger, by number](../pieces/)`)
+
+  // Body paragraphs (template v3). Photos paragraph varies on the axes the
+  // export actually provides: capture date, image count, bespoke store title.
+  const count = p.images.length
+  let photosPara
+  if (productionDate) {
+    photosPara = `Its ${count > 1 ? `${count} listing photos were` : "single listing photo was"} taken on ${longDate(productionDate)} — [see everything photographed that day](../tags/batch/${productionDate}).`
+  } else if (dates.length > 1) {
+    // Mixed capture dates: the files DO carry dates, they just disagree — so
+    // make no capture-date claim in either direction, and no batch link.
+    photosPara = `Its ${count > 1 ? `${count} listing photos come` : "single listing photo comes"} straight from the store.`
+  } else {
+    photosPara = count > 1
+      ? `Its ${count} listing photos come straight from the store; the files carry no capture date.`
+      : `Its single listing photo comes straight from the store; the file carries no capture date.`
+  }
+  // Body quoting only — the frontmatter title keeps the raw text (JSON-escaped).
+  if (bespokeCore) photosPara += ` On the store it's listed as "${bespokeCore.replace(/"/g, "'")}."`
+  const statusPara = `This page is a ledger entry — the short form. Piece pages grow into full descriptions once their listing photos have been reviewed up close; [the documented ranges](../ranges/) collect the pieces that have. Until then, the ${count === 1 ? "photo does" : "photos do"} the talking.`
 
   const lines = [
     "---",
@@ -311,7 +337,11 @@ function renderPage(n, p, willExist) {
     "",
     `![${alt}](${firstImage.src})`,
     "",
-    `This is handmade piece ${n} of 10,000 in the series — individually numbered on its base and listed at $${price}. The photographs come straight from its listing on the store.`,
+    `**Piece ${n} of 10,000**, handmade and listed as Piece ${n} in the 10,000-piece ledger. Its price is its number in cents: $${price}.`,
+    "",
+    photosPara,
+    "",
+    statusPara,
     "",
     ...(nav.length ? [nav.join(" · "), ""] : []),
     `**[View / Buy on Shopify →](${productUrl})**`,
