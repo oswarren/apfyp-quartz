@@ -36,4 +36,7 @@ Not every numbered piece exists yet. On the store, pieces that haven't been made
 
 ## Start browsing
 
-[[range-2250-2260|Pieces 2250–2260]] · [[production-june-2026|By production date]] · [[quest-hands-multiplier|A guided path]]
+- [The Ledger — every photographed piece, by number](pieces/)
+- [Ranges](ranges/) — documented stretches of the number line, piece by piece
+- [Techniques & details](techniques/) — the recurring surfaces and marks, and the pieces that carry them
+- [[by-photography-date|By photography date]] — pieces grouped by the day their listing photos were taken
