@@ -13,3 +13,20 @@ footer > p {
 footer > ul {
   margin-top: 0;
 }
+
+// Listing dates are file-edit dates (created-modified-date plugin, modified
+// mode) — they read as piece dates to visitors. Hide them in all auto
+// listings (folder pages and tag pages alike); piece-meaningful dates live
+// in page prose instead.
+// Each listing row is a 3-column grid (date | title | tags); display:none on
+// the whole .meta cell would shift the title into the narrow date track, and
+// the popover variant of that grid is layered-!important, which unlayered
+// custom.scss cannot override. So hide the <time> inside the date cell and
+// collapse the emptied column instead — works in folder pages, tag pages,
+// and link-hover popovers alike.
+.page-listing .meta time {
+  display: none;
+}
+.page-listing .meta {
+  margin: 0; // the empty fit-content column then resolves to zero width
+}
