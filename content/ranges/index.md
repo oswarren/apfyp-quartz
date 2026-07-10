@@ -9,7 +9,9 @@ A range is a hand-curated stretch of the number line — consecutive pieces docu
 
 ## The documented ranges
 
+- [[range-1-20|Pieces 1–20]] — the first twenty: 16 miniature vessels at the very start of the ledger, the cheapest numbers in the series ($0.01–$0.20), every listing photo reviewed.
 - [[range-1692-1714|Pieces 1692–1714]] — the wild-clay stretch: 17 rough red handbuilt vessels with torn rims, coil ridges, and metallic glints, every listing photo reviewed.
+- [[range-1716-1725|Pieces 1716–1725]] — the bridge: six dark handbuilt pieces between the wild-clay stretch and the black stoneware run, including a four-piece group portrait, every listing photo reviewed.
 - [[range-2085-2092|Pieces 2085–2092]] — the abstract cups: six white handmade cups, from quiet speckled cream to brushed decoration and handwritten glaze text, every listing photo reviewed.
 - [[range-1727-1769|Pieces 1727–1769]] — the black stoneware run: 40 handbuilt bare dark-clay vessels, the largest reviewed stretch of the series, every listing photo reviewed.
 - [[range-1571-1597|Pieces 1571–1597]] — 16 pieces across three clay looks: terracotta-red cups with glazed rims, white-buff vessels, and marbled clay, every listing photo reviewed.
