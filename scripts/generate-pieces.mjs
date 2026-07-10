@@ -248,13 +248,18 @@ function renderPage(n, p, willExist) {
   // ending in some other number ("Conversation Piece 3") must survive. Also
   // strip the site name itself (some store titles embed it, e.g.
   // "Piece #1708 – Penny for Your Pottery") — the pageTitleSuffix supplies it.
+  // Store titles write the number with or without thousands commas
+  // ("Piece 1,694 – ..."), so match both: optional comma at each thousands
+  // boundary of THIS piece's number.
+  const nPat = String(n).replace(/\B(?=(?:\d{3})+$)/g, ",?")
   const bespokeCore = bespoke
     ? sanitizeText(p.title)
         .replace(/\b(?:a\s+)?penny\s+for\s+your\s+pottery\b/gi, "")
-        .replace(new RegExp(`^\\s*(?:ceramic|pottery)?\\s*piece\\s*#?\\s*${n}\\s*[:\\-–—]?\\s*`, "i"), "")
-        .replace(new RegExp(`[:\\-–—]?\\s*(?:ceramic|pottery)?\\s*piece\\s*#?\\s*${n}\\s*$`, "i"), "")
-        // trailing bare piece number ("Handmade Abstract Cup - 2086")
-        .replace(new RegExp(`[:\\-–—]\\s*#?\\s*${n}\\s*$`), "")
+        .replace(new RegExp(`^\\s*(?:ceramic|pottery)?\\s*piece\\s*#?\\s*${nPat}\\s*[:\\-–—]?\\s*`, "i"), "")
+        .replace(new RegExp(`[:\\-–—]?\\s*(?:ceramic|pottery)?\\s*piece\\s*#?\\s*${nPat}\\s*$`, "i"), "")
+        // trailing bare piece number, separated by punctuation ("Handmade
+        // Abstract Cup - 2086") or whitespace alone ("Ceramic Cup 2088")
+        .replace(new RegExp(`(?:[:\\-–—]|\\s)\\s*#?\\s*${nPat}\\s*$`), "")
         .replace(/^[.,;:\s–—-]+|[.,;:\s–—-]+$/g, "")
         .trim()
     : ""

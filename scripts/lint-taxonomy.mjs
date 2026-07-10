@@ -6,6 +6,8 @@
 //   E1  a page uses a tag not registered in docs/taxonomy.md
 //   E2  an images_unreviewed page carries a tag outside batch/ + the CSV allowlist
 //   E3  a wikilink in content/ points at a basename that doesn't exist
+//   E4  a piece page's piece_number is missing, quoted, or doesn't match its
+//       filename — must be a YAML number equal to the filename's integer
 // Warnings (exit 0, reported):
 //   W1  registry member list disagrees with the pages actually carrying the tag
 //   W2  a registered tag has fewer than 2 member pages (2-piece rule watch)
@@ -70,6 +72,20 @@ for (const file of mdFiles(CONTENT)) {
   const isPiece = /^pieces\/\d+\.md$/.test(rel)
   pages.push({ rel, file, text, tags, reviewed, isTechniquePage, isPiece })
 
+  // E4: every piece page must carry piece_number as a YAML NUMBER (unquoted)
+  // equal to the integer in its filename. The Ledger/tag sort override
+  // classifies string piece_numbers as non-pieces and floats them to the top,
+  // so a quoted "2250" silently breaks piece ordering in every listing.
+  if (rel.startsWith("pieces/") && rel !== "pieces/index.md") {
+    const expected = path.basename(rel, ".md")
+    const value = /^piece_number:[ \t]*(.*?)[ \t]*\r?$/m.exec(fm)?.[1]
+    if (value === undefined) {
+      errors.push(`E4 ${rel}: missing piece_number in frontmatter`)
+    } else if (!/^\d+$/.test(value) || value !== expected) {
+      errors.push(`E4 ${rel}: piece_number must be the unquoted number ${expected}, got: ${value === "" ? "(empty)" : value}`)
+    }
+  }
+
   for (const tag of tags) {
     // E1: registered?
     const isBatch = BATCH_RE.test(tag)
@@ -110,7 +126,8 @@ function parseMembers(cell) {
   for (const r of cell.matchAll(/(\d{1,5})\s*[–-]\s*(\d{1,5})/g)) {
     for (let i = Number(r[1]); i <= Number(r[2]); i++) nums.add(String(i))
   }
-  for (const s of cell.replace(/(\d{1,5})\s*[–-]\s*(\d{1,5})/g, "").matchAll(/\b(\d{4})\b/g)) nums.add(s[1])
+  // 1-5 digits: piece numbers run 1..10000 (piece 1 is a member since 2026-07)
+  for (const s of cell.replace(/(\d{1,5})\s*[–-]\s*(\d{1,5})/g, "").matchAll(/\b(\d{1,5})\b/g)) nums.add(s[1])
   return nums
 }
 
