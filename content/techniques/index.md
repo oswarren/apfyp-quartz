@@ -17,7 +17,10 @@ pieces to look at.
 ## Surfaces
 
 - [[bare-clay|Bare clay]] — no glaze: the fired clay itself is the finished surface
+- [[brushed-glaze|Brushed glaze]] — hand-brushed patches, lines, washes, and splatter
+- [[coil-ridges|Coil ridges]] — stacked coil bands left visible in the wall
 - [[crackle-glaze|Crackle glaze]] — the fine web of lines in the glaze surface
+- [[metallic-sheen|Metallic sheen]] — a pewter-like glint, described from the photos only
 - [[pale-wash|Pale wash]] — the thin light coating over dark stoneware, in the maker's own words
 - [[scored-marks|Scored marks]] — hatched lines cut into the clay
 - [[speckled-surfaces|Speckled surfaces]] — mineral speckling in washes, bands, and clusters
@@ -27,6 +30,7 @@ pieces to look at.
 - [[blue-flecks|Blue flecks]] — tiny glassy blue points in dark clay
 - [[embedded-particles|Embedded particles]] — pale specks fired into the body
 - [[fabric-impression|Fabric impressions]] — cloth weave left in the surface
+- [[glaze-text|Glaze text]] — handwritten words in the glaze, quoted, never interpreted
 - [[glazed-rim-band|Glazed rim bands]] — a band of glaze over an otherwise bare body
 - [[surface-nodules|Surface nodules]] — dark grit protruding through the surface
 

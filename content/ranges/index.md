@@ -9,6 +9,8 @@ A range is a hand-curated stretch of the number line — consecutive pieces docu
 
 ## The documented ranges
 
+- [[range-1692-1714|Pieces 1692–1714]] — the wild-clay stretch: 17 rough red handbuilt vessels with torn rims, coil ridges, and metallic glints, every listing photo reviewed.
+- [[range-2085-2092|Pieces 2085–2092]] — the abstract cups: six white handmade cups, from quiet speckled cream to brushed decoration and handwritten glaze text, every listing photo reviewed.
 - [[range-1727-1769|Pieces 1727–1769]] — the black stoneware run: 40 handbuilt bare dark-clay vessels, the largest reviewed stretch of the series, every listing photo reviewed.
 - [[range-1571-1597|Pieces 1571–1597]] — 16 pieces across three clay looks: terracotta-red cups with glazed rims, white-buff vessels, and marbled clay, every listing photo reviewed.
 - [[range-2250-2260|Pieces 2250–2260]] — 11 consecutive small handbuilt cups in white crackle glaze, the most fully documented stretch of the series: every listing photo human-reviewed, with [[production-june-2026|photography notes]] and [[quest-hands-multiplier|a guided path]].
