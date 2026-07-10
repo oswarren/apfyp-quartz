@@ -22,14 +22,13 @@ Piece #1 cost one penny. Piece #10,000 will cost $100.00. The price of any piece
 - [[by-photography-date|By photography date]] — pieces grouped by the day their listing photos were taken
 - [Ranges](ranges/) — hand-curated stretches of the number line, documented piece by piece
 
-New browse paths are added as pieces are photographed and reviewed. Every piece page links directly to its live Shopify listing.
+New browse paths are added as pieces are photographed and reviewed.
 
 ## Buying a piece
 
-This site is for looking, reading, and choosing. **Buying happens on Shopify** — every piece page ends in a link to its live listing, which is the only source of truth for current price, availability, shipping, and checkout. Nothing here claims to know whether a piece is in stock.
+This site is for looking, reading, and choosing. **Buying happens on Shopify** — every piece page ends in a link to its live listing, which is the only source of truth for current price, availability, shipping, and checkout.
 
 ## Follow the process
 
 - [Techniques & details](techniques/) — handbuilding, crackle glaze, speckled surfaces, and the numbered bases that carry each piece's price
-- [Discover](discover/) — photography dates, production notes, and guided paths through the catalog
-- More writing on process, materials, and the reasoning behind the pennies is coming to this section as the site grows.
+- [Discover](discover/) — photography dates, guided paths, and other ways through the catalog

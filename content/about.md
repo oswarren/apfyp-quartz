@@ -30,7 +30,7 @@ Not every numbered piece exists yet. On the store, pieces that haven't been made
 
 ## Where things live
 
-- **This site** is the archive and the story: piece pages, ranges, production notes, and writing about the process. It doesn't sell anything and never states whether a piece is currently available.
+- **This site** is the archive and the story: piece pages, ranges, photography notes, and writing about the process. It doesn't sell anything and never states whether a piece is currently available.
 - **[The Shopify store](https://apennyforyourpottery.com)** is the store: live prices, availability, shipping, and checkout. Every piece page here links to its live listing.
 - **[Instagram — @apennyforyourpottery](https://www.instagram.com/apennyforyourpottery/)** is where pieces show up as they're made.
 

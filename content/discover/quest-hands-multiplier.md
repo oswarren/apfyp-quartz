@@ -26,4 +26,4 @@ This page walks through eleven consecutive pieces in order, using that line as t
 
 Each stop links to its own page for the full visual description and a direct link to buy on Shopify.
 
-Other ways to browse: [[range-2250-2260|By piece number / price]] · [[production-june-2026|By production date]] · [All browse paths](../discover/)
+Other ways to browse: [[range-2250-2260|By piece number / price]] · [[production-june-2026|By photography date]] · [All browse paths](../discover/)

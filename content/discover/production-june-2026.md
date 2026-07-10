@@ -1,7 +1,7 @@
 ---
 type: catalog-discover
-title: "Production Date: June 2026"
-description: "Browse the A Penny For Your Pottery catalog pilot's 11 pieces grouped by their photography date: June 16 and June 22, 2026."
+title: "Photography dates: June 2026"
+description: "Browse eleven pieces of A Penny For Your Pottery grouped by the day their listing photos were taken: June 16 and June 22, 2026."
 catalog_pilot: true
 checkout_source: Shopify
 ---
