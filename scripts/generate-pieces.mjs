@@ -24,7 +24,12 @@ import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 
-const PIECES_DIR = path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "content", "pieces")
+const PIECES_DIR = path.join(
+  path.dirname(fileURLToPath(import.meta.url)),
+  "..",
+  "content",
+  "pieces",
+)
 const HANDLE_RE = /^pottery-piece-(\d+)$/
 const RESERVE_RE = /not yet made/i
 const STORE_BASE = "https://apennyforyourpottery.com/products/"
@@ -44,13 +49,17 @@ const CSV_TAG_ALLOWLIST = new Map([
 
 const args = process.argv.slice(2)
 const rangeFlagIdx = args.indexOf("--range")
-const csvPath = args.find((a, i) => !a.startsWith("--") && (rangeFlagIdx === -1 || i !== rangeFlagIdx + 1))
+const csvPath = args.find(
+  (a, i) => !a.startsWith("--") && (rangeFlagIdx === -1 || i !== rangeFlagIdx + 1),
+)
 const survey = args.includes("--survey")
 const write = args.includes("--write")
 const range = rangeFlagIdx !== -1 ? parseRange(args[rangeFlagIdx + 1]) : null
 
 if (!csvPath || (!survey && !range)) {
-  console.error("usage: node scripts/generate-pieces.mjs <csv-path> (--survey | --range A-B [--write])")
+  console.error(
+    "usage: node scripts/generate-pieces.mjs <csv-path> (--survey | --range A-B [--write])",
+  )
   process.exit(1)
 }
 
@@ -85,7 +94,16 @@ for (const row of rows) {
   if (!handle) continue
   let p = products.get(handle)
   if (!p) {
-    p = { handle, title: "", body: "", status: "", published: "", priceCents: null, variantRows: 0, images: [] }
+    p = {
+      handle,
+      title: "",
+      body: "",
+      status: "",
+      published: "",
+      priceCents: null,
+      variantRows: 0,
+      images: [],
+    }
     products.set(handle, p)
   }
   if (row["Title"]) {
@@ -94,7 +112,10 @@ for (const row of rows) {
     p.body = row["Body (HTML)"] ?? ""
     p.status = row["Status"] ?? ""
     p.published = row["Published"] ?? ""
-    p.storeTags = (row["Tags"] ?? "").split(",").map((t) => t.trim().toLowerCase()).filter(Boolean)
+    p.storeTags = (row["Tags"] ?? "")
+      .split(",")
+      .map((t) => t.trim().toLowerCase())
+      .filter(Boolean)
   }
   if (row["Variant Price"]) {
     p.variantRows++
@@ -109,7 +130,10 @@ for (const row of rows) {
         position: Number(row["Image Position"] || 0),
         // Alt text is free text from Shopify admin — strip characters that
         // would break ![alt](src) syntax or smuggle markup into the page.
-        alt: (row["Image Alt Text"] ?? "").replace(/[\r\n]+/g, " ").replace(/[[\]()<>]/g, "").trim(),
+        alt: (row["Image Alt Text"] ?? "")
+          .replace(/[\r\n]+/g, " ")
+          .replace(/[[\]()<>]/g, "")
+          .trim(),
       })
     } else {
       p.droppedImages = (p.droppedImages ?? 0) + 1
@@ -177,9 +201,12 @@ if (fs.existsSync(PIECES_DIR)) {
     // Safety net: a reviewed page is curated even if its generated flag was
     // never removed — visual review promotes a page out of generator control.
     const flaggedGenerated = /^generated:\s*true\s*\r?$/m.test(head)
-    const reviewed = /^visual_status:\s*['"]?(real_images_reviewed|ai_visual_reviewed)['"]?\s*\r?$/m.test(head)
+    const reviewed =
+      /^visual_status:\s*['"]?(real_images_reviewed|ai_visual_reviewed)['"]?\s*\r?$/m.test(head)
     if (flaggedGenerated && reviewed) {
-      console.warn(`WARN: ${f} is reviewed but still flagged generated: true — treating as curated; remove the flag`)
+      console.warn(
+        `WARN: ${f} is reviewed but still flagged generated: true — treating as curated; remove the flag`,
+      )
     }
     localPages.set(Number(m[1]), { file: f, generated: flaggedGenerated && !reviewed, head })
   }
@@ -203,9 +230,13 @@ if (survey) {
   console.log(`  made-template listings:     ${madeTemplateCount}`)
   console.log(`  QUALIFIED for pages:        ${qualified.length}`)
   if (qualified.length) {
-    console.log(`  qualified number range:     #${qualified[0].n} - #${qualified[qualified.length - 1].n}`)
+    console.log(
+      `  qualified number range:     #${qualified[0].n} - #${qualified[qualified.length - 1].n}`,
+    )
   }
-  console.log(`local piece pages:            ${localPages.size} (${[...localPages.values()].filter((l) => !l.generated).length} curated)`)
+  console.log(
+    `local piece pages:            ${localPages.size} (${[...localPages.values()].filter((l) => !l.generated).length} curated)`,
+  )
   const missing = [...localPages.keys()].filter((n) => !pieces.some((p) => p.n === n))
   if (missing.length) console.log(`local pages MISSING from CSV: ${missing.join(", ")}`)
   console.log(`anomalies (${anomalies.length}):`)
@@ -221,18 +252,47 @@ if (survey) {
 // ---------- page rendering ----------
 
 function sanitizeText(s) {
-  return (s ?? "").replace(/[\r\n]+/g, " ").replace(/[[\]()<>{}]/g, "").trim()
+  return (s ?? "")
+    .replace(/[\r\n]+/g, " ")
+    .replace(/[[\]()<>{}]/g, "")
+    .trim()
 }
 
 function monthName(isoDate) {
   const [y, m] = isoDate.split("-").map(Number)
-  const names = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+  const names = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ]
   return `${names[m - 1]} ${y}`
 }
 
 function longDate(isoDate) {
   const [y, m, d] = isoDate.split("-").map(Number)
-  const names = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+  const names = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ]
   return `${names[m - 1]} ${d}, ${y}`
 }
 
@@ -255,8 +315,14 @@ function renderPage(n, p, willExist) {
   const bespokeCore = bespoke
     ? sanitizeText(p.title)
         .replace(/\b(?:a\s+)?penny\s+for\s+your\s+pottery\b/gi, "")
-        .replace(new RegExp(`^\\s*(?:ceramic|pottery)?\\s*piece\\s*#?\\s*${nPat}\\s*[:\\-–—]?\\s*`, "i"), "")
-        .replace(new RegExp(`[:\\-–—]?\\s*(?:ceramic|pottery)?\\s*piece\\s*#?\\s*${nPat}\\s*$`, "i"), "")
+        .replace(
+          new RegExp(`^\\s*(?:ceramic|pottery)?\\s*piece\\s*#?\\s*${nPat}\\s*[:\\-–—]?\\s*`, "i"),
+          "",
+        )
+        .replace(
+          new RegExp(`[:\\-–—]?\\s*(?:ceramic|pottery)?\\s*piece\\s*#?\\s*${nPat}\\s*$`, "i"),
+          "",
+        )
         // trailing bare piece number, separated by punctuation ("Handmade
         // Abstract Cup - 2086") or whitespace alone ("Ceramic Cup 2088")
         .replace(new RegExp(`(?:[:\\-–—]|\\s)\\s*#?\\s*${nPat}\\s*$`), "")
@@ -265,7 +331,8 @@ function renderPage(n, p, willExist) {
     : ""
   const title = bespokeCore ? `${bespokeCore} — Piece ${n}` : `Piece ${n}`
   const firstImage = p.images[0]
-  const alt = firstImage.alt || `Listing photo of handmade ceramic piece ${n} from A Penny For Your Pottery.`
+  const alt =
+    firstImage.alt || `Listing photo of handmade ceramic piece ${n} from A Penny For Your Pottery.`
   const productUrl = `${STORE_BASE}${p.handle}`
 
   // A piece's photo date comes from its image filenames — but only when the
@@ -306,9 +373,10 @@ function renderPage(n, p, willExist) {
     // make no capture-date claim in either direction, and no batch link.
     photosPara = `Its ${count > 1 ? `${count} listing photos come` : "single listing photo comes"} straight from the store.`
   } else {
-    photosPara = count > 1
-      ? `Its ${count} listing photos come straight from the store; the files carry no capture date.`
-      : `Its single listing photo comes straight from the store; the file carries no capture date.`
+    photosPara =
+      count > 1
+        ? `Its ${count} listing photos come straight from the store; the files carry no capture date.`
+        : `Its single listing photo comes straight from the store; the file carries no capture date.`
   }
   // Body quoting only — the frontmatter title keeps the raw text (JSON-escaped).
   if (bespokeCore) photosPara += ` On the store it's listed as "${bespokeCore.replace(/"/g, "'")}."`
@@ -367,7 +435,10 @@ function extractDate(src) {
 
 const inRange = pieces.filter((p) => p.n >= range.lo && p.n <= range.hi)
 const targets = inRange.filter((p) => p.qualified)
-const willExist = new Set([...localPages.keys(), ...targets.filter((p) => !localPages.get(p.n) || localPages.get(p.n).generated).map((p) => p.n)])
+const willExist = new Set([
+  ...localPages.keys(),
+  ...targets.filter((p) => !localPages.get(p.n) || localPages.get(p.n).generated).map((p) => p.n),
+])
 
 let created = 0
 let updated = 0
@@ -382,7 +453,9 @@ for (const { n, product: p } of targets) {
     const priceInPage = /^price: (.+?)\r?$/m.exec(local.head)?.[1]?.replace(/["']/g, "")
     const pagePriceCents = priceInPage ? toCents(priceInPage) : null
     if (pagePriceCents !== null && pagePriceCents !== p.priceCents) {
-      drift.push(`#${n}: curated page says ${fmtPrice(pagePriceCents)}, CSV says ${fmtPrice(p.priceCents)}`)
+      drift.push(
+        `#${n}: curated page says ${fmtPrice(pagePriceCents)}, CSV says ${fmtPrice(p.priceCents)}`,
+      )
     }
     const imgCount = (local.head.match(/^ {2}- https?:/gm) ?? []).length
     if (imgCount && imgCount !== p.images.length) {
@@ -408,10 +481,14 @@ console.log(`  in range:        ${inRange.length} (${targets.length} qualified)`
 console.log(`  created:         ${created}`)
 console.log(`  updated:         ${updated}`)
 console.log(`  unchanged:       ${unchanged}`)
-console.log(`  skipped curated: ${skippedCurated.length}${skippedCurated.length ? ` (${skippedCurated.join(", ")})` : ""}`)
+console.log(
+  `  skipped curated: ${skippedCurated.length}${skippedCurated.length ? ` (${skippedCurated.join(", ")})` : ""}`,
+)
 for (const d of drift) console.log(`  drift: ${d}`)
 for (const t of targets.filter((t) => t.product.mixedDates)) {
-  console.log(`  mixed photo dates #${t.n}: ${t.product.mixedDates.join(", ")} — date claim and batch tag omitted`)
+  console.log(
+    `  mixed photo dates #${t.n}: ${t.product.mixedDates.join(", ")} — date claim and batch tag omitted`,
+  )
 }
 const disqualified = inRange.filter((p) => !p.qualified)
 if (disqualified.length) {

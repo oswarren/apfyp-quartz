@@ -22,7 +22,17 @@ const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..")
 const CONTENT = path.join(ROOT, "content")
 const REGISTRY = path.join(ROOT, "docs", "taxonomy.md")
 
-const VISUAL_AXES = ["form/", "surface/", "color/", "mark/", "detail/", "condition/", "technique/", "material/", "process/"]
+const VISUAL_AXES = [
+  "form/",
+  "surface/",
+  "color/",
+  "mark/",
+  "detail/",
+  "condition/",
+  "technique/",
+  "material/",
+  "process/",
+]
 const BATCH_RE = /^batch\/(\d{4})-(\d{2})-(\d{2})$/
 
 // ---------- parse the registry ----------
@@ -67,7 +77,8 @@ for (const file of mdFiles(CONTENT)) {
   const tags = [...fm.matchAll(/^\s{2}- ([a-z0-9/-]+)\s*$/gm)]
     .map((m) => m[1])
     .filter((t) => t.includes("/")) // taxonomy tags are always nested
-  const reviewed = /^visual_status:\s*['"]?(real_images_reviewed|ai_visual_reviewed)['"]?\s*\r?$/m.test(fm)
+  const reviewed =
+    /^visual_status:\s*['"]?(real_images_reviewed|ai_visual_reviewed)['"]?\s*\r?$/m.test(fm)
   const isTechniquePage = rel.startsWith("techniques/")
   const isPiece = /^pieces\/\d+\.md$/.test(rel)
   pages.push({ rel, file, text, tags, reviewed, isTechniquePage, isPiece })
@@ -82,7 +93,9 @@ for (const file of mdFiles(CONTENT)) {
     if (value === undefined) {
       errors.push(`E4 ${rel}: missing piece_number in frontmatter`)
     } else if (!/^\d+$/.test(value) || value !== expected) {
-      errors.push(`E4 ${rel}: piece_number must be the unquoted number ${expected}, got: ${value === "" ? "(empty)" : value}`)
+      errors.push(
+        `E4 ${rel}: piece_number must be the unquoted number ${expected}, got: ${value === "" ? "(empty)" : value}`,
+      )
     }
   }
 
@@ -127,7 +140,8 @@ function parseMembers(cell) {
     for (let i = Number(r[1]); i <= Number(r[2]); i++) nums.add(String(i))
   }
   // 1-5 digits: piece numbers run 1..10000 (piece 1 is a member since 2026-07)
-  for (const s of cell.replace(/(\d{1,5})\s*[–-]\s*(\d{1,5})/g, "").matchAll(/\b(\d{1,5})\b/g)) nums.add(s[1])
+  for (const s of cell.replace(/(\d{1,5})\s*[–-]\s*(\d{1,5})/g, "").matchAll(/\b(\d{1,5})\b/g))
+    nums.add(s[1])
   return nums
 }
 
@@ -138,7 +152,9 @@ for (const [tag, cell] of activeTerms) {
   const missing = [...declared].filter((n) => !actual.has(n))
   const extra = [...actual].filter((n) => !declared.has(n))
   if (missing.length || extra.length) {
-    warnings.push(`W1 ${tag}: registry says [${[...declared].join(",")}] but pages say [${[...actual].join(",")}]`)
+    warnings.push(
+      `W1 ${tag}: registry says [${[...declared].join(",")}] but pages say [${[...actual].join(",")}]`,
+    )
   }
   if (actual.size === 1) {
     warnings.push(`W2 ${tag}: only one member page — 2-piece rule watch`)
@@ -149,5 +165,7 @@ for (const [tag, cell] of activeTerms) {
 
 for (const w of warnings) console.log(`WARN  ${w}`)
 for (const e of errors) console.log(`ERROR ${e}`)
-console.log(`lint-taxonomy: ${pages.length} pages, ${activeTerms.size} registered terms, ${errors.length} error(s), ${warnings.length} warning(s)`)
+console.log(
+  `lint-taxonomy: ${pages.length} pages, ${activeTerms.size} registered terms, ${errors.length} error(s), ${warnings.length} warning(s)`,
+)
 process.exit(errors.length ? 1 : 0)
