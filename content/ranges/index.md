@@ -19,5 +19,8 @@ A range is a hand-curated stretch of the number line — consecutive pieces docu
 - [[range-1653-1687|Pieces 1653–1687]] — 34 pieces closing the red run: torn-crown brick-red cups, dark vessels with glassy pooled crowns, and a sunlit windowsill series, every listing photo reviewed.
 - [[range-541-619|Pieces 541–619]] — 68 pieces from speckled pale geometry to night-black bowls, the longest reviewed stretch of the series: sand-speckled cubes and jars, dark silvered blocks, soil-brown dishes, and black-over-pale closers, every listing photo reviewed.
 - [[range-2250-2260|Pieces 2250–2260]] — 11 consecutive small handbuilt cups in white crackle glaze, the most fully documented stretch of the series: every listing photo human-reviewed, with [[production-june-2026|photography notes]] and [[quest-hands-multiplier|a guided path]].
+- [[range-1829-1844|Pieces 1829–1844]] — the excavated run: 14 dark handbuilt vessels in two surface moods, pale frost-like speckle and graphite-copper luster, every listing photo reviewed.
+- [[range-2261-2263|Pieces 2261–2263]] — past the pilot's edge: three torn-white grit-speckled cups continuing the 2250–2260 family, every listing photo reviewed.
+- [[range-2334-2335|Pieces 2334–2335]] — the dark footed pair: two rough near-black bowls with silvery rim beads and glassy pooled floors, the highest numbers documented so far, every listing photo reviewed.
 
 More range pages are added as batches of pieces get their photos reviewed. For everything by number, see [the Ledger](../pieces/); for other ways in, see [Discover](../discover/).

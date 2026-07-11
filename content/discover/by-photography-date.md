@@ -25,6 +25,6 @@ Some listing images carry real capture timestamps in their filenames, which lets
 | [2026-05-14](../tags/batch/2026-05-14) | 23 | pieces around 2210–2233 |
 | [2026-06-08](../tags/batch/2026-06-08) | 12 | includes the newest photographed pieces, [[2334]] and [[2335]] |
 | [2026-06-16](../tags/batch/2026-06-16) | 10 | includes the first six pieces of [the documented range](../ranges/range-2250-2260) |
-| [2026-06-22](../tags/batch/2026-06-22) | 7 | the rest of the documented range |
+| [2026-06-22](../tags/batch/2026-06-22) | 7 | the rest of the documented range, plus [[2262]] and [[2263]] just past its edge |
 
 For a deep look at what one of these dates contains, see [[production-june-2026|Photography dates: June 2026]] — the June 16 and June 22 sessions, piece by piece.
