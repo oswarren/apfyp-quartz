@@ -23,5 +23,6 @@ A range is a hand-curated stretch of the number line — consecutive pieces docu
 - [[range-2261-2263|Pieces 2261–2263]] — past the pilot's edge: three torn-white grit-speckled cups continuing the 2250–2260 family, every listing photo reviewed.
 - [[range-2334-2335|Pieces 2334–2335]] — the dark footed pair: two rough near-black bowls with silvery rim beads and glassy pooled floors, the highest numbers documented so far, every listing photo reviewed.
 - [[range-1848-1899|Pieces 1848–1899]] — boulders and white linings: 48 handbuilt pieces from closed rock-form vessels to dark cups with bright crazed white interiors, plus zebra bands, white thread-lines, and blue flecks, every listing photo reviewed.
+- [[range-1901-1950|Pieces 1901–1950]] — lids and brushwork: 43 pieces bringing the catalog's first lidded vessels — nine jars, boxes, and stoppered forms — plus rust fissures, froth-lined cups, and a pale family of brushed abstract cups, every listing photo reviewed.
 
 More range pages are added as batches of pieces get their photos reviewed. For everything by number, see [the Ledger](../pieces/); for other ways in, see [Discover](../discover/).
