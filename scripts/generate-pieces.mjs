@@ -4,6 +4,7 @@
 //   node scripts/generate-pieces.mjs <csv-path> --survey
 //   node scripts/generate-pieces.mjs <csv-path> --range 2261-2335            (dry run)
 //   node scripts/generate-pieces.mjs <csv-path> --range 2261-2335 --write
+//   node scripts/generate-pieces.mjs <csv-path> --range 1770-1828 --include-reserve --write
 //
 // The CSV is a standard Shopify products_export read in place (e.g. from the
 // vault's .raw/) — it must never be committed to this repo.
@@ -14,6 +15,14 @@
 //   - has at least one image
 //   - body is not the "not yet made" reservation template
 //   - price in integer cents === piece number (the penny rule)
+//
+// --include-reserve overrides the reservation-body gate ONLY: a listing whose
+// body still reads "not yet made" but which carries at least one real photo is
+// treated as photographed and qualifies. Every other gate still applies (a
+// reserve listing with no images stays disqualified on "no images"). This is
+// the escape hatch for pieces the maker photographed but never switched off the
+// reserve template on Shopify — the stub is still born images_unreviewed and
+// must be visually reviewed like any other before it carries visual tags.
 //
 // Pages carrying `generated: true` frontmatter are refreshed in place.
 // Pages WITHOUT it (hand-curated, e.g. the 2250-2260 pilot) are never touched;
@@ -54,11 +63,12 @@ const csvPath = args.find(
 )
 const survey = args.includes("--survey")
 const write = args.includes("--write")
+const includeReserve = args.includes("--include-reserve")
 const range = rangeFlagIdx !== -1 ? parseRange(args[rangeFlagIdx + 1]) : null
 
 if (!csvPath || (!survey && !range)) {
   console.error(
-    "usage: node scripts/generate-pieces.mjs <csv-path> (--survey | --range A-B [--write])",
+    "usage: node scripts/generate-pieces.mjs <csv-path> (--survey | --range A-B [--write] [--include-reserve])",
   )
   process.exit(1)
 }
@@ -170,7 +180,9 @@ for (const p of products.values()) {
   if (p.status !== "active") reasons.push(`status=${p.status || "?"}`)
   if (String(p.published).toLowerCase() !== "true") reasons.push("unpublished")
   if (p.images.length === 0) reasons.push("no images")
-  if (isReserve) reasons.push("reserve listing")
+  // --include-reserve suppresses this gate for photographed pieces; the
+  // no-images gate above still disqualifies reserve listings with no photo.
+  if (isReserve && !includeReserve) reasons.push("reserve listing")
   if (p.priceCents !== n) {
     reasons.push(`price ${fmtPrice(p.priceCents)} != piece number`)
     anomalies.push(`#${n}: price ${fmtPrice(p.priceCents)}, expected ${fmtPrice(n)}`)
