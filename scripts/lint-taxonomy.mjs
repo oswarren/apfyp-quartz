@@ -8,15 +8,34 @@
 //   E3  a wikilink in content/ points at a basename that doesn't exist
 //   E4  a piece page's piece_number is missing, quoted, or doesn't match its
 //       filename — must be a YAML number equal to the filename's integer
+//   E5  a page asserts a term forbidden by a rejected/never-use/corrected claim (data/claims/)
+//   E6  a piece carries a frontmatter tag whose mapped claim is rejected/corrected for it
+//   E7  the public claim registry or lexicon carries leak-shaped data (CLAUDE.md rule 1)
 // Warnings (exit 0, reported):
 //   W1  registry member list disagrees with the pages actually carrying the tag
 //   W2  a registered tag has fewer than 2 member pages (2-piece rule watch)
+//   W3  a page asserts a material/making word with no claim record (extraction drift)
 //
-// Run before every content merge, alongside the leak grep (see CLAUDE.md).
+// Run before every content merge, alongside the leak grep (see CLAUDE.md). E5/E6/E7 gate
+// the maker-verification layer; the deploy workflow runs this so main can't ship a
+// resurrected rejected claim.
 
 import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
+import {
+  loadRegistry,
+  loadLexicon,
+  loadContent,
+  classifyHits,
+  stripForScan,
+  effectiveClaims,
+  coveringRecordsForPage,
+  fragmentAssertsBanned,
+  tagToClaim,
+  CLAIMS_DIR,
+  LEXICON_FILE,
+} from "./claims-lib.mjs"
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..")
 const CONTENT = path.join(ROOT, "content")
@@ -161,11 +180,94 @@ for (const [tag, cell] of activeTerms) {
   }
 }
 
+// ---------- claim-registry checks (E5/E6/E7/W3) ----------
+//
+// These gate the maker-verification layer: once a claim is ruled rejected/corrected, no
+// page may resurrect it (E5/E6), the public registry may never leak private data (E7), and
+// prose that drifts a material word past the registry is flagged (W3). See data/claims/README.md.
+
+const registryRecords = loadRegistry()
+const lexicon = loadLexicon()
+const claimPages = loadContent()
+
+// E5: a page still asserts a term forbidden by a rejected/never-use/corrected claim covering it.
+// E6: a piece carries a frontmatter tag whose mapped claim is rejected/corrected for that piece.
+// W3: a page asserts a material/making word with NO covering registry record (extraction drift —
+//     re-run scripts/extract-claims.mjs, then review the new claim).
+for (const page of claimPages) {
+  const covering = coveringRecordsForPage(registryRecords, page)
+  const ruled = covering.filter((r) => ["rejected", "never-use", "corrected"].includes(r.status))
+
+  for (const rec of ruled) {
+    for (const fragment of ["title", "description", "body"]) {
+      if (fragmentAssertsBanned(page, fragment, rec, lexicon)) {
+        errors.push(
+          `E5 ${page.rel}#${fragment}: asserts "${rec.value}" — ${rec.status} by ${rec.id}` +
+            (rec.corrected_value ? ` (use "${rec.corrected_value}")` : ""),
+        )
+      }
+    }
+  }
+
+  if (page.kind === "piece") {
+    const { effective } = effectiveClaims(registryRecords, page.pieceNumber)
+    for (const tag of page.tags) {
+      const claim = tagToClaim(tag)
+      if (!claim) continue
+      const rec = effective.get(`${claim.axis}:${claim.value}`)
+      if (rec && ["rejected", "corrected"].includes(rec.status)) {
+        errors.push(`E6 ${page.rel}: tag "${tag}" is ${rec.status} for this piece by ${rec.id}`)
+      }
+    }
+  }
+
+  // W3: asserted lexicon hits with no covering record at all (drift, not day-one debt —
+  // extraction creates a record for every asserted hit, so a fresh registry has zero W3).
+  const backedKeys = new Set(covering.map((r) => `${r.axis}:${r.value}`))
+  const seen = new Set()
+  for (const fragment of ["title", "description", "body"]) {
+    const text =
+      fragment === "title"
+        ? page.title
+        : fragment === "description"
+          ? page.description
+          : stripForScan(page.body)
+    for (const hit of classifyHits(text, lexicon)) {
+      if (hit.kind !== "asserted") continue
+      const key = `${hit.axis}:${hit.value}`
+      if (backedKeys.has(key) || seen.has(key)) continue
+      seen.add(key)
+      warnings.push(
+        `W3 ${page.rel}: asserts ${key} with no registry record — run extract-claims.mjs`,
+      )
+    }
+  }
+}
+
+// E7: the public claim registry + lexicon must never carry leak-shaped data (CLAUDE.md rule 1).
+const LEAK_RE = /shpat_|shpss_|@gmail|\.csv\b|wild clay archive/i
+for (const file of [LEXICON_FILE, ...listYaml(CLAIMS_DIR)]) {
+  const rel = path.relative(ROOT, file).replace(/\\/g, "/")
+  const text = fs.readFileSync(file, "utf8")
+  text.split(/\r?\n/).forEach((line, i) => {
+    if (LEAK_RE.test(line))
+      errors.push(`E7 ${rel}:${i + 1}: possible leak — "${line.trim().slice(0, 60)}"`)
+  })
+}
+
+function listYaml(dir) {
+  if (!fs.existsSync(dir)) return []
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".yaml"))
+    .map((f) => path.join(dir, f))
+}
+
 // ---------- report ----------
 
 for (const w of warnings) console.log(`WARN  ${w}`)
 for (const e of errors) console.log(`ERROR ${e}`)
 console.log(
-  `lint-taxonomy: ${pages.length} pages, ${activeTerms.size} registered terms, ${errors.length} error(s), ${warnings.length} warning(s)`,
+  `lint-taxonomy: ${pages.length} pages, ${activeTerms.size} registered terms, ${registryRecords.size} claim records, ${errors.length} error(s), ${warnings.length} warning(s)`,
 )
 process.exit(errors.length ? 1 : 0)

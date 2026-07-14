@@ -1,0 +1,574 @@
+# APFYP claim registry — schema: data/claims/README.md
+# Machine-rewritten by scripts/extract-claims.mjs --write; comments do not survive.
+
+- id: piece:2001:surface-material:iron
+  claim: Piece 2001 asserts surface-material "iron"
+  subject: 2001
+  scope: piece
+  axis: surface-material
+  value: iron
+  original: What the red is — slip, glaze, an iron bloom from the firing — the photos don't say, and this page doesn't either.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2001.md#body
+- id: piece:2001:surface-material:slip
+  claim: Piece 2001 asserts surface-material "slip"
+  subject: 2001
+  scope: piece
+  axis: surface-material
+  value: slip
+  original: What the red is — slip, glaze, an iron bloom from the firing — the photos don't say, and this page doesn't either.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2001.md#body
+- id: piece:2005:clay-body:black-clay
+  claim: Piece 2005 asserts clay-body "black-clay"
+  subject: 2005
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: Two big loop ears rise clear above the shoulder line, framing a small ragged mouth between them — the third dark amphora in a row, handbuilt
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2005.md#body
+- id: piece:2006:intent:intentional
+  claim: Piece 2006 asserts intent "intentional"
+  subject: 2006
+  scope: piece
+  axis: intent
+  value: intentional
+  original: "**Are the studs on piece 2006's handle decoration?** They read that way — a deliberate-looking row down the handle's spine — but the page on"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2006.md#body
+- id: piece:2008:intent:intentional
+  claim: Piece 2008 asserts intent "intentional"
+  subject: 2008
+  scope: piece
+  axis: intent
+  value: intentional
+  original: "**Is piece 2008 cracked?** Its surface is — deliberately left that way, a crust of hairline openings that reveal no break in the wall, just "
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2008.md#body
+- id: piece:2012:firing:scorched
+  claim: Piece 2012 asserts firing "scorched"
+  subject: 2012
+  scope: piece
+  axis: firing
+  value: scorched
+  original: A scorched grey-black boulder with two big pulled loops and a small oval crater at the crown — no neck, so no amphora — whose matte handbuil
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2012.md#body
+- id: piece:2015:clay-body:sand
+  claim: Piece 2015 asserts clay-body "sand"
+  subject: 2015
+  scope: piece
+  axis: clay-body
+  value: sand
+  original: Piece 2015 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a sand-tan two-handled amphora with curled rams-horn handles, p
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2015.md#body
+    - content/pieces/2015.md#description
+- id: piece:2018:surface-material:ash
+  claim: Piece 2018 asserts surface-material "ash"
+  subject: 2018
+  scope: piece
+  axis: surface-material
+  value: ash
+  original: Ash-grey crusted zones settle on one shoulder; an orange streak runs down the stub like a last drip of sunset.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2018.md#body
+- id: piece:2029:firing:smoke
+  claim: Piece 2029 asserts firing "smoke"
+  subject: 2029
+  scope: piece
+  axis: firing
+  value: smoke
+  original: Piece 2029 — smoke-smudged boulder
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2029.md#body
+    - content/pieces/2029.md#description
+    - content/pieces/2029.md#title
+- id: piece:2030:surface-material:stain
+  claim: Piece 2030 asserts surface-material "stain"
+  subject: 2030
+  scope: piece
+  axis: surface-material
+  value: stain
+  original: "![Dark handbuilt ceramic boulder whose chest carries a crazed pale crust panel suffused with blue and red staining, piece 2030 of A Penny Fo"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2030.md#body
+- id: piece:2037:forming:trimmed
+  claim: Piece 2037 asserts forming "trimmed"
+  subject: 2037
+  scope: piece
+  axis: forming
+  value: trimmed
+  original: "The showpiece of the late batch: a rounded tan-brown gritty boulder on a dark trimmed foot, its whole top third coated in vivid ultramarine-"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2037.md#body
+- id: piece:2039:forming:trimmed
+  claim: Piece 2039 asserts forming "trimmed"
+  subject: 2039
+  scope: piece
+  axis: forming
+  value: trimmed
+  original: The swirled warm-brown marbled body rides twin shoulder humps down to a narrow trimmed foot, with charcoal-black smudge zones on the bare cl
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2039.md#body
+- id: piece:2044:firing:flashing
+  claim: Piece 2044 asserts firing "flashing"
+  subject: 2044
+  scope: piece
+  axis: firing
+  value: flashing
+  original: This one wears a milky pale wash over its upper two-thirds, breaking to an orange-tan band at mid-body where bare speckled greige clay takes
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2044.md#body
+- id: piece:2045:firing:flashing
+  claim: Piece 2045 asserts firing "flashing"
+  subject: 2045
+  scope: piece
+  axis: firing
+  value: flashing
+  original: Piece 2045 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a handbuilt cup with a pulled handle, milky wash with orange fl
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2045.md#body
+    - content/pieces/2045.md#description
+- id: piece:2046:surface-material:crawl
+  claim: Piece 2046 asserts surface-material "crawl"
+  subject: 2046
+  scope: piece
+  axis: surface-material
+  value: crawl
+  original: "The wobbly handbuilt rim wears crusty crawled glaze at the lip, and the top-down shot finds a glossy tan interior with a pearl smear at the "
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2046.md#body
+- id: piece:2052:forming:carved
+  claim: Piece 2052 asserts forming "carved"
+  subject: 2052
+  scope: piece
+  axis: forming
+  value: carved
+  original: Piece 2052 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a sandy tan handbuilt cup with a pierced pulled handle, two bol
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2052.md#body
+    - content/pieces/2052.md#description
+- id: piece:2053:forming:handbuilt
+  claim: Piece 2053 asserts forming "handbuilt"
+  subject: 2053
+  scope: piece
+  axis: forming
+  value: handbuilt
+  original: "![Milky-white glossy handbuilt ceramic bowl with a wobbly finger-pinched rim, piece 2053 of A Penny For Your Pottery.]"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2053.md#body
+    - content/pieces/2053.md#tags
+- id: piece:2054:forming:handbuilt
+  claim: Piece 2054 asserts forming "handbuilt"
+  subject: 2054
+  scope: piece
+  axis: forming
+  value: handbuilt
+  original: tag technique/handbuilt
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2054.md#tags
+- id: piece:2058:firing:kiln
+  claim: Piece 2058 asserts firing "kiln"
+  subject: 2058
+  scope: piece
+  axis: firing
+  value: kiln
+  original: "**Did it come out of a fire?** Out of a kiln, technically — but the black mottling over rust makes it look pulled from a campfire this morni"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2058.md#body
+- id: piece:2070:forming:handbuilt
+  claim: Piece 2070 asserts forming "handbuilt"
+  subject: 2070
+  scope: piece
+  axis: forming
+  value: handbuilt
+  original: Piece 2070 — pale handbuilt cup with a pointed handle
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2070.md#body
+    - content/pieces/2070.md#description
+    - content/pieces/2070.md#tags
+    - content/pieces/2070.md#title
+- id: piece:2071:surface-material:unglazed
+  claim: Piece 2071 asserts surface-material "unglazed"
+  subject: 2071
+  scope: piece
+  axis: surface-material
+  value: unglazed
+  original: "**Why is it unglazed?** As photographed, the clay is the whole show — every knead, fold, and tear left legible, with one plum shadow wanderi"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2071.md#body
+- id: piece:2074:clay-body:grog
+  claim: Piece 2074 asserts clay-body "grog"
+  subject: 2074
+  scope: piece
+  axis: clay-body
+  value: grog
+  original: "**What are the two red bumps?** Twin nodules that surfaced through the glaze and set glassy — stone, grog, or something else, the photos kee"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2074.md#body
+- id: piece:2085:surface-material:unglazed
+  claim: Piece 2085 asserts surface-material "unglazed"
+  subject: 2085
+  scope: piece
+  axis: surface-material
+  value: unglazed
+  original: '**Is the number really on the piece?** Yes — the base photo shows "2085" written by hand on the unglazed foot.'
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2085.md#body
+- id: piece:2089:surface-material:glaze
+  claim: Piece 2089 asserts surface-material "glaze"
+  subject: 2089
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: Piece 2089 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a handmade cup with a blue marbled rim band and handwritten gla
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2089.md#body
+    - content/pieces/2089.md#description
+- id: piece:2092:surface-material:glaze
+  claim: Piece 2092 asserts surface-material "glaze"
+  subject: 2092
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: Piece 2092 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a handmade cup with handwritten glaze text on both sides over a
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2092.md#body
+    - content/pieces/2092.md#description
+- id: piece:2095:firing:flashing
+  claim: Piece 2095 asserts firing "flashing"
+  subject: 2095
+  scope: piece
+  axis: firing
+  value: flashing
+  original: "The reverse face goes bolder: a large glossy black field descends from the rim over a slate-grey wash, two tones deep, with white flashing t"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2095.md#body
+- id: piece:2096:clay-body:sand
+  claim: Piece 2096 asserts clay-body "sand"
+  subject: 2096
+  scope: piece
+  axis: clay-body
+  value: sand
+  original: "A hard turn from the painted cups around it: 2096 is bare sand outside — warm tan-grey, gritty with white specks and fine dark flecks, a rus"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2096.md#body
+- id: piece:2098:firing:flashing
+  claim: Piece 2098 asserts firing "flashing"
+  subject: 2098
+  scope: piece
+  axis: firing
+  value: flashing
+  original: "The boldest of the splashed tail: satin black cloud fields wrap most of the body, pale blue-grey haze bleeding at their edges, white reserve"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2098.md#body

@@ -2,6 +2,8 @@
 
 The single source of allowed taxonomy tags for piece pages. **A tag may not be used on any page unless it is listed here.** Adding a term means editing this file first (so every vocabulary change is a reviewable diff).
 
+> **Fact status now lives in the claim registry** (`data/claims/`, schema `data/claims/README.md`). This file keeps the tag vocabulary, the member cells, and the narrative "Candidate rulings" journal below; the registry is the machine-readable record of whether each technical claim is confirmed / corrected / rejected / visual-only / probable / unknown. The maker ground-truth "making notes" in the batch rulings below (batch-15 rust-streak wedging, batch-16 beaded-crust plant matter, batch-17 pierced-hole rod, batch-18 salt-firing wadding, and the pale-wash account) are seeded into the registry as `source: ruling-log` records; new rulings should land their facts as claim records in the same commit and reference the claim id.
+
 ## Rules
 
 1. **Provenance**: visual tags (`form/ surface/ color/ mark/ detail/ condition/ technique/`) may only appear on piece pages whose images were actually reviewed: `visual_status: real_images_reviewed` (human-checked) or `ai_visual_reviewed` (Claude reviewed the listing photos; carries `visual_reviewed_by` + `visual_review_date`). Pages with `images_unreviewed` may carry only `batch/` tags and allowlisted CSV-mapped tags. Exception: technique pages (`content/techniques/`) carry their matching tag so they appear on tag listings beside their pieces.

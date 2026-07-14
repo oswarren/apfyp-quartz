@@ -40,6 +40,10 @@ jobs:
             ${{ runner.os }}-plugins-
       - name: Install Dependencies
         run: npm ci
+      - name: Lint taxonomy + claim registry
+        # Blocks deploy on any E-class violation, including a resurrected rejected/corrected
+        # claim (E5/E6) or a leak in the public claim registry (E7). See scripts/lint-taxonomy.mjs.
+        run: node scripts/lint-taxonomy.mjs
       - name: Install Quartz plugins
         run: npx quartz plugin install
       - name: Build Quartz

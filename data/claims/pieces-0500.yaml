@@ -1,0 +1,44 @@
+# APFYP claim registry — schema: data/claims/README.md
+# Machine-rewritten by scripts/extract-claims.mjs --write; comments do not survive.
+
+- id: piece:580:forming:pinch
+  claim: Piece 580 asserts forming "pinch"
+  subject: 580
+  scope: piece
+  axis: forming
+  value: pinch
+  original: Piece 580 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a pale crusted handbuilt bowl pinched out into a flat crescent t
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/580.md#body
+    - content/pieces/580.md#description
+- id: piece:589:forming:pinch
+  claim: Piece 589 asserts forming "pinch"
+  subject: 589
+  scope: piece
+  axis: forming
+  value: pinch
+  original: "**Who crimped the rim?** The lobes sit like pie crust — pinched and left; the photos show the result, not the hands."
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/589.md#body

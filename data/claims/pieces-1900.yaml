@@ -1,0 +1,285 @@
+# APFYP claim registry — schema: data/claims/README.md
+# Machine-rewritten by scripts/extract-claims.mjs --write; comments do not survive.
+
+- id: piece:1929:forming:trimmed
+  claim: Piece 1929 asserts forming "trimmed"
+  subject: 1929
+  scope: piece
+  axis: forming
+  value: trimmed
+  original: A trimmed foot ring closes the case for the wheel.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1929.md#body
+- id: piece:1933:intent:intentional
+  claim: Piece 1933 asserts intent "intentional"
+  subject: 1933
+  scope: piece
+  axis: intent
+  value: intentional
+  original: "**Where does it fit in the family?** Between the banded cups and the washed ones — a transitional case the registry's terms deliberately don"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1933.md#body
+- id: piece:1940:surface-material:glaze
+  claim: Piece 1940 asserts surface-material "glaze"
+  subject: 1940
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: "![A pale cream cup with a grey glaze band dripping from the rim and brown brush marks on the body — piece 1940 of A Penny For Your Pottery.]"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1940.md#body
+- id: piece:1942:surface-material:glaze
+  claim: Piece 1942 asserts surface-material "glaze"
+  subject: 1942
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: "![A pale cream cup with a grey glaze band dripping from a defined rim and brown brush marks low on the body — piece 1942 of A Penny For Your"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1942.md#body
+- id: piece:1945:intent:intentional
+  claim: Piece 1945 asserts intent "intentional"
+  subject: 1945
+  scope: piece
+  axis: intent
+  value: intentional
+  original: "**Jar or boulder?** Both at once — the body belongs to the boulder lineage of 1901 and the 1848–1899 run, but the deliberate mouth and lid m"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1945.md#body
+- id: piece:1950:forming:trimmed
+  claim: Piece 1950 asserts forming "trimmed"
+  subject: 1950
+  scope: piece
+  axis: forming
+  value: trimmed
+  original: Piece 1950 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a craggy rock-crusted cup on a bare trimmed foot, listed at $19
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1950.md#body
+    - content/pieces/1950.md#description
+- id: piece:1951:surface-material:slip
+  claim: Piece 1951 asserts surface-material "slip"
+  subject: 1951
+  scope: piece
+  axis: surface-material
+  value: slip
+  original: What the dark grit is — body, slip, something the fire did — the photos don't say, so this page doesn't either.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1951.md#body
+- id: piece:1956:surface-material:stain
+  claim: Piece 1956 asserts surface-material "stain"
+  subject: 1956
+  scope: piece
+  axis: surface-material
+  value: stain
+  original: "1955's toastier sibling: the same pinholed cream skin over a squat handbuilt body, but here the warm staining takes over — rust-tan freckles"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1956.md#body
+- id: piece:1961:firing:flashing
+  claim: Piece 1961 asserts firing "flashing"
+  subject: 1961
+  scope: piece
+  axis: firing
+  value: flashing
+  original: "Two pots in one photograph set: seen from one side, a charred-looking boulder whose matte black crust splits into plates over pale ground, g"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1961.md#body
+- id: piece:1965:forming:carved
+  claim: Piece 1965 asserts forming "carved"
+  subject: 1965
+  scope: piece
+  axis: forming
+  value: carved
+  original: "**Are the bands an impression?** They look pressed rather than carved, and that hedged sentence is as far as one photo lets the page go."
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1965.md#body
+- id: piece:1975:forming:carved
+  claim: Piece 1975 asserts forming "carved"
+  subject: 1975
+  scope: piece
+  axis: forming
+  value: carved
+  original: "Piece 1975 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a pale grey-beige handbuilt cup with a wavy carved-looking rim "
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1975.md#body
+    - content/pieces/1975.md#description
+- id: piece:1976:firing:scorched
+  claim: Piece 1976 asserts firing "scorched"
+  subject: 1976
+  scope: piece
+  axis: firing
+  value: scorched
+  original: Piece 1976 — scorch-marked tan cup
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1976.md#title
+- id: piece:1986:intent:intentional
+  claim: Piece 1986 asserts intent "intentional"
+  subject: 1986
+  scope: piece
+  axis: intent
+  value: intentional
+  original: "**Three handles in one run — deliberate?** The pots don't testify to intent; they just keep arriving with loops."
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1986.md#body
+- id: piece:1994:intent:intentional
+  claim: Piece 1994 asserts intent "intentional"
+  subject: 1994
+  scope: piece
+  axis: intent
+  value: intentional
+  original: "**Is the black at the joins deliberate?** It gathers exactly where the handle was worked on — which is geometry, not testimony."
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1994.md#body

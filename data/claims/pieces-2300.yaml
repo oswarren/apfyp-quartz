@@ -1,0 +1,47 @@
+# APFYP claim registry — schema: data/claims/README.md
+# Machine-rewritten by scripts/extract-claims.mjs --write; comments do not survive.
+
+- id: piece:2334:forming:handbuilt
+  claim: Piece 2334 asserts forming "handbuilt"
+  subject: 2334
+  scope: piece
+  axis: forming
+  value: handbuilt
+  original: Piece 2334 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a dark footed handbuilt bowl with a bright silvery pool-line ac
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2334.md#body
+    - content/pieces/2334.md#description
+    - content/pieces/2334.md#tags
+- id: piece:2335:forming:handbuilt
+  claim: Piece 2335 asserts forming "handbuilt"
+  subject: 2335
+  scope: piece
+  axis: forming
+  value: handbuilt
+  original: Piece 2335 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a wide dark footed handbuilt bowl with a silvery-white rim bead
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2335.md#body
+    - content/pieces/2335.md#description
+    - content/pieces/2335.md#tags

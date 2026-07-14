@@ -1,0 +1,526 @@
+# APFYP claim registry — schema: data/claims/README.md
+# Machine-rewritten by scripts/extract-claims.mjs --write; comments do not survive.
+
+- id: piece:1701:firing:fired
+  claim: Piece 1701 asserts firing "fired"
+  subject: 1701
+  scope: piece
+  axis: firing
+  value: fired
+  original: The store lists it as "Wild Red Clay Coil Vessel Unglazed, Cone 10" — the unglazed surface and cone-10 firing are the store's statements.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1701.md#body
+- id: piece:1701:surface-material:unglazed
+  claim: Piece 1701 asserts surface-material "unglazed"
+  subject: 1701
+  scope: piece
+  axis: surface-material
+  value: unglazed
+  original: Wild Red Clay Coil Vessel Unglazed, Cone 10 — Piece 1701
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1701.md#body
+    - content/pieces/1701.md#title
+- id: piece:1705:clay-body:grog
+  claim: Piece 1705 asserts clay-body "grog"
+  subject: 1705
+  scope: piece
+  axis: clay-body
+  value: grog
+  original: The walls carry soft horizontal ridges left from coil-building and a web of fine drying cracks, with pale grog flecks freckled through the r
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1705.md#body
+- id: piece:1705:forming:wheel-thrown
+  claim: Piece 1705 asserts forming "wheel-thrown"
+  subject: 1705
+  scope: piece
+  axis: forming
+  value: wheel-thrown
+  original: The torn, uneven rim and softly pinched walls point to forming by hand rather than throwing.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1705.md#body
+- id: piece:1706:firing:salt-fired
+  claim: Piece 1706 asserts firing "salt-fired"
+  subject: 1706
+  scope: piece
+  axis: firing
+  value: salt-fired
+  original: Salt-Fired Wild Clay Vessel with Metallic Sheen — Piece 1706
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1706.md#title
+- id: piece:1710:firing:salt-fired
+  claim: Piece 1710 asserts firing "salt-fired"
+  subject: 1710
+  scope: piece
+  axis: firing
+  value: salt-fired
+  original: Wild Virginia Clay, Salt Fired, Unglazed — Piece 1710
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1710.md#title
+- id: piece:1710:surface-material:unglazed
+  claim: Piece 1710 asserts surface-material "unglazed"
+  subject: 1710
+  scope: piece
+  axis: surface-material
+  value: unglazed
+  original: Wild Virginia Clay, Salt Fired, Unglazed — Piece 1710
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1710.md#title
+- id: piece:1713:forming:wheel-thrown
+  claim: Piece 1713 asserts forming "wheel-thrown"
+  subject: 1713
+  scope: piece
+  axis: forming
+  value: wheel-thrown
+  original: "**How was this cup shaped?** Its stepped horizontal ridges and uneven, torn rim point to coil-building by hand rather than throwing on a whe"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1713.md#body
+- id: piece:1714:clay-body:local-clay
+  claim: Piece 1714 asserts clay-body "local-clay"
+  subject: 1714
+  scope: piece
+  axis: clay-body
+  value: local-clay
+  original: Local Clay — Piece 1714
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1714.md#title
+- id: piece:1717:forming:pinch
+  claim: Piece 1717 asserts forming "pinch"
+  subject: 1717
+  scope: piece
+  axis: forming
+  value: pinch
+  original: A tumbler-sized cup that tapers to a small foot and flares to an uneven, softly pinched rim.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1717.md#body
+- id: piece:1717:surface-material:glaze
+  claim: Piece 1717 asserts surface-material "glaze"
+  subject: 1717
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: Piece 1717 — craggy tumbler, glazed rim over bare clay
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1717.md#description
+    - content/pieces/1717.md#title
+- id: piece:1718:firing:fired
+  claim: Piece 1718 asserts firing "fired"
+  subject: 1718
+  scope: piece
+  axis: firing
+  value: fired
+  original: "**Is the surface actually metallic?** It photographs that way — pewter-bronze glints across the whole crust — but what makes the look (glaze"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1718.md#body
+- id: piece:1718:surface-material:ash
+  claim: Piece 1718 asserts surface-material "ash"
+  subject: 1718
+  scope: piece
+  axis: surface-material
+  value: ash
+  original: "**Is the surface actually metallic?** It photographs that way — pewter-bronze glints across the whole crust — but what makes the look (glaze"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1718.md#body
+- id: piece:1718:surface-material:glaze
+  claim: Piece 1718 asserts surface-material "glaze"
+  subject: 1718
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: "**Is the surface actually metallic?** It photographs that way — pewter-bronze glints across the whole crust — but what makes the look (glaze"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1718.md#body
+- id: piece:1719:forming:carved
+  claim: Piece 1719 asserts forming "carved"
+  subject: 1719
+  scope: piece
+  axis: forming
+  value: carved
+  original: Turned over, the base is carved with an incised "1719", set in a patch of pale sage and gold.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1719.md#body
+- id: piece:1732:forming:trimmed
+  claim: Piece 1732 asserts forming "trimmed"
+  subject: 1732
+  scope: piece
+  axis: forming
+  value: trimmed
+  original: The uneven rim and softly lopsided body point to hand-forming rather than the wheel; no throwing rings or trimmed foot are visible.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1732.md#body
+- id: piece:1732:forming:wheel-thrown
+  claim: Piece 1732 asserts forming "wheel-thrown"
+  subject: 1732
+  scope: piece
+  axis: forming
+  value: wheel-thrown
+  original: The uneven rim and softly lopsided body point to hand-forming rather than the wheel; no throwing rings or trimmed foot are visible.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1732.md#body
+- id: piece:1737:forming:carved
+  claim: Piece 1737 asserts forming "carved"
+  subject: 1737
+  scope: piece
+  axis: forming
+  value: carved
+  original: Seen from above, a scalloped, carved-looking texture lines the inside of the rim.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1737.md#body
+- id: piece:1750:surface-material:glaze
+  claim: Piece 1750 asserts surface-material "glaze"
+  subject: 1750
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: "**Is the blue on 1750 glaze?** The flecks catch light like glass, but this page doesn’t name a material — just two pieces in this run carry "
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1750.md#body
+- id: piece:1751:surface-material:glaze
+  claim: Piece 1751 asserts surface-material "glaze"
+  subject: 1751
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: Handbuilt Black Clay Vessel – Sculptural Form with Blue Glaze Inclusions — Piece 1751
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1751.md#body
+    - content/pieces/1751.md#title
+- id: piece:1766:surface-material:iron
+  claim: Piece 1766 asserts surface-material "iron"
+  subject: 1766
+  scope: piece
+  axis: surface-material
+  value: iron
+  original: Black Claybody Vessel with Red Iron Oxide Coating — Piece 1766
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1766.md#title
+- id: piece:1766:surface-material:oxide
+  claim: Piece 1766 asserts surface-material "oxide"
+  subject: 1766
+  scope: piece
+  axis: surface-material
+  value: oxide
+  original: Black Claybody Vessel with Red Iron Oxide Coating — Piece 1766
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1766.md#title
+- id: piece:1780:clay-body:black-clay
+  claim: Piece 1780 asserts clay-body "black-clay"
+  subject: 1780
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: The near-black clay is rough and matte, crossed on one side by broad tan-to-ochre granular patches, and the lower body pinches in toward a s
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1780.md#body
+- id: piece:1783:clay-body:black-clay
+  claim: Piece 1783 asserts clay-body "black-clay"
+  subject: 1783
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: "![Close view of a dark hand-built cup's surface, near-black clay peppered with yellow and green flecks over an impressed grid — piece 1783 o"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1783.md#body
+- id: piece:1788:clay-body:sand
+  claim: Piece 1788 asserts clay-body "sand"
+  subject: 1788
+  scope: piece
+  axis: clay-body
+  value: sand
+  original: Piece 1788, foremost in its listing photos, is a cup built by hand, with a torn rim and a bare, sandy grit-flecked surface — pale sand and g
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1788.md#body
+- id: piece:1799:forming:wheel-thrown
+  claim: Piece 1799 asserts forming "wheel-thrown"
+  subject: 1799
+  scope: piece
+  axis: forming
+  value: wheel-thrown
+  original: "**Does the wheel under the cup mean it was thrown?** No — the concentric rings belong to the turntable it is standing on; the cup's own unev"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1799.md#body

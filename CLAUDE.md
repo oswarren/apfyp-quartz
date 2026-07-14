@@ -51,12 +51,21 @@ Explainer slugs = the tag leaf verbatim (`surface/scored-marks` → `techniques/
 
 `docs/taxonomy.md` is the registry of allowed tags — **a tag not listed there may not be used on any page**; add the term to the registry first (reviewable diff, 2-piece rule). Nested tags (`surface/crackle-glaze`, `mark/incised-number`, `batch/YYYY-MM-DD`) are the taxonomy carrier; Quartz auto-generates `/tags/...` listing pages. Visual tags only on pages with `visual_status: real_images_reviewed` — never on `images_unreviewed` generated pages. Technique explainers live in `content/techniques/` and carry their matching tag so they appear beside their pieces on tag pages. Funnel: piece page (tags + inline wikilinks) → technique/tag page → related pieces → Shopify.
 
+## Claim registry (maker verification)
+
+`data/claims/` is the machine-readable store of **fact status** for every technical claim the site asserts (clay bodies, slips, glazes, forming, firing, intent) — schema in `data/claims/README.md`. `docs/taxonomy.md` keeps the tag vocabulary and the narrative ruling log; the registry owns whether each claim is `confirmed`/`corrected`/`rejected`/`visual-only`/`probable`/`unknown`. Maker-confirmed facts outrank all AI inference; rejected claims never regenerate. Public repo, same exposure as the ruling log — no private text (private answers get `private_ref: true` and live in the vault).
+
+- `node scripts/extract-claims.mjs [--write]` — harvest asserted technical claims from all content into the registry; idempotent, dry-run by default. Never writes maker fields (status/reviewed/maker_response/assertable).
+- `node scripts/claim-impact.mjs [--queue N | --piece N]` — stale-page report after a ruling; review queue by blast radius; per-piece scope resolution.
+- `node scripts/lint-taxonomy.mjs` also enforces the registry: **E5** a page asserts a rejected/corrected term, **E6** a tag is rejected for its piece, **E7** the registry leaks private data; **W3** prose drifted a material word past the registry. Runs in `deploy.yml` — main can't ship a resurrected rejected claim.
+- Review with **`/review-claims`** (`.claude/commands/review-claims.md`): compact confirm/correct/reject questions to Warren, one group per round, answers saved to the registry per round; resumable via `docs/claims/review-log.md`. Never re-reviews images. After rulings, the **`apfyp-writer`** agent rewrites only the stale pages from confirmed facts (diff-first, never invents claims).
+
 ## Workflow
 
 - `main` = live site. Work on short-lived branches (`content/…`, `config/…`, `fix/…`), preview locally, merge.
 - Local preview: `npx quartz build --serve` (default port 8080). Plain build check: `npx quartz build`.
 - Content-only changes: build locally → merge. Config/layout/workflow/script changes: run the `code-reviewer` agent on the diff first.
-- **Before every content merge**: `node scripts/lint-taxonomy.mjs` (registry-legal tags, provenance, wikilinks — exit 1 blocks) + the leak grep from rule 1.
+- **Before every content merge**: `node scripts/lint-taxonomy.mjs` (registry-legal tags, provenance, wikilinks, and claim-registry checks E5/E6/E7 — exit 1 blocks) + the leak grep from rule 1. After editing pages to reconcile a maker ruling, run `node scripts/extract-claims.mjs --write` then `node scripts/claim-impact.mjs` to confirm no stale pages remain.
 - Piece-page generation: `node scripts/generate-pieces.mjs <csv-path> --survey` to audit an export, `--range A-B [--write]` to generate a reviewable batch. The CSV lives in the vault's `.raw/`, never in this repo. Pages without `generated: true` are curated and never touched by the script. When extending the catalog, start the new range one piece before the previous boundary (e.g. after 2261-2263, next batch is 2263-2400) so the boundary page's Next link refreshes.
 - Conventional commits; `content:` prefix for page-only changes.
 
@@ -71,5 +80,6 @@ Adapted from [msitarzewski/agency-agents](https://github.com/msitarzewski/agency
 | `code-reviewer` | Pre-merge review of non-content changes (read-only) |
 | `frontend-developer` | Layout/component/SCSS work, page templates |
 | `data-engineer` | Generator/schema/lint work — CSV parsing, frontmatter contract, data-quality gates |
+| `apfyp-writer` | Rewriting piece/technique/range prose AFTER maker verification — confirmed registry facts + safe visual observations only, never invents claims |
 
-Planned later (not yet): technical-writer, SEO/AEO agents once organic-performance work starts. Content generation agents live in the private vault, not here.
+SEO/AEO handling is currently lint rules (E5/W3) + a checklist inside `apfyp-writer`; a dedicated SEO/AEO agent stays planned-later, adopted only when organic-performance work starts. Content generation (Substack/Instagram/blurbs) still lives in the private vault, not here.

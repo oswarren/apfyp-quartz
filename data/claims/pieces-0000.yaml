@@ -1,0 +1,43 @@
+# APFYP claim registry — schema: data/claims/README.md
+# Machine-rewritten by scripts/extract-claims.mjs --write; comments do not survive.
+
+- id: piece:12:intent:intentional
+  claim: Piece 12 asserts intent "intentional"
+  subject: 12
+  scope: piece
+  axis: intent
+  value: intentional
+  original: Deliberate or not, the listing doesn't say — so neither does this page.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/12.md#body
+- id: piece:19:surface-material:glaze
+  claim: Piece 19 asserts surface-material "glaze"
+  subject: 19
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: The outside is charcoal-dark and matte; the interior photographs paler gray-blue with a soft sheen this page won't name as glaze.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/19.md#body

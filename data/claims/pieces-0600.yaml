@@ -1,0 +1,43 @@
+# APFYP claim registry — schema: data/claims/README.md
+# Machine-rewritten by scripts/extract-claims.mjs --write; comments do not survive.
+
+- id: piece:604:surface-material:glaze
+  claim: Piece 604 asserts surface-material "glaze"
+  subject: 604
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: "**Is there water in it?** No — just a floor that holds light like one; the sheen is a look, not a liquid and not a named glaze."
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/604.md#body
+- id: piece:613:forming:pulled
+  claim: Piece 613 asserts forming "pulled"
+  subject: 613
+  scope: piece
+  axis: forming
+  value: pulled
+  original: "The batch's big color break: a bone-pale dish with charcoal-black veins threading the rim and one whole flank — dark lines pulled through pa"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/613.md#body

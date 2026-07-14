@@ -1,0 +1,389 @@
+# APFYP claim registry — schema: data/claims/README.md
+# Machine-rewritten by scripts/extract-claims.mjs --write; comments do not survive.
+
+- id: piece:2102:firing:flashing
+  claim: Piece 2102 asserts firing "flashing"
+  subject: 2102
+  scope: piece
+  axis: firing
+  value: flashing
+  original: "Taller sibling to 2101, same weather: a handbuilt cup scrubbed all over with dry-brushed navy, white ground flashing through the scratchy st"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2102.md#body
+- id: piece:2118:firing:scorched
+  claim: Piece 2118 asserts firing "scorched"
+  subject: 2118
+  scope: piece
+  axis: firing
+  value: scorched
+  original: Piece 2118 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a squat stony barrel cup with a milky sheen over coarse sandy t
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2118.md#body
+    - content/pieces/2118.md#description
+- id: piece:2118:forming:pulled
+  claim: Piece 2118 asserts forming "pulled"
+  subject: 2118
+  scope: piece
+  axis: forming
+  value: pulled
+  original: "**Why does it look wet?** The sheen — a translucent coat that goes glassy where it thickens at the rim, exactly like a stone pulled from the"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2118.md#body
+- id: piece:2119:surface-material:crawl
+  claim: Piece 2119 asserts surface-material "crawl"
+  subject: 2119
+  scope: piece
+  axis: surface-material
+  value: crawl
+  original: The milky grey-white coating thins to bare tan at the wobbling rim; the interior well is peppered with dark speckles; two pit-holes and a ti
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2119.md#body
+- id: piece:2120:surface-material:crawl
+  claim: Piece 2120 asserts surface-material "crawl"
+  subject: 2120
+  scope: piece
+  axis: surface-material
+  value: crawl
+  original: A crawl-crack patch marks the mid-flank; the base disc shows concentric ring grooves and "2120" handwritten in dark ink.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2120.md#body
+- id: piece:2122:firing:fired
+  claim: Piece 2122 asserts firing "fired"
+  subject: 2122
+  scope: piece
+  axis: firing
+  value: fired
+  original: "**Why incised, not written?** This one's scratched in before firing rather than inked after — the run around it mostly writes; 2122 carves."
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2122.md#body
+- id: piece:2125:firing:smoke
+  claim: Piece 2125 asserts firing "smoke"
+  subject: 2125
+  scope: piece
+  axis: firing
+  value: smoke
+  original: Piece 2125 — the smoke-dark cup
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2125.md#body
+    - content/pieces/2125.md#description
+    - content/pieces/2125.md#title
+- id: piece:2128:firing:fired
+  claim: Piece 2128 asserts firing "fired"
+  subject: 2128
+  scope: piece
+  axis: firing
+  value: fired
+  original: Faceted trim planes edge the foot, and the base shows "2128" handwritten in black — with a grey smear dragged straight through the digits, l
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2128.md#body
+- id: piece:2139:surface-material:oxide
+  claim: Piece 2139 asserts surface-material "oxide"
+  subject: 2139
+  scope: piece
+  axis: surface-material
+  value: oxide
+  original: "**Where did the rust come from?** The photos only show where it went — a thin oxide-orange line running rim to belly, stopped mid-fall."
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2139.md#body
+- id: piece:2142:firing:smoke
+  claim: Piece 2142 asserts firing "smoke"
+  subject: 2142
+  scope: piece
+  axis: firing
+  value: smoke
+  original: "A globe cup in satin white smudged with tan-smoke drifts, carrying its dark weather in two masses: a thick, glossy black panel poured down o"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2142.md#body
+- id: piece:2143:forming:carved
+  claim: Piece 2143 asserts forming "carved"
+  subject: 2143
+  scope: piece
+  axis: forming
+  value: carved
+  original: 'Under the carved foot: "2143" handwritten in black.'
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2143.md#body
+- id: piece:2151:firing:scorched
+  claim: Piece 2151 asserts firing "scorched"
+  subject: 2151
+  scope: piece
+  axis: firing
+  value: scorched
+  original: Around it the frost-white ground stays soft — powder-blue clouds brushed thin, a few tan-ochre scorch smudges low near the foot, a scatter o
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2151.md#body
+- id: piece:2153:firing:scorched
+  claim: Piece 2153 asserts firing "scorched"
+  subject: 2153
+  scope: piece
+  axis: firing
+  value: scorched
+  original: Piece 2153 — iron spots and a scorched rim
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2153.md#body
+    - content/pieces/2153.md#description
+    - content/pieces/2153.md#title
+- id: piece:2157:forming:pulled
+  claim: Piece 2157 asserts forming "pulled"
+  subject: 2157
+  scope: piece
+  axis: forming
+  value: pulled
+  original: "**Where did the freckles go?** They lined up — the scattered iron of the cup before it pulled into a single rust-brown run down this wall, t"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2157.md#body
+- id: piece:2159:surface-material:stain
+  claim: Piece 2159 asserts surface-material "stain"
+  subject: 2159
+  scope: piece
+  axis: surface-material
+  value: stain
+  original: "**Painted, not stained?** Painted — the color arrives by brush here, black gesture over blue wash, the first of a small family of hand-decor"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2159.md#body
+- id: piece:2180:forming:pulled
+  claim: Piece 2180 asserts forming "pulled"
+  subject: 2180
+  scope: piece
+  axis: forming
+  value: pulled
+  original: A white tea bowl carries a broad black patch across one flank — not smooth but pitted and blistered, a rough lava crust — set beside a powde
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2180.md#body
+- id: piece:2188:clay-body:sand
+  claim: Piece 2188 asserts clay-body "sand"
+  subject: 2188
+  scope: piece
+  axis: clay-body
+  value: sand
+  original: Piece 2188 — bare sand grit
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2188.md#body
+    - content/pieces/2188.md#title
+- id: piece:2192:clay-body:sand
+  claim: Piece 2192 asserts clay-body "sand"
+  subject: 2192
+  scope: piece
+  axis: clay-body
+  value: sand
+  original: "**All texture?** All texture — a rough, sand-heavy tumbler under the thinnest milky glaze, the bare end of the May-11 grit cluster before th"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2192.md#body
+- id: piece:2193:firing:fired
+  claim: Piece 2193 asserts firing "fired"
+  subject: 2193
+  scope: piece
+  axis: firing
+  value: fired
+  original: The dark is applied, brushed on rather than fired in.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2193.md#body

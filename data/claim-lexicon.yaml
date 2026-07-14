@@ -1,0 +1,197 @@
+# APFYP claim lexicon — the vocabulary that turns prose into auditable claims.
+#
+# Consumed by scripts/extract-claims.mjs (harvest) and scripts/lint-taxonomy.mjs (W3/E5).
+# Hand-edited, reviewable diff — like docs/taxonomy.md. Comments here survive; this file
+# is never machine-rewritten.
+#
+# Matching rules (implemented in scripts/claims-lib.mjs):
+#   - `match` entries are matched case-insensitively on word boundaries; longest match wins.
+#   - `pattern` is an alternative regex source (case-insensitive) for open-ended forms.
+#   - `except` lists hyphenated compounds that do NOT count as an assertion of this term —
+#     these are registered tag/watch names whose naming policy is reviewed at the tag level
+#     (S1 of the review queue), not flagged on every prose occurrence. A spaced form
+#     ("crackle glaze") still counts; the hyphenated name ("crackle-glaze") does not.
+#   - Hits inside double quotes are store-copy quotes, never assertions (skipped, counted).
+#   - Hits in a sentence carrying a hedge cue ("never asserted", "the photos can't say",
+#     "material unclaimed", "I believe", …) classify as hedged, not asserted.
+#   - `editorial.claims_to_avoid` frontmatter is never scanned.
+#
+# Axes: clay-body | surface-material | forming | firing | intent
+# (colors and named looks are the taxonomy's job — see docs/taxonomy.md rule 5. "terracotta"
+# is established color vocabulary per the 2026-07-08 ruling and is deliberately not listed.)
+
+terms:
+  # ---- clay-body ----
+  - value: stoneware
+    axis: clay-body
+    match: [stoneware, stonewares]
+  - value: porcelain
+    axis: clay-body
+    match: [porcelain]
+  - value: earthenware
+    axis: clay-body
+    match: [earthenware]
+  - value: wild-clay
+    axis: clay-body
+    match: [wild clay]
+    note: store-mapped material/wild-clay is store-stated (CSV allowlist)
+  - value: local-clay
+    axis: clay-body
+    match: [local clay]
+    note: store phrase — quoted only, per the batch-3 ruling
+  - value: black-clay
+    axis: clay-body
+    match: [black clay]
+    except: [black-clay]
+    note: color/black-clay is a store-mapped color tag; spaced prose asserting the body is a claim
+  - value: grog
+    axis: clay-body
+    match: [grog, grogged]
+    except: [grog-like]
+    note: detail/embedded-particles definition — "grog" not lab-confirmed
+  - value: shale
+    axis: clay-body
+    match: [shale]
+    note: store title word — quoted only (detail/surface-nodules definition)
+
+  # ---- surface-material ----
+  - value: slip
+    axis: surface-material
+    match: [slip, slips, slipped]
+  - value: glaze
+    axis: surface-material
+    match: [glaze, glazes, glazed, glazing]
+    except:
+      [
+        crackle-glaze,
+        brushed-glaze,
+        glazed-rim-band,
+        pooled-interior-glaze,
+        glaze-text,
+        glaze-flecks,
+        glaze-run,
+      ]
+  - value: underglaze
+    axis: surface-material
+    match: [underglaze, underglazes]
+  - value: unglazed
+    axis: surface-material
+    match: [unglazed]
+    note: asserting the ABSENCE of glaze is also a process claim (surface/bare-clay definition)
+  - value: mason-stain
+    axis: surface-material
+    match: [mason stain, mason stains]
+  - value: oxide
+    axis: surface-material
+    match: [oxide, oxides]
+  - value: ash
+    axis: surface-material
+    match: [ash]
+    note: store phrase "ash-glazed" quoted only, per the batch-3 ruling
+  - value: tenmoku
+    axis: surface-material
+    match: [tenmoku]
+  - value: stain
+    axis: surface-material
+    match: [stained, staining]
+    note: bare "stain" collides with "mason stain"; longest-match keeps them apart
+  - value: iron
+    axis: surface-material
+    match: [iron]
+    except: [iron-brown, iron-black]
+  - value: sand
+    axis: clay-body
+    match: [sand]
+    except: [sand-grit, sand-speckled, sand-textured, sand-like]
+    note: surface/sand-grit definition — what the grit is (sand, grog) never asserted
+  - value: crawl
+    axis: surface-material
+    match: [crawl, crawled, crawling]
+    note: a glaze-process claim — a "crawl-glaze" name was declined in the batch-16 ruling
+
+  # ---- forming ----
+  - value: handbuilt
+    axis: forming
+    match: [handbuilt, hand-built, handbuilding]
+  - value: wheel-thrown
+    axis: forming
+    match: [wheel-thrown, thrown, throwing]
+  - value: pinch
+    axis: forming
+    match: [pinch, pinched, pinching]
+  - value: coil
+    axis: forming
+    match: [coil, coiled, coiling, coils]
+    except: [coil-ridges]
+  - value: slab-built
+    axis: forming
+    match: [slab-built, slab]
+  - value: wedged
+    axis: forming
+    match: [wedged, wedging]
+  - value: carved
+    axis: forming
+    match: [carved, carving]
+  - value: trimmed
+    axis: forming
+    match: [trimmed, trimming]
+  - value: pulled
+    axis: forming
+    match: [pulled]
+    except: [pulled-handle]
+    note: detail/pulled-handle names a technique; tag-level policy question, prose assertion still counts
+  - value: kurinuki
+    axis: forming
+    match: [kurinuki]
+
+  # ---- firing ----
+  - value: fired
+    axis: firing
+    match: [fired, firing, unfired]
+  - value: salt-fired
+    axis: firing
+    match: [salt-fired, salt fired, salt-firing, salt firing]
+  - value: soda-fired
+    axis: firing
+    match: [soda-fired, soda fired, soda-firing, soda firing]
+  - value: wood-fired
+    axis: firing
+    match: [wood-fired, wood fired, wood-firing, wood firing]
+  - value: raku
+    axis: firing
+    match: [raku]
+  - value: reduction
+    axis: firing
+    match: [reduction]
+  - value: oxidation
+    axis: firing
+    match: [oxidation]
+  - value: kiln
+    axis: firing
+    match: [kiln]
+  - value: cone
+    axis: firing
+    pattern: "cone[ -]?\\d+"
+  - value: bisque
+    axis: firing
+    match: [bisque, bisqued]
+  - value: vitrified
+    axis: firing
+    match: [vitrified]
+  - value: scorched
+    axis: firing
+    match: [scorched, scorch]
+  - value: smoke
+    axis: firing
+    match: [smoke, smoked, smoke-fired]
+  - value: carbon
+    axis: firing
+    match: [carbon]
+  - value: flashing
+    axis: firing
+    match: [flashing]
+
+  # ---- intent ----
+  - value: intentional
+    axis: intent
+    match: [intentional, intentionally, deliberate, deliberately]

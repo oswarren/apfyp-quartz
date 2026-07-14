@@ -1,0 +1,324 @@
+# APFYP claim registry — schema: data/claims/README.md
+# Machine-rewritten by scripts/extract-claims.mjs --write; comments do not survive.
+
+- id: piece:1803:forming:wheel-thrown
+  claim: Piece 1803 asserts forming "wheel-thrown"
+  subject: 1803
+  scope: piece
+  axis: forming
+  value: wheel-thrown
+  original: The hand-formed walls and torn crown carry no throwing rings.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1803.md#body
+- id: piece:1803:intent:intentional
+  claim: Piece 1803 asserts intent "intentional"
+  subject: 1803
+  scope: piece
+  axis: intent
+  value: intentional
+  original: "**Is the top meant to look broken?** The rim is deliberately ragged and ridged, left craggy rather than smoothed — the crown is the point of"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1803.md#body
+- id: piece:1811:forming:carved
+  claim: Piece 1811 asserts forming "carved"
+  subject: 1811
+  scope: piece
+  axis: forming
+  value: carved
+  original: "**Where is 1811's number?** Cut straight into the recessed base in a cursive hand and still legible as 1811 — one of the pieces that wears i"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1811.md#body
+- id: piece:1818:forming:wedged
+  claim: Piece 1818 asserts forming "wedged"
+  subject: 1818
+  scope: piece
+  axis: forming
+  value: wedged
+  original: "![Open cup with a torn rim and a warm dark-brown bare wall bearing pale beaded crust and glossy melted white deposits, wedged between grey c"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1818.md#body
+- id: piece:1838:firing:fired
+  claim: Piece 1838 asserts firing "fired"
+  subject: 1838
+  scope: piece
+  axis: firing
+  value: fired
+  original: "**Is that a metallic glaze?** The photos show a pewter-graphite luster and nothing about its cause — glaze, ash, or firing are all guesses t"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1838.md#body
+- id: piece:1838:surface-material:ash
+  claim: Piece 1838 asserts surface-material "ash"
+  subject: 1838
+  scope: piece
+  axis: surface-material
+  value: ash
+  original: "**Is that a metallic glaze?** The photos show a pewter-graphite luster and nothing about its cause — glaze, ash, or firing are all guesses t"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1838.md#body
+- id: piece:1838:surface-material:glaze
+  claim: Piece 1838 asserts surface-material "glaze"
+  subject: 1838
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: "**Is that a metallic glaze?** The photos show a pewter-graphite luster and nothing about its cause — glaze, ash, or firing are all guesses t"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1838.md#body
+- id: piece:1842:clay-body:black-clay
+  claim: Piece 1842 asserts clay-body "black-clay"
+  subject: 1842
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: "![Dark handbuilt ceramic pot, its base carrying the number 1842 handwritten in pale strokes on the black clay, piece 1842 of A Penny For You"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1842.md#body
+- id: piece:1842:forming:carved
+  claim: Piece 1842 asserts forming "carved"
+  subject: 1842
+  scope: piece
+  axis: forming
+  value: carved
+  original: "**How is the number written?** In pale strokes on the bare black base — clearly written rather than carved, though what it's written with is"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1842.md#body
+- id: piece:1843:forming:pinch
+  claim: Piece 1843 asserts forming "pinch"
+  subject: 1843
+  scope: piece
+  axis: forming
+  value: pinch
+  original: "A small near-black charcoal cup, cradled in one hand: matte, dusty-dark walls pinched up to an uneven, torn rim."
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1843.md#body
+- id: piece:1844:clay-body:black-clay
+  claim: Piece 1844 asserts clay-body "black-clay"
+  subject: 1844
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: "The dark run's strangest silhouette: a handbuilt vessel in near-black clay whose rim sweeps up into two horns, like a swallow's tail caught "
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1844.md#body
+- id: piece:1851:firing:cone-10
+  claim: Piece 1851 asserts firing "cone-10"
+  subject: 1851
+  scope: piece
+  axis: firing
+  value: cone-10
+  original: tag process/cone-10
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1851.md#tags
+- id: piece:1857:intent:intentional
+  claim: Piece 1857 asserts intent "intentional"
+  subject: 1857
+  scope: piece
+  axis: intent
+  value: intentional
+  original: "A boulder that shows its history: a handbuilt rock-form vessel in the 1848–1899 run whose third photo is a deliberate close-up of an open cr"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1857.md#body
+- id: piece:1892:clay-body:porcelain
+  claim: Piece 1892 asserts clay-body "porcelain"
+  subject: 1892
+  scope: piece
+  axis: clay-body
+  value: porcelain
+  original: "The sharpest contrast in the white-lined family: a matte black handbuilt cup whose torn rim opens onto an interior as bright and crazed as d"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1892.md#body
+- id: piece:1898:forming:pulled
+  claim: Piece 1898 asserts forming "pulled"
+  subject: 1898
+  scope: piece
+  axis: forming
+  value: pulled
+  original: '**What does "crawled" mean here?** The white patch has pulled apart into plates with dark gaps between — a texture the macro shows plainly, '
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1898.md#body
+- id: piece:1898:surface-material:crawl
+  claim: Piece 1898 asserts surface-material "crawl"
+  subject: 1898
+  scope: piece
+  axis: surface-material
+  value: crawl
+  original: Piece 1898 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a wide flaring handbuilt vessel with a crawled white splash bel
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1898.md#body
+    - content/pieces/1898.md#description

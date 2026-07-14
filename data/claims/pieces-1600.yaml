@@ -1,0 +1,374 @@
+# APFYP claim registry — schema: data/claims/README.md
+# Machine-rewritten by scripts/extract-claims.mjs --write; comments do not survive.
+
+- id: piece:1607:firing:fired
+  claim: Piece 1607 asserts firing "fired"
+  subject: 1607
+  scope: piece
+  axis: firing
+  value: fired
+  original: "**Is the surface actually plaster?** It photographs that way — chalky and patched — but it's a fired ceramic piece, and what coats it isn't "
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1607.md#body
+- id: piece:1608:forming:slab-built
+  claim: Piece 1608 asserts forming "slab-built"
+  subject: 1608
+  scope: piece
+  axis: forming
+  value: slab-built
+  original: Piece 1608 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a wide white handbuilt bowl built of visible slab patches, list
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1608.md#body
+    - content/pieces/1608.md#description
+- id: piece:1627:surface-material:unglazed
+  claim: Piece 1627 asserts surface-material "unglazed"
+  subject: 1627
+  scope: piece
+  axis: surface-material
+  value: unglazed
+  original: Handbuilt, unglazed-looking, unadorned.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1627.md#body
+- id: piece:1630:forming:pinch
+  claim: Piece 1630 asserts forming "pinch"
+  subject: 1630
+  scope: piece
+  axis: forming
+  value: pinch
+  original: Piece 1630 — pinched sandy cup
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1630.md#body
+    - content/pieces/1630.md#description
+    - content/pieces/1630.md#title
+- id: piece:1639:forming:coil
+  claim: Piece 1639 asserts forming "coil"
+  subject: 1639
+  scope: piece
+  axis: forming
+  value: coil
+  original: Piece 1639 — coil-stacked red tower
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1639.md#body
+    - content/pieces/1639.md#description
+    - content/pieces/1639.md#title
+- id: piece:1645:forming:coil
+  claim: Piece 1645 asserts forming "coil"
+  subject: 1645
+  scope: piece
+  axis: forming
+  value: coil
+  original: Piece 1645 — red cup, coil bands
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1645.md#body
+    - content/pieces/1645.md#description
+    - content/pieces/1645.md#title
+- id: piece:1653:forming:pinch
+  claim: Piece 1653 asserts forming "pinch"
+  subject: 1653
+  scope: piece
+  axis: forming
+  value: pinch
+  original: "![Sandy pink-red handbuilt vessel with a pinched waist and crusted sunken crown, photographed on a blue turntable in a workshop, piece 1653 "
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1653.md#body
+- id: piece:1654:clay-body:sand
+  claim: Piece 1654 asserts clay-body "sand"
+  subject: 1654
+  scope: piece
+  axis: clay-body
+  value: sand
+  original: "**What does the close-up show?** The crust an inch away: coarse sand-grain, fine crack webs, edges crumbling like dried earth — recorded exa"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1654.md#body
+- id: piece:1664:forming:slab-built
+  claim: Piece 1664 asserts forming "slab-built"
+  subject: 1664
+  scope: piece
+  axis: forming
+  value: slab-built
+  original: The standing shot poses it on a stone slab with string-lights blurred behind.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1664.md#body
+- id: piece:1668:surface-material:glaze
+  claim: Piece 1668 asserts surface-material "glaze"
+  subject: 1668
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: In the close shot the direct sun fills the bowl and the interior glows orange — light doing the glazing.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1668.md#body
+- id: piece:1669:forming:trimmed
+  claim: Piece 1669 asserts forming "trimmed"
+  subject: 1669
+  scope: piece
+  axis: forming
+  value: trimmed
+  original: "**What shaped the crown?** Tearing, not trimming — the rim keeps every peak and dip the clay made."
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1669.md#body
+- id: piece:1671:forming:pinch
+  claim: Piece 1671 asserts forming "pinch"
+  subject: 1671
+  scope: piece
+  axis: forming
+  value: pinch
+  original: Piece 1671 — round red pot, pinched collar
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1671.md#body
+    - content/pieces/1671.md#description
+    - content/pieces/1671.md#title
+- id: piece:1676:clay-body:sand
+  claim: Piece 1676 asserts clay-body "sand"
+  subject: 1676
+  scope: piece
+  axis: clay-body
+  value: sand
+  original: Piece 1676 — sand-buff vessel
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1676.md#body
+    - content/pieces/1676.md#description
+    - content/pieces/1676.md#title
+- id: piece:1684:surface-material:glaze
+  claim: Piece 1684 asserts surface-material "glaze"
+  subject: 1684
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: "**Is the top glazed and the bottom not?** That's how it photographs — glassy crown, raw-looking base — but what the gloss is, the photos can"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1684.md#body
+- id: piece:1692:firing:fired
+  claim: Piece 1692 asserts firing "fired"
+  subject: 1692
+  scope: piece
+  axis: firing
+  value: fired
+  original: "**Why does the surface sparkle?** The photos show a metallic-looking luster across the dark upper body — the look is right there in the list"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1692.md#body
+- id: piece:1692:surface-material:glaze
+  claim: Piece 1692 asserts surface-material "glaze"
+  subject: 1692
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: "**Why does the surface sparkle?** The photos show a metallic-looking luster across the dark upper body — the look is right there in the list"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1692.md#body
+- id: piece:1697:surface-material:ash
+  claim: Piece 1697 asserts surface-material "ash"
+  subject: 1697
+  scope: piece
+  axis: surface-material
+  value: ash
+  original: Ash-Glazed Wild Clay Vessel with Metallic Crust — Piece 1697
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1697.md#title
+- id: piece:1697:surface-material:glaze
+  claim: Piece 1697 asserts surface-material "glaze"
+  subject: 1697
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: Ash-Glazed Wild Clay Vessel with Metallic Crust — Piece 1697
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1697.md#title
