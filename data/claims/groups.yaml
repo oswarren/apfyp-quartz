@@ -426,6 +426,32 @@
   avoid_terms: []
   affected_outputs:
     - content/techniques/crater-cluster.md#body
+- id: group:dark-bowls:surface-material:glaze
+  claim: The June-08 dark bowls' pooled interiors are glaze
+  subject: dark-bowls
+  scope: group
+  members: 2236-2240
+  axis: surface-material
+  value: glaze
+  original: a glossy dark glaze pools at the floor
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: The pooled interior is glaze — pages may say so. (Pilot review 2026-07-14; overrides the glassy-pools 'never assert the melt' default for these pieces.)
+  reviewed: 2026-07-14
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2236.md#body
+    - content/pieces/2236.md#description
+    - content/pieces/2237.md#body
+    - content/pieces/2237.md#description
+    - content/pieces/2238.md#body
+    - content/pieces/2239.md#body
 - id: group:dark-smears:firing:kiln
   claim: techniques/dark-smears.md asserts firing "kiln"
   subject: dark-smears
@@ -5204,34 +5230,19 @@
   axis: clay-body
   value: stoneware
   original: Piece 2236 — dark sandy stoneware
-  status: unknown
-  corrected_value:
+  status: corrected
+  corrected_value: black sculpture clay
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: It's a black sculpture clay, not stoneware. (Pilot review 2026-07-14.)
+  reviewed: 2026-07-14
+  assertable: true
   private_ref: false
   exceptions: []
-  avoid_terms: []
-  affected_outputs:
-    - content/pieces/2236.md#body
-    - content/pieces/2236.md#description
-    - content/pieces/2236.md#title
-    - content/pieces/2237.md#body
-    - content/pieces/2237.md#description
-    - content/pieces/2238.md#body
-    - content/pieces/2238.md#description
-    - content/pieces/2239.md#body
-    - content/pieces/2239.md#description
-    - content/pieces/2240.md#body
-    - content/pieces/2240.md#description
-    - content/pieces/2241.md#body
-    - content/pieces/2243.md#body
-    - content/pieces/2243.md#description
-    - content/ranges/range-2201-2249.md#body
-    - content/ranges/range-2201-2249.md#description
+  avoid_terms:
+    - stoneware
+  affected_outputs: []
 - id: group:range-2201-2249:surface-material:crawl
   claim: The range-2201-2249 family asserts surface-material "crawl" (3 pieces)
   subject: range-2201-2249
@@ -5282,11 +5293,6 @@
     - content/pieces/2220.md#body
     - content/pieces/2220.md#description
     - content/pieces/2229.md#body
-    - content/pieces/2236.md#body
-    - content/pieces/2237.md#body
-    - content/pieces/2237.md#description
-    - content/pieces/2238.md#body
-    - content/pieces/2239.md#body
     - content/pieces/2241.md#body
     - content/pieces/2243.md#body
     - content/pieces/2244.md#body
