@@ -30,6 +30,20 @@ const byPieceNumberThenTitle = (a: QuartzPluginData, b: QuartzPluginData) => {
   if (na !== null && nb !== null) return na - nb
   if (na !== null) return 1 // curated non-piece entries list first
   if (nb !== null) return -1
+  // Ranges carry no piece_number; sort them by the numeric START of the range
+  // (parsed from the range-<start>-<end> slug) so 541-619 precedes 2334-2335
+  // instead of comparing titles/slugs as strings. Non-range pages fall through
+  // to the title ordering below unchanged. This stays a consistent ordering
+  // because a range page only ever shares a listing with other ranges (the
+  // ranges/ folder holds only range pages, which are untagged) or with pieces
+  // (which short-circuit above) — never with a title-sorted non-range page.
+  const rangeStart = (d: QuartzPluginData): number | null => {
+    const m = /(?:^|\/)range-(\d+)-\d+$/.exec(String(d.slug ?? ""))
+    return m ? parseInt(m[1], 10) : null
+  }
+  const ra = rangeStart(a)
+  const rb = rangeStart(b)
+  if (ra !== null && rb !== null) return ra - rb
   const ta = a.frontmatter?.title?.toLowerCase() ?? ""
   const tb = b.frontmatter?.title?.toLowerCase() ?? ""
   return ta.localeCompare(tb)
