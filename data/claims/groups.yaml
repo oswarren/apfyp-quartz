@@ -1416,8 +1416,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/pieces/index.md#body
+  affected_outputs: []
 - id: group:pierced-cups:other:bamboo-rod-handle
   claim: The pierced holes on the charcoal cups take a rod/bamboo as a removable carrying handle
   subject: pierced-cups
@@ -1478,7 +1477,6 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/2250.md#body
-    - content/pieces/2250.md#description
     - content/pieces/2255.md#body
     - content/pieces/2257.md#body
 - id: group:pulled-handle:forming:pinch
@@ -5525,14 +5523,7 @@
   exceptions: []
   avoid_terms: []
   affected_outputs:
-    - content/pieces/2251.md#body
     - content/pieces/2252.md#body
-    - content/pieces/2253.md#body
-    - content/pieces/2254.md#body
-    - content/pieces/2256.md#body
-    - content/pieces/2258.md#body
-    - content/pieces/2259.md#body
-    - content/pieces/2260.md#body
     - content/ranges/range-2250-2260.md#body
 - id: group:range-2261-2263:forming:coil
   claim: ranges/range-2261-2263.md asserts forming "coil"
@@ -6045,13 +6036,27 @@
   superseded:
   source: maker
   confidence: high
-  maker_response: "These glazed-rim-band pieces are wild clay bodies. PUBLISH PENDING: their claims_to_avoid forbids connection to sourcing/material projects — Warren to confirm whether 'wild clay' may be named on the pages before it goes to prose."
+  maker_response: "These glazed-rim-band pieces are wild clay bodies. Warren approved publishing (2026-07-15): the wild-clay material may be named on the pages; no connection to the Wild Clay Archive / Wild Clay Locator projects."
   reviewed: 2026-07-15
-  assertable: false
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs: []
+  affected_outputs:
+    - content/pieces/1571.md#body
+    - content/pieces/1571.md#tags
+    - content/pieces/1574.md#body
+    - content/pieces/1574.md#tags
+    - content/pieces/1576.md#body
+    - content/pieces/1576.md#tags
+    - content/pieces/1577.md#body
+    - content/pieces/1577.md#tags
+    - content/pieces/1578.md#body
+    - content/pieces/1578.md#tags
+    - content/pieces/1579.md#description
+    - content/pieces/1579.md#tags
+    - content/pieces/1580.md#body
+    - content/pieces/1580.md#tags
 - id: group:rust-fissures:firing:fired
   claim: techniques/rust-fissures.md asserts firing "fired"
   subject: rust-fissures

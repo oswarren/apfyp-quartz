@@ -244,8 +244,12 @@ for (const page of claimPages) {
   }
 }
 
-// E7: the public claim registry + lexicon must never carry leak-shaped data (CLAUDE.md rule 1).
-const LEAK_RE = /shpat_|shpss_|@gmail|\.csv\b|wild clay archive/i
+// E7: the public claim registry + lexicon must never carry leak-shaped data — the canonical
+// rule-1 patterns (tokens, customer email, CSV exports). "Wild Clay Archive" is deliberately
+// NOT here: it's public guardrail vocabulary (it appears in editorial.claims_to_avoid across
+// many published pages), so flagging it would false-positive on legitimate "do not link to it"
+// notes. Keeping APFYP disconnected from that project is a content-review concern, not a leak.
+const LEAK_RE = /shpat_|shpss_|@gmail|\.csv\b/i
 for (const file of [LEXICON_FILE, ...listYaml(CLAIMS_DIR)]) {
   const rel = path.relative(ROOT, file).replace(/\\/g, "/")
   const text = fs.readFileSync(file, "utf8")

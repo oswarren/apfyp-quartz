@@ -109,3 +109,31 @@ Standing policy applied: tag slugs/URLs kept; where a glaze-name is now factuall
 3. **Wild-clay publish** decision above.
 
 Next: S2 remainder / S4 (`handbuilt` by era).
+
+### S1 follow-up (2026-07-15, Warren's three directives)
+
+- **Crackle correction applied to the pilot pages.** The 11 human-reviewed pilot cups
+  (2250–2260) plus `pieces/index.md` were rewritten: "crackle glaze" / "crackled glaze" →
+  "crackle" / "crackled surface"; the wikilink display `[[crackle-glaze|crackle glaze]]` →
+  `[[crackle-glaze|crackle]]` (slug preserved). The **confirmed interior "pooled glaze"** on
+  2250/2255/2257 was left untouched. `1708` needed nothing (it already said "No glaze is
+  visible… the network is in the clay surface"). `2074` was **left alone** — it's a genuinely
+  glazed vessel (not crackle-glaze-tagged), so the water-drip ruling doesn't apply.
+- **Wild clay published** on the seven glazed-rim-band pieces (1571, 1574, 1576, 1577, 1578,
+  1579, 1580). Named in each description and body (colors kept), added the `material/wild-clay`
+  discovery tag (its first maker-confirmed members), lifted the per-page "don't call the body
+  'wild clay'" guardrail, and rewrote the sourcing-project `claims_to_avoid` line to permit the
+  material while still barring links to the Wild Clay Archive / Locator projects. Registry
+  record set `assertable: true`. taxonomy.md note added.
+- **Tag-slug rename: not done — would break URLs.** The alias-redirects plugin covers content
+  pages but NOT the auto-generated `/tags/…` pages, and a technique explainer's slug must match
+  its tag leaf. So renaming `surface/crackle-glaze` or `detail/glaze-text` would 404 their
+  `/tags/` URLs with no redirect. The **display titles** were already corrected in S1 ("Crackle
+  Surface", "Handwritten Words"); the slugs stay as legacy labels.
+- **Lint fix:** dropped "wild clay archive" from the E7 leak pattern — it's public guardrail
+  vocabulary (in `claims_to_avoid` on many pages), so it false-positived on legitimate
+  "do not link to it" notes. E7 now matches only the canonical rule-1 secrets.
+
+**Still open:** `2244` (the marbled blue-white tea bowl) is tagged `surface/crackle-glaze` but
+its prose reads like a genuine crazed glaze ("glossy glaze crazed into a fine crackle"), unlike
+the matte water-drip cups — one question for Warren before correcting it either way.
