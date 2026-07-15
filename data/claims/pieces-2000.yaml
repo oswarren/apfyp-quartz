@@ -333,14 +333,14 @@
   axis: forming
   value: handbuilt
   original: "![Milky-white glossy handbuilt ceramic bowl with a wobbly finger-pinched rim, piece 2053 of A Penny For Your Pottery.]"
-  status: unknown
+  status: confirmed
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: Confirmed handbuilt (S4 review, all-eras confirmation).
+  reviewed: 2026-07-15
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []
@@ -354,14 +354,14 @@
   axis: forming
   value: handbuilt
   original: tag technique/handbuilt
-  status: unknown
+  status: confirmed
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: Confirmed handbuilt (S4 review, all-eras confirmation).
+  reviewed: 2026-07-15
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []
@@ -394,14 +394,14 @@
   axis: forming
   value: handbuilt
   original: Piece 2070 — pale handbuilt cup with a pointed handle
-  status: unknown
+  status: confirmed
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: Confirmed handbuilt (S4 review, all-eras confirmation).
+  reviewed: 2026-07-15
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []

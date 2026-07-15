@@ -143,3 +143,29 @@ overrides the old range-level inference for 2244. Lint 0/0, 0 stale.
 
 S1 and its follow-ups are fully closed. Next: **S4** (`handbuilt` by era, starting with the
 batch-13 chawan contradiction `group:range-2051-2100:forming:handbuilt`).
+
+---
+
+## Session 3 — S4 handbuilt by era (2026-07-15, with Warren)
+
+Two questions settled the whole `technique/handbuilt` family (~570 pieces across 20 eras):
+
+- **Chawans 2051–2100 — CONFIRMED handbuilt.** The batch-13 tagging stands; the batch-15
+  throwing-ring chawans were a different run. Resolves the seeded batch-13/15 contradiction.
+- **All 18 other eras — CONFIRMED handbuilt** (bulk). The visual review had already withheld
+  the tag wherever it saw wheel evidence, so the tagged set is correct as read.
+
+Applied: **34 handbuilt records confirmed** (`source: maker`, `assertable: true`) — 29 group
+records (the 20 era ranges + the `handbuilding` explainer + technique/index pages that describe
+handbuilt pieces) and 5 piece-scoped stragglers (2053, 2054, 2070, 2334, 2335) that sat outside
+the era member lists. No prose changes needed — the pages already say "handbuilt," now on record
+as confirmed. The wheel-thrown seeds (rust-streak cups etc.) were untouched and don't conflict.
+Lint 0/0, 0 stale, idempotent. Open queue: 304 → the handbuilt family is out of it.
+
+**Held for Warren (1 item):** `about.md`'s "**Every piece is handbuilt**" is a universal claim
+that the confirmed wheel-thrown pieces (rust-streak cups, batch-15 chawans) contradict. Not
+bulk-confirmed. Options: keep it as a brand statement, or qualify it ("most pieces are
+handbuilt; some are wheel-thrown"). `group:about:forming:handbuilt` left `unknown` pending.
+
+Next: the remaining material families (bare-clay/unglazed, black-clay, the "slip" prose sweep),
+or merge the completed sessions to `main`.
