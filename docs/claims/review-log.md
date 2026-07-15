@@ -134,6 +134,12 @@ Next: S2 remainder / S4 (`handbuilt` by era).
   vocabulary (in `claims_to_avoid` on many pages), so it false-positived on legitimate
   "do not link to it" notes. E7 now matches only the canonical rule-1 secrets.
 
-**Still open:** `2244` (the marbled blue-white tea bowl) is tagged `surface/crackle-glaze` but
-its prose reads like a genuine crazed glaze ("glossy glaze crazed into a fine crackle"), unlike
-the matte water-drip cups — one question for Warren before correcting it either way.
+**`2244` resolved (2026-07-15):** Warren confirmed it's the same water-drip crackle as the
+cups. Rewrote its description, alt text, body, and Q&A — "crazed/peeling glaze" → "crackled,
+peeling surface"; the interpretation-implying "crazed" softened to "crackled." Added 2244 to
+the `group:crackle-glaze:surface-material:glaze` members so E5 now bans "glaze" on it too (it
+has no legitimate glaze, unlike the pilot cups' confirmed interiors). The maker-reviewed record
+overrides the old range-level inference for 2244. Lint 0/0, 0 stale.
+
+S1 and its follow-ups are fully closed. Next: **S4** (`handbuilt` by era, starting with the
+batch-13 chawan contradiction `group:range-2051-2100:forming:handbuilt`).

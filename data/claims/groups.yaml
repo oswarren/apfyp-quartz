@@ -423,10 +423,10 @@
   avoid_terms: []
   affected_outputs: []
 - id: group:crackle-glaze:surface-material:glaze
-  claim: techniques/crackle-glaze.md asserts surface-material "glaze"
+  claim: techniques/crackle-glaze.md asserts surface-material "glaze"; also covers piece 2244 (same water-drip crackle, maker-confirmed 2026-07-15)
   subject: crackle-glaze
   scope: group
-  members: ""
+  members: "2244"
   axis: surface-material
   value: glaze
   original: Crackle Glaze
@@ -5375,8 +5375,6 @@
     - content/pieces/2229.md#body
     - content/pieces/2241.md#body
     - content/pieces/2243.md#body
-    - content/pieces/2244.md#body
-    - content/pieces/2244.md#description
     - content/pieces/2245.md#body
     - content/pieces/2245.md#description
     - content/pieces/2247.md#body
