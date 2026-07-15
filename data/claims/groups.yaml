@@ -281,6 +281,28 @@
   axis: surface-material
   value: glaze
   original: Brushed Glaze
+  status: visual-only
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: The brushed decoration is a mix — slips, glazes, and mason stains brushed on, depending on the piece (per the batch-15 ruling). The explainer must not assert flat "glaze"; name the slip/glaze/stain mix. Tag name kept per standing policy.
+  reviewed: 2026-07-15
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/techniques/brushed-glaze.md#description
+    - content/techniques/brushed-glaze.md#title
+- id: group:brushed-glaze:surface-material:mason-stain
+  claim: techniques/brushed-glaze.md asserts surface-material "mason-stain"
+  subject: brushed-glaze
+  scope: group
+  members: ""
+  axis: surface-material
+  value: mason-stain
+  original: "The hand-brushed decoration on A Penny For Your Pottery's abstract cups — slip, glaze, or mason stain depending on the piece: bold black pat"
   status: unknown
   corrected_value:
   superseded:
@@ -293,9 +315,28 @@
   exceptions: []
   avoid_terms: []
   affected_outputs:
-    - content/techniques/brushed-glaze.md#body
     - content/techniques/brushed-glaze.md#description
-    - content/techniques/brushed-glaze.md#title
+- id: group:brushed-glaze:surface-material:slip
+  claim: techniques/brushed-glaze.md asserts surface-material "slip"
+  subject: brushed-glaze
+  scope: group
+  members: ""
+  axis: surface-material
+  value: slip
+  original: "The hand-brushed decoration on A Penny For Your Pottery's abstract cups — slip, glaze, or mason stain depending on the piece: bold black pat"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/techniques/brushed-glaze.md#description
 - id: group:coil-ridges:forming:coil
   claim: techniques/coil-ridges.md asserts forming "coil"
   subject: coil-ridges
@@ -380,8 +421,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/techniques/crackle-glaze.md#body
+  affected_outputs: []
 - id: group:crackle-glaze:surface-material:glaze
   claim: techniques/crackle-glaze.md asserts surface-material "glaze"
   subject: crackle-glaze
@@ -390,6 +430,27 @@
   axis: surface-material
   value: glaze
   original: Crackle Glaze
+  status: corrected
+  corrected_value: water-dripped decoration on dried clay and slips — a clay/slip crackle, not a glaze
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: I dripped water in an incremental manner onto dried clay and slips on one side, letting the decoration occur through this process, using various clays and materials. It is not a glaze.
+  reviewed: 2026-07-15
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms:
+    - glaze
+  affected_outputs: []
+- id: group:crackle-glaze:surface-material:slip
+  claim: techniques/crackle-glaze.md asserts surface-material "slip"
+  subject: crackle-glaze
+  scope: group
+  members: ""
+  axis: surface-material
+  value: slip
+  original: "The crackled surface on A Penny For Your Pottery's pale pieces — a water-dripped decoration worked into dried clay and slips, not a glaze — "
   status: unknown
   corrected_value:
   superseded:
@@ -404,7 +465,6 @@
   affected_outputs:
     - content/techniques/crackle-glaze.md#body
     - content/techniques/crackle-glaze.md#description
-    - content/techniques/crackle-glaze.md#title
 - id: group:crater-cluster:surface-material:glaze
   claim: techniques/crater-cluster.md asserts surface-material "glaze"
   subject: crater-cluster
@@ -881,14 +941,14 @@
   axis: surface-material
   value: glaze
   original: Glaze Flecks
-  status: unknown
+  status: confirmed
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: Confirmed glaze — mineral flecks suspended in a pale glaze.
+  reviewed: 2026-07-15
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []
@@ -902,20 +962,18 @@
   axis: surface-material
   value: glaze
   original: Glaze Text
-  status: unknown
+  status: visual-only
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
+  source: maker
+  confidence: high
+  maker_response: The handwritten words are not glaze — part of the brushed slip/glaze/stain decoration; describe the words by appearance, medium not asserted.
+  reviewed: 2026-07-15
   assertable: false
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/techniques/glaze-text.md#body
-    - content/techniques/glaze-text.md#title
+  affected_outputs: []
 - id: group:glazed-rim-band:surface-material:glaze
   claim: techniques/glazed-rim-band.md asserts surface-material "glaze"
   subject: glazed-rim-band
@@ -924,14 +982,14 @@
   axis: surface-material
   value: glaze
   original: Glazed Rim Bands
-  status: unknown
+  status: confirmed
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: It is glaze — glazed on the inside and outside rim.
+  reviewed: 2026-07-15
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []
@@ -1399,6 +1457,30 @@
   avoid_terms: []
   affected_outputs:
     - content/techniques/pierced-hole.md#description
+- id: group:pooled-interior-glaze:surface-material:glaze
+  claim: The pooled interiors of the pilot cups are glaze
+  subject: pooled-interior-glaze
+  scope: group
+  members: 2250, 2255, 2257
+  axis: surface-material
+  value: glaze
+  original: Glossy glaze pooled in the interior
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: Confirmed glaze — glaze pooled in the interior of the pilot cups.
+  reviewed: 2026-07-15
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2250.md#body
+    - content/pieces/2250.md#description
+    - content/pieces/2255.md#body
+    - content/pieces/2257.md#body
 - id: group:pulled-handle:forming:pinch
   claim: techniques/pulled-handle.md asserts forming "pinch"
   subject: pulled-handle
@@ -5443,15 +5525,11 @@
   exceptions: []
   avoid_terms: []
   affected_outputs:
-    - content/pieces/2250.md#body
-    - content/pieces/2250.md#description
     - content/pieces/2251.md#body
     - content/pieces/2252.md#body
     - content/pieces/2253.md#body
     - content/pieces/2254.md#body
-    - content/pieces/2255.md#body
     - content/pieces/2256.md#body
-    - content/pieces/2257.md#body
     - content/pieces/2258.md#body
     - content/pieces/2259.md#body
     - content/pieces/2260.md#body
@@ -5954,6 +6032,26 @@
   avoid_terms: []
   affected_outputs:
     - content/ranges/index.md#body
+- id: group:rim-band-wild-clay:clay-body:wild-clay
+  claim: The glazed-rim-band pieces around 1571-1580 are wild clay bodies
+  subject: rim-band-wild-clay
+  scope: group
+  members: 1571, 1574, 1576, 1577, 1578, 1579, 1580
+  axis: clay-body
+  value: wild-clay
+  original: these are also wild clay (maker, S1 review)
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: "These glazed-rim-band pieces are wild clay bodies. PUBLISH PENDING: their claims_to_avoid forbids connection to sourcing/material projects — Warren to confirm whether 'wild clay' may be named on the pages before it goes to prose."
+  reviewed: 2026-07-15
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs: []
 - id: group:rust-fissures:firing:fired
   claim: techniques/rust-fissures.md asserts firing "fired"
   subject: rust-fissures

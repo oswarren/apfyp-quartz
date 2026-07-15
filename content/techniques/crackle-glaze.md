@@ -1,25 +1,22 @@
 ---
 type: technique
-title: "Crackle Glaze"
-description: "What crackle glaze (crazing) is — the fine network of cracks in a ceramic glaze surface — and where to see it on A Penny For Your Pottery's white-glazed pieces."
+title: "Crackle Surface"
+description: "The crackled surface on A Penny For Your Pottery's pale pieces — a water-dripped decoration worked into dried clay and slips — and where to see it."
 tags:
   - surface/crackle-glaze
 ---
 
-**What is crackle glaze?** Crackle — potters also call it crazing — is a fine network of hairline cracks running through the glaze surface, like the surface of an old painting. In general terms it happens when a glaze and the clay body beneath it shrink at different rates as the piece cools: the glaze pulls tight and cracks into a web. The cracks are in the glass layer, not the clay.
+**What makes the crackled surface?** The maker's own account: water dripped on in an incremental way over dried clay and slips on one side, letting the decoration form through that process, with various clays and materials. The fine web of lines is worked into the clay-and-slip layer, not crazed into a coat of glass.
 
-Whether crackle counts as a flaw or a finish depends entirely on tradition and intent — whole ceramic traditions prize it. On these pieces it reads as a surface texture: a white/cream glaze broken into a soft web of lines.
+On these pieces it reads as a surface texture — a pale, cream-white field broken into a soft network of lines, like the surface of an old painting.
 
 ## How to spot it
 
-- A **network of fine lines** across the glaze, most visible where light rakes across the surface
-- On several pieces here, **glossy glaze pooled in the interior** — where glaze runs thicker, it pools and shines ([[2250]], [[2255]], [[2257]])
-- Crackle lines are even and web-like; they're distinct from the occasional **structural hairline crack** in a piece's body or base, which these pages record separately and only as observed
-
-This site doesn't state glaze recipes or firing details for individual pieces — what's described is what the listing photos show.
+- A **network of fine lines** across the surface, most visible where light rakes across it
+- The lines are even and web-like; they're distinct from the occasional **structural hairline crack** in a piece's body or base, which these pages record separately and only as observed
 
 ## See it on real pieces
 
-[[2250]] (classic white crackle with speckled lower body) · [[2255]] (crackle with pooled interior glaze) · [[2258]] (crackle, with an interior line drawing visible in one photo) · or browse [every crackle-glazed piece](../tags/surface/crackle-glaze).
+[[2250]] (classic pale crackle with a speckled lower body) · [[2255]] · [[2258]] (crackle, with an interior line drawing visible in one photo) · or browse [every crackle piece](../tags/surface/crackle-glaze).
 
 Each piece page links to its live listing on [the Shopify store](https://apennyforyourpottery.com) — the purchase path for every piece.

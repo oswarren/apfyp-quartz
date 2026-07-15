@@ -64,3 +64,48 @@ merged or deployed — all changes sit on the `feat/maker-verification` branch f
 
 Next: S1 (glaze-tag family) and S4 (`handbuilt` by era, starting with the chawan contradiction
 `group:range-2051-2100:forming:handbuilt`).
+
+---
+
+## Session 2 — S1 glaze-tag family (2026-07-15, with Warren)
+
+Reviewed the seven tags whose name commits to "glaze." Seven rulings:
+
+- **`crackle-glaze` — CORRECTED: not glaze.** The crackled surface is the maker's own
+  process — "water dripped in an incremental manner onto dried clay and slips on one side,
+  letting the decoration occur, using various clays and materials." Recorded corrected +
+  assertable, `avoid_terms: [glaze]` (scoped to the explainer only, empty members → pieces
+  untouched). Rewrote `techniques/crackle-glaze.md` as the maker's water-drip account; dropped
+  the entire "crazing in a glaze" mechanism and the interior-glaze bullet (that detail lives on
+  the piece pages). E5 clear.
+- **`brushed-glaze` — VISUAL-ONLY: a mix.** The brushed decoration is slip, glaze, or mason
+  stain depending on the piece (per batch-15), not flatly "glaze." Rewrote the explainer to name
+  the mix. (`visual-only` rather than `corrected` so E5 doesn't ban the word "glaze," which is
+  legitimately part of the mix.)
+- **`glazed-rim-band` — CONFIRMED glaze.** Glazed on the inside and outside rim; explainer's
+  "a stripe of glaze along the rim" stands as fact.
+- **`glaze-flecks` — CONFIRMED glaze.** Mineral flecks suspended in a pale glaze.
+- **`pooled-interior-glaze` — CONFIRMED glaze** (new record, 2250/2255/2257).
+- **`glaze-text` — VISUAL-ONLY: not glaze.** The handwritten words are part of the brushed
+  slip/glaze/stain decoration, medium not asserted. Rewrote the explainer (retitled display
+  "Handwritten Words"; tag slug kept).
+- **NEW: `clay-body:wild-clay` for the rim-band pieces (~1571–1580) — CONFIRMED, PUBLISH
+  PENDING.** Warren volunteered that these are wild-clay bodies. Recorded `assertable: false`
+  because these pages' `claims_to_avoid` forbids connection to sourcing/material projects —
+  Warren to decide whether "wild clay" may be named on the pages.
+
+Rewrote 3 technique explainers (crackle-glaze, brushed-glaze, glaze-text); lint 0/0, 0 stale.
+Standing policy applied: tag slugs/URLs kept; where a glaze-name is now factually wrong
+(crackle, glaze-text) the display title was changed but the slug preserved.
+
+**Pending Warren's input (flagged, not acted on):**
+
+1. **Pilot pages** 2250–2260 (human-reviewed gold) plus 2244, and 1708/2074/`pieces/index.md`,
+   still describe the crackle as "crackle glaze." Per-page approval needed before applying the
+   water-drip correction to any of them — especially the human-reviewed pilot.
+2. **Tag-slug renames:** `surface/crackle-glaze` and `detail/glaze-text` now name a material
+   they aren't. Rename the slugs (breaks URLs/wikilinks, needs redirects) or keep them as legacy
+   visual labels? Warren's call.
+3. **Wild-clay publish** decision above.
+
+Next: S2 remainder / S4 (`handbuilt` by era).
