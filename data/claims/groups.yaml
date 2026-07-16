@@ -72,17 +72,18 @@
   axis: clay-body
   value: stoneware
   original: What a bare, unglazed clay surface is and why most of A Penny For Your Pottery's dark stoneware and buff vessels are finished without glaze.
-  status: unknown
-  corrected_value:
+  status: corrected
+  corrected_value: black-clay
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: The "black stoneware run" nickname for pieces 1727–1769 is renamed "the black clay run"; "dark stoneware" becomes "dark clay". The corridor is black clay, not stoneware. (Session 2 review 2026-07-16.)
+  reviewed: 2026-07-16
+  assertable: true
   private_ref: false
   exceptions: []
-  avoid_terms: []
+  avoid_terms:
+    - stoneware
   affected_outputs:
     - content/techniques/bare-clay.md#body
     - content/techniques/bare-clay.md#description
@@ -260,17 +261,18 @@
   axis: clay-body
   value: stoneware
   original: "**Why is there blue on a bare black pot?** Two pieces in the black stoneware run carry small glassy blue marks — sparse scattered flecks on "
-  status: unknown
-  corrected_value:
+  status: corrected
+  corrected_value: black-clay
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: The "black stoneware run" nickname for pieces 1727–1769 is renamed "the black clay run"; "dark stoneware" becomes "dark clay". The corridor is black clay, not stoneware. (Session 2 review 2026-07-16.)
+  reviewed: 2026-07-16
+  assertable: true
   private_ref: false
   exceptions: []
-  avoid_terms: []
+  avoid_terms:
+    - stoneware
   affected_outputs:
     - content/techniques/blue-flecks.md#body
 - id: group:brushed-glaze:surface-material:glaze
@@ -710,17 +712,18 @@
   axis: clay-body
   value: stoneware
   original: Why two of A Penny For Your Pottery's black stoneware pieces look woven — cloth pressed into soft clay, its weave carried through the firing
-  status: unknown
-  corrected_value:
+  status: corrected
+  corrected_value: black-clay
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: The "black stoneware run" nickname for pieces 1727–1769 is renamed "the black clay run"; "dark stoneware" becomes "dark clay". The corridor is black clay, not stoneware. (Session 2 review 2026-07-16.)
+  reviewed: 2026-07-16
+  assertable: true
   private_ref: false
   exceptions: []
-  avoid_terms: []
+  avoid_terms:
+    - stoneware
   affected_outputs:
     - content/techniques/fabric-impression.md#description
 - id: group:fabric-impression:firing:fired
@@ -1363,17 +1366,18 @@
   axis: clay-body
   value: stoneware
   original: "- The black stoneware run — 40 raw, sculptural dark-clay vessels, pieces 1727–1769, every listing photo reviewed"
-  status: unknown
-  corrected_value:
+  status: corrected
+  corrected_value: black-clay
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: The "black stoneware run" nickname for pieces 1727–1769 is renamed "the black clay run"; "dark stoneware" becomes "dark clay". The corridor is black clay, not stoneware. (Session 2 review 2026-07-16.)
+  reviewed: 2026-07-16
+  assertable: true
   private_ref: false
   exceptions: []
-  avoid_terms: []
+  avoid_terms:
+    - stoneware
   affected_outputs:
     - content/pieces/index.md#body
 - id: group:pieces-index:forming:handbuilt
@@ -1592,17 +1596,18 @@
   axis: clay-body
   value: stoneware
   original: Like the black stoneware run, these photo files carry no dates, so there's no photography-date grouping for this stretch.
-  status: unknown
-  corrected_value:
+  status: corrected
+  corrected_value: black-clay
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: The "black stoneware run" nickname for pieces 1727–1769 is renamed "the black clay run"; "dark stoneware" becomes "dark clay". The corridor is black clay, not stoneware. (Session 2 review 2026-07-16.)
+  reviewed: 2026-07-16
+  assertable: true
   private_ref: false
   exceptions: []
-  avoid_terms: []
+  avoid_terms:
+    - stoneware
   affected_outputs:
     - content/ranges/range-1571-1597.md#body
 - id: group:range-1571-1597:forming:handbuilt
@@ -2401,17 +2406,18 @@
   axis: clay-body
   value: stoneware
   original: Eleven photographed pieces of A Penny For Your Pottery between the wild-clay stretch and the black stoneware run, pieces 1715 ($17.15) to 17
-  status: unknown
-  corrected_value:
+  status: corrected
+  corrected_value: black-clay
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: The "black stoneware run" nickname for pieces 1727–1769 is renamed "the black clay run"; "dark stoneware" becomes "dark clay". The corridor is black clay, not stoneware. (Session 2 review 2026-07-16.)
+  reviewed: 2026-07-16
+  assertable: true
   private_ref: false
   exceptions: []
-  avoid_terms: []
+  avoid_terms:
+    - stoneware
   affected_outputs:
     - content/ranges/range-1716-1725.md#body
     - content/ranges/range-1716-1725.md#description
@@ -2511,14 +2517,14 @@
   axis: clay-body
   value: black-clay
   original: "**What color is piece 1740?** Black clay — the maker confirms it — though the listing photo reads warm brown with a gray interior."
-  status: unknown
+  status: confirmed
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: Black clay — the maker confirms it across this corridor; several pieces photograph warm brown. (Session 2 review 2026-07-16.)
+  reviewed: 2026-07-16
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []
@@ -2573,17 +2579,18 @@
   axis: clay-body
   value: stoneware
   original: Handcrafted Textured Black Stoneware Vase – Sculptural Form — Piece 1727
-  status: unknown
-  corrected_value:
+  status: corrected
+  corrected_value: black-clay
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: It's black clay, not stoneware — the same body confirmed on piece 1740. (Session 2 review 2026-07-16.)
+  reviewed: 2026-07-16
+  assertable: true
   private_ref: false
   exceptions: []
-  avoid_terms: []
+  avoid_terms:
+    - stoneware
   affected_outputs:
     - content/pieces/1727.md#body
     - content/pieces/1727.md#title
@@ -5043,14 +5050,14 @@
   axis: clay-body
   value: stoneware
   original: Piece 2188 of 10,000 in A Penny For Your Pottery's numbered ceramic series — the sandy outlier of the chawan run, a bare grit-flecked stonew
-  status: unknown
+  status: confirmed
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: These sandy, grogged chawan-run pieces are stoneware — the store copy is accurate here. (Session 2 review 2026-07-16.)
+  reviewed: 2026-07-16
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []
@@ -5924,17 +5931,18 @@
   axis: clay-body
   value: stoneware
   original: "- Pieces 1716–1725 — the bridge: six dark handbuilt pieces between the wild-clay stretch and the black stoneware run, including a four-piece"
-  status: unknown
-  corrected_value:
+  status: corrected
+  corrected_value: black-clay
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: The "black stoneware run" nickname for pieces 1727–1769 is renamed "the black clay run"; "dark stoneware" becomes "dark clay". The corridor is black clay, not stoneware. (Session 2 review 2026-07-16.)
+  reviewed: 2026-07-16
+  assertable: true
   private_ref: false
   exceptions: []
-  avoid_terms: []
+  avoid_terms:
+    - stoneware
   affected_outputs:
     - content/ranges/index.md#body
 - id: group:ranges-index:forming:coil
@@ -6193,17 +6201,18 @@
   axis: clay-body
   value: stoneware
   original: The hatched, cut-in texture covering piece 1756 of A Penny For Your Pottery's black stoneware run — and the fainter lines elsewhere in the r
-  status: unknown
-  corrected_value:
+  status: corrected
+  corrected_value: black-clay
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: The "black stoneware run" nickname for pieces 1727–1769 is renamed "the black clay run"; "dark stoneware" becomes "dark clay". The corridor is black clay, not stoneware. (Session 2 review 2026-07-16.)
+  reviewed: 2026-07-16
+  assertable: true
   private_ref: false
   exceptions: []
-  avoid_terms: []
+  avoid_terms:
+    - stoneware
   affected_outputs:
     - content/techniques/scored-marks.md#description
 - id: group:scored-marks:intent:intentional
@@ -6340,17 +6349,18 @@
   axis: clay-body
   value: stoneware
   original: "The dark protruding grit on eleven pieces of A Penny For Your Pottery's black stoneware run — from scattered grains to full pebbled crusts, "
-  status: unknown
-  corrected_value:
+  status: corrected
+  corrected_value: black-clay
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: The "black stoneware run" nickname for pieces 1727–1769 is renamed "the black clay run"; "dark stoneware" becomes "dark clay". The corridor is black clay, not stoneware. (Session 2 review 2026-07-16.)
+  reviewed: 2026-07-16
+  assertable: true
   private_ref: false
   exceptions: []
-  avoid_terms: []
+  avoid_terms:
+    - stoneware
   affected_outputs:
     - content/techniques/surface-nodules.md#body
     - content/techniques/surface-nodules.md#description
@@ -6362,17 +6372,18 @@
   axis: clay-body
   value: stoneware
   original: "- Pale wash — the thin light coating over dark stoneware, in the maker's own words"
-  status: unknown
-  corrected_value:
+  status: corrected
+  corrected_value: black-clay
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: The "black stoneware run" nickname for pieces 1727–1769 is renamed "the black clay run"; "dark stoneware" becomes "dark clay". The corridor is black clay, not stoneware. (Session 2 review 2026-07-16.)
+  reviewed: 2026-07-16
+  assertable: true
   private_ref: false
   exceptions: []
-  avoid_terms: []
+  avoid_terms:
+    - stoneware
   affected_outputs:
     - content/techniques/index.md#body
 - id: group:techniques-index:firing:fired

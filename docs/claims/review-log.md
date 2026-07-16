@@ -169,3 +169,46 @@ handbuilt; some are wheel-thrown"). `group:about:forming:handbuilt` left `unknow
 
 Next: the remaining material families (bare-clay/unglazed, black-clay, the "slip" prose sweep),
 or merge the completed sessions to `main`.
+
+---
+
+## Session 4 — S2 the "stoneware" families (2026-07-16, with Warren)
+
+Walked the `clay-body:stoneware` axis — the highest-publicness dark-family question (store
+titles + SEO descriptions). Four rulings, 13 records, open queue 299 → 286:
+
+- **`group:range-1727-1769:clay-body:stoneware` (15 pieces: 1727–1731, 1733–1735, 1737, 1739,
+  1763, 1764, 1767–1769) — CORRECTED: black clay, not stoneware.** The "Black Stoneware" label
+  came from the bespoke store titles; the same corridor already carried a maker-confirmed "black
+  clay" line on 1740, and the pilot had ruled the analogous 2236–2243 family black sculpture
+  clay. `corrected_value: black-clay`, `avoid_terms: [stoneware]`, `assertable: true`. Blast
+  radius: 14 piece titles + 1727 body + the range page (title/description/body).
+- **`group:range-1727-1769:clay-body:black-clay` (19 pieces: 1740, 1742–1753, 1755, 1758, 1759,
+  1761–1763) — CONFIRMED.** Puts on the registry what was already stated as fact on 1740 (the
+  2026-07-08 maker ground truth); several pieces photograph warm brown but the body is black
+  clay. Assertable across all 19.
+- **`group:range-2151-2200:clay-body:stoneware` (7 pieces: 2188–2192, 2199, 2200) — CONFIRMED
+  stoneware.** The sandy, grogged chawan-run outliers genuinely are stoneware — establishing
+  that "stoneware" is a real catalog body, not universally wrong. Assertable; no prose change
+  needed (pages already say it).
+- **The "black stoneware run" nickname — CORRECTED across 10 aggregate/index/technique records**
+  (`pieces-index`, `ranges-index`, `techniques-index`, `bare-clay`, `blue-flecks`,
+  `fabric-impression`, `scored-marks`, `surface-nodules`, `range-1571-1597`, `range-1716-1725`,
+  each `:clay-body:stoneware`). Every output is the 1727–1769 nickname or a wikilink to it.
+  Warren's rename: **"the black stoneware run" → "the black clay run"**, **"dark stoneware" →
+  "dark clay"**. `corrected_value: black-clay`, `avoid_terms: [stoneware]`, assertable.
+
+**Standing fact established:** "stoneware" is now split — WRONG for the 1727–1769 black corridor
+(and the pilot's dark 2236–2243 bowls), RIGHT for the 2188–2200 sandy chawan run. A future
+"stoneware" mention must resolve to the confirmed chawan family, never the dark corridors.
+
+Registry-only session — no prose rewritten, nothing deployed. Lint: 33 E5 flags (the writer's
+to-do), 0 structural errors, 0 warnings; 32 stale locations across 26 files await the
+**apfyp-writer** step, which runs only after Warren approves. Method: the 10 aggregate records
+were flipped in one canonical `saveRegistry` pass; the 3 piece groups by hand-edit.
+
+**Held from S4, still open:** `about.md` "Every piece is handbuilt" (`group:about:forming:handbuilt`
+`unknown`) — brand statement vs qualify.
+
+Next: S3 the "slip" prose sweep, or the queue leaders (`forming:pulled`, the `surface-material:glaze`
+era groups). Then the writer pass over this session's 26 stale files.
