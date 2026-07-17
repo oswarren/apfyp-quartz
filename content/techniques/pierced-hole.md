@@ -10,8 +10,10 @@ tags:
 
 The catalog describes the holes only as they photograph — round openings pierced through the wall — and does not assert what they are for or how they were made; per the same caution the pierced walls are never called functional or watertight either way. Approved as a nine-member family in the 2026-07-13 batch-17 ruling.
 
+A later piece carries the same signature in a different form: the charcoal boulder [[2280]] has a row of three holes pierced clean across its crown, photographed with dried flower stems set into them in place of the cups' reed. It shares the pierced-hole feature though not the cup form.
+
 ## See it on real pieces
 
-[[1770]], [[1771]], [[1772]], [[1773]], [[1774]], [[1775]], [[1776]], [[1777]], [[1778]] — or browse [the pierced-hole listing](../tags/detail/pierced-hole).
+[[1770]], [[1771]], [[1772]], [[1773]], [[1774]], [[1775]], [[1776]], [[1777]], [[1778]], and the boulder [[2280]] — or browse [the pierced-hole listing](../tags/detail/pierced-hole).
 
 Each piece page links to its live listing on [the Shopify store](https://apennyforyourpottery.com).

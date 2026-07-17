@@ -202,3 +202,24 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/2262.md#body
+- id: piece:2280:forming:handbuilt
+  claim: Piece 2280 asserts forming "handbuilt"
+  subject: 2280
+  scope: piece
+  axis: forming
+  value: handbuilt
+  original: "**What is piece 2280?** A small closed charcoal boulder, handbuilt in bare clay with three holes pierced across its crown, the 2,280th of 10"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2280.md#body
+    - content/pieces/2280.md#tags
