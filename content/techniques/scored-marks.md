@@ -1,7 +1,7 @@
 ---
 type: technique
 title: "Scored Marks"
-description: "The hatched, cut-in texture covering piece 1756 of A Penny For Your Pottery's black stoneware run — and the fainter lines elsewhere in the run."
+description: "The hatched, cut-in texture covering piece 1756 of A Penny For Your Pottery's black clay run — and the fainter lines elsewhere in the run."
 tags:
   - surface/scored-marks
 ---

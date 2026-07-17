@@ -303,6 +303,107 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/1719.md#body
+- id: piece:1727:clay-body:black-clay
+  claim: Piece 1727 asserts clay-body "black-clay"
+  subject: 1727
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: Handcrafted Textured Black Clay Vase – Sculptural Form — Piece 1727
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1727.md#body
+    - content/pieces/1727.md#title
+- id: piece:1728:clay-body:black-clay
+  claim: Piece 1728 asserts clay-body "black-clay"
+  subject: 1728
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: Sculptural Black Clay Vessel – Textured Organic Form — Piece 1728
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1728.md#title
+- id: piece:1729:clay-body:black-clay
+  claim: Piece 1729 asserts clay-body "black-clay"
+  subject: 1729
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: Handcrafted Black Clay Bowl – Organic Textured Form — Piece 1729
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1729.md#title
+- id: piece:1730:clay-body:black-clay
+  claim: Piece 1730 asserts clay-body "black-clay"
+  subject: 1730
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: Handmade Black Clay Vessel – Raw Textured Form — Piece 1730
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1730.md#title
+- id: piece:1731:clay-body:black-clay
+  claim: Piece 1731 asserts clay-body "black-clay"
+  subject: 1731
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: Handcrafted Black Clay Vessel – Softly Weathered Form — Piece 1731
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1731.md#title
 - id: piece:1732:forming:trimmed
   claim: Piece 1732 asserts forming "trimmed"
   subject: 1732
@@ -343,6 +444,86 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/1732.md#body
+- id: piece:1733:clay-body:black-clay
+  claim: Piece 1733 asserts clay-body "black-clay"
+  subject: 1733
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: Handmade Black Clay Vessel – Primitive Sculptural Form — Piece 1733
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1733.md#title
+- id: piece:1734:clay-body:black-clay
+  claim: Piece 1734 asserts clay-body "black-clay"
+  subject: 1734
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: Handcrafted Black Clay Vessel – Wabi Sabi Organic Form — Piece 1734
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1734.md#title
+- id: piece:1735:clay-body:black-clay
+  claim: Piece 1735 asserts clay-body "black-clay"
+  subject: 1735
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: Handmade Black Clay Vessel – Raw Sculptural Form — Piece 1735
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1735.md#title
+- id: piece:1737:clay-body:black-clay
+  claim: Piece 1737 asserts clay-body "black-clay"
+  subject: 1737
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: Handmade Black Clay Vessel – Raw Sculptural Texture — Piece 1737
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1737.md#title
 - id: piece:1737:forming:carved
   claim: Piece 1737 asserts forming "carved"
   subject: 1737
@@ -363,6 +544,26 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/1737.md#body
+- id: piece:1739:clay-body:black-clay
+  claim: Piece 1739 asserts clay-body "black-clay"
+  subject: 1739
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: Handmade Black Clay Vessel | Primitive Sculptural Ceramic Form — Piece 1739
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1739.md#title
 - id: piece:1750:surface-material:glaze
   claim: Piece 1750 asserts surface-material "glaze"
   subject: 1750
@@ -404,6 +605,26 @@
   affected_outputs:
     - content/pieces/1751.md#body
     - content/pieces/1751.md#title
+- id: piece:1764:clay-body:black-clay
+  claim: Piece 1764 asserts clay-body "black-clay"
+  subject: 1764
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: Handbuilt Black Clay Piece — Piece 1764
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1764.md#title
 - id: piece:1766:surface-material:iron
   claim: Piece 1766 asserts surface-material "iron"
   subject: 1766
@@ -444,6 +665,66 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/1766.md#title
+- id: piece:1767:clay-body:black-clay
+  claim: Piece 1767 asserts clay-body "black-clay"
+  subject: 1767
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: Handbuilt Black Clay Vessel - Raw, Sculptural Form — Piece 1767
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1767.md#title
+- id: piece:1768:clay-body:black-clay
+  claim: Piece 1768 asserts clay-body "black-clay"
+  subject: 1768
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: Handbuilt Black Clay Vessel - Weathered Stone Finish — Piece 1768
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1768.md#title
+- id: piece:1769:clay-body:black-clay
+  claim: Piece 1769 asserts clay-body "black-clay"
+  subject: 1769
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: Handbuilt Black Clay Vessel - Weathered Stone Finish — Piece 1769
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1769.md#title
 - id: piece:1780:clay-body:black-clay
   claim: Piece 1780 asserts clay-body "black-clay"
   subject: 1780

@@ -1,7 +1,7 @@
 ---
 type: technique
 title: "Fabric Impressions"
-description: "Why two of A Penny For Your Pottery's black stoneware pieces look woven — cloth pressed into soft clay, its weave carried through the firing."
+description: "Why two of A Penny For Your Pottery's black clay pieces look woven — cloth pressed into soft clay, its weave carried through the firing."
 tags:
   - detail/fabric-impression
 ---

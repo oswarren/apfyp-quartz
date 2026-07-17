@@ -64,6 +64,27 @@
   avoid_terms: []
   affected_outputs:
     - content/about.md#body
+- id: group:bare-clay:clay-body:black-clay
+  claim: techniques/bare-clay.md asserts clay-body "black-clay"
+  subject: bare-clay
+  scope: group
+  members: ""
+  axis: clay-body
+  value: black-clay
+  original: Most of the black clay run (pieces 1727–1769) is bare, and so are the white-buff and marbled vessels around 1571–1597.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/techniques/bare-clay.md#body
 - id: group:bare-clay:clay-body:stoneware
   claim: techniques/bare-clay.md asserts clay-body "stoneware"
   subject: bare-clay
@@ -84,9 +105,7 @@
   exceptions: []
   avoid_terms:
     - stoneware
-  affected_outputs:
-    - content/techniques/bare-clay.md#body
-    - content/techniques/bare-clay.md#description
+  affected_outputs: []
 - id: group:bare-clay:firing:fired
   claim: techniques/bare-clay.md asserts firing "fired"
   subject: bare-clay
@@ -253,6 +272,27 @@
   avoid_terms: []
   affected_outputs:
     - content/techniques/blue-crust.md#body
+- id: group:blue-flecks:clay-body:black-clay
+  claim: techniques/blue-flecks.md asserts clay-body "black-clay"
+  subject: blue-flecks
+  scope: group
+  members: ""
+  axis: clay-body
+  value: black-clay
+  original: "**Why is there blue on a bare black pot?** Two pieces in the black clay run carry small glassy blue marks — sparse scattered flecks on 1750,"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/techniques/blue-flecks.md#body
 - id: group:blue-flecks:clay-body:stoneware
   claim: techniques/blue-flecks.md asserts clay-body "stoneware"
   subject: blue-flecks
@@ -273,8 +313,7 @@
   exceptions: []
   avoid_terms:
     - stoneware
-  affected_outputs:
-    - content/techniques/blue-flecks.md#body
+  affected_outputs: []
 - id: group:brushed-glaze:surface-material:glaze
   claim: techniques/brushed-glaze.md asserts surface-material "glaze"
   subject: brushed-glaze
@@ -704,6 +743,27 @@
   avoid_terms: []
   affected_outputs:
     - content/techniques/embedded-particles.md#body
+- id: group:fabric-impression:clay-body:black-clay
+  claim: techniques/fabric-impression.md asserts clay-body "black-clay"
+  subject: fabric-impression
+  scope: group
+  members: ""
+  axis: clay-body
+  value: black-clay
+  original: Why two of A Penny For Your Pottery's black clay pieces look woven — cloth pressed into soft clay, its weave carried through the firing.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/techniques/fabric-impression.md#description
 - id: group:fabric-impression:clay-body:stoneware
   claim: techniques/fabric-impression.md asserts clay-body "stoneware"
   subject: fabric-impression
@@ -724,8 +784,7 @@
   exceptions: []
   avoid_terms:
     - stoneware
-  affected_outputs:
-    - content/techniques/fabric-impression.md#description
+  affected_outputs: []
 - id: group:fabric-impression:firing:fired
   claim: techniques/fabric-impression.md asserts firing "fired"
   subject: fabric-impression
@@ -1358,6 +1417,27 @@
   affected_outputs:
     - content/pieces/1748.md#title
     - content/techniques/pale-wash.md#body
+- id: group:pieces-index:clay-body:black-clay
+  claim: pieces/index.md asserts clay-body "black-clay"
+  subject: pieces-index
+  scope: group
+  members: ""
+  axis: clay-body
+  value: black-clay
+  original: "- The black clay run — 40 raw, sculptural dark-clay vessels, pieces 1727–1769, every listing photo reviewed"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/index.md#body
 - id: group:pieces-index:clay-body:stoneware
   claim: pieces/index.md asserts clay-body "stoneware"
   subject: pieces-index
@@ -1378,8 +1458,7 @@
   exceptions: []
   avoid_terms:
     - stoneware
-  affected_outputs:
-    - content/pieces/index.md#body
+  affected_outputs: []
 - id: group:pieces-index:forming:handbuilt
   claim: pieces/index.md asserts forming "handbuilt"
   subject: pieces-index
@@ -1588,6 +1667,27 @@
     - content/pieces/8.md#body
     - content/pieces/8.md#tags
     - content/ranges/range-1-20.md#body
+- id: group:range-1571-1597:clay-body:black-clay
+  claim: ranges/range-1571-1597.md asserts clay-body "black-clay"
+  subject: range-1571-1597
+  scope: group
+  members: ""
+  axis: clay-body
+  value: black-clay
+  original: Like the black clay run, these photo files carry no dates, so there's no photography-date grouping for this stretch.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/ranges/range-1571-1597.md#body
 - id: group:range-1571-1597:clay-body:stoneware
   claim: ranges/range-1571-1597.md asserts clay-body "stoneware"
   subject: range-1571-1597
@@ -1608,8 +1708,7 @@
   exceptions: []
   avoid_terms:
     - stoneware
-  affected_outputs:
-    - content/ranges/range-1571-1597.md#body
+  affected_outputs: []
 - id: group:range-1571-1597:forming:handbuilt
   claim: The range-1571-1597 family asserts forming "handbuilt" (16 pieces)
   subject: range-1571-1597
@@ -2398,6 +2497,28 @@
     - content/pieces/1704.md#body
     - content/pieces/1705.md#body
     - content/ranges/range-1692-1714.md#body
+- id: group:range-1716-1725:clay-body:black-clay
+  claim: ranges/range-1716-1725.md asserts clay-body "black-clay"
+  subject: range-1716-1725
+  scope: group
+  members: ""
+  axis: clay-body
+  value: black-clay
+  original: Eleven photographed pieces of A Penny For Your Pottery between the wild-clay stretch and the black clay run, pieces 1715 ($17.15) to 1725 ($
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/ranges/range-1716-1725.md#body
+    - content/ranges/range-1716-1725.md#description
 - id: group:range-1716-1725:clay-body:stoneware
   claim: ranges/range-1716-1725.md asserts clay-body "stoneware"
   subject: range-1716-1725
@@ -2418,9 +2539,7 @@
   exceptions: []
   avoid_terms:
     - stoneware
-  affected_outputs:
-    - content/ranges/range-1716-1725.md#body
-    - content/ranges/range-1716-1725.md#description
+  affected_outputs: []
 - id: group:range-1716-1725:forming:handbuilt
   claim: The range-1716-1725 family asserts forming "handbuilt" (10 pieces)
   subject: range-1716-1725
@@ -2548,6 +2667,9 @@
     - content/pieces/1761.md#title
     - content/pieces/1762.md#body
     - content/pieces/1763.md#body
+    - content/pieces/1763.md#title
+    - content/ranges/range-1727-1769.md#description
+    - content/ranges/range-1727-1769.md#title
 - id: group:range-1727-1769:clay-body:shale
   claim: The range-1727-1769 family asserts clay-body "shale" (3 pieces)
   subject: range-1727-1769
@@ -2591,26 +2713,7 @@
   exceptions: []
   avoid_terms:
     - stoneware
-  affected_outputs:
-    - content/pieces/1727.md#body
-    - content/pieces/1727.md#title
-    - content/pieces/1728.md#title
-    - content/pieces/1729.md#title
-    - content/pieces/1730.md#title
-    - content/pieces/1731.md#title
-    - content/pieces/1733.md#title
-    - content/pieces/1734.md#title
-    - content/pieces/1735.md#title
-    - content/pieces/1737.md#title
-    - content/pieces/1739.md#title
-    - content/pieces/1763.md#title
-    - content/pieces/1764.md#title
-    - content/pieces/1767.md#title
-    - content/pieces/1768.md#title
-    - content/pieces/1769.md#title
-    - content/ranges/range-1727-1769.md#body
-    - content/ranges/range-1727-1769.md#description
-    - content/ranges/range-1727-1769.md#title
+  affected_outputs: []
 - id: group:range-1727-1769:firing:fired
   claim: The range-1727-1769 family asserts firing "fired" (10 pieces)
   subject: range-1727-1769
@@ -5923,6 +6026,27 @@
   avoid_terms: []
   affected_outputs:
     - content/ranges/range-541-619.md#body
+- id: group:ranges-index:clay-body:black-clay
+  claim: ranges/index.md asserts clay-body "black-clay"
+  subject: ranges-index
+  scope: group
+  members: ""
+  axis: clay-body
+  value: black-clay
+  original: "- Pieces 1716–1725 — the bridge: six dark handbuilt pieces between the wild-clay stretch and the black clay run, including a four-piece grou"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/ranges/index.md#body
 - id: group:ranges-index:clay-body:stoneware
   claim: ranges/index.md asserts clay-body "stoneware"
   subject: ranges-index
@@ -5943,8 +6067,7 @@
   exceptions: []
   avoid_terms:
     - stoneware
-  affected_outputs:
-    - content/ranges/index.md#body
+  affected_outputs: []
 - id: group:ranges-index:forming:coil
   claim: ranges/index.md asserts forming "coil"
   subject: ranges-index
@@ -6193,6 +6316,27 @@
   avoid_terms: []
   affected_outputs:
     - content/techniques/sand-grit.md#body
+- id: group:scored-marks:clay-body:black-clay
+  claim: techniques/scored-marks.md asserts clay-body "black-clay"
+  subject: scored-marks
+  scope: group
+  members: ""
+  axis: clay-body
+  value: black-clay
+  original: The hatched, cut-in texture covering piece 1756 of A Penny For Your Pottery's black clay run — and the fainter lines elsewhere in the run.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/techniques/scored-marks.md#description
 - id: group:scored-marks:clay-body:stoneware
   claim: techniques/scored-marks.md asserts clay-body "stoneware"
   subject: scored-marks
@@ -6213,8 +6357,7 @@
   exceptions: []
   avoid_terms:
     - stoneware
-  affected_outputs:
-    - content/techniques/scored-marks.md#description
+  affected_outputs: []
 - id: group:scored-marks:intent:intentional
   claim: techniques/scored-marks.md asserts intent "intentional"
   subject: scored-marks
@@ -6320,6 +6463,28 @@
   avoid_terms: []
   affected_outputs:
     - content/techniques/studded-handle.md#body
+- id: group:surface-nodules:clay-body:black-clay
+  claim: techniques/surface-nodules.md asserts clay-body "black-clay"
+  subject: surface-nodules
+  scope: group
+  members: ""
+  axis: clay-body
+  value: black-clay
+  original: The dark protruding grit on eleven pieces of A Penny For Your Pottery's black clay run — from scattered grains to full pebbled crusts, descr
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/techniques/surface-nodules.md#body
+    - content/techniques/surface-nodules.md#description
 - id: group:surface-nodules:clay-body:shale
   claim: techniques/surface-nodules.md asserts clay-body "shale"
   subject: surface-nodules
@@ -6361,9 +6526,7 @@
   exceptions: []
   avoid_terms:
     - stoneware
-  affected_outputs:
-    - content/techniques/surface-nodules.md#body
-    - content/techniques/surface-nodules.md#description
+  affected_outputs: []
 - id: group:techniques-index:clay-body:stoneware
   claim: techniques/index.md asserts clay-body "stoneware"
   subject: techniques-index
@@ -6384,8 +6547,7 @@
   exceptions: []
   avoid_terms:
     - stoneware
-  affected_outputs:
-    - content/techniques/index.md#body
+  affected_outputs: []
 - id: group:techniques-index:firing:fired
   claim: techniques/index.md asserts firing "fired"
   subject: techniques-index

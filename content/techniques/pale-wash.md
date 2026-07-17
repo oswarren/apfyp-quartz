@@ -1,7 +1,7 @@
 ---
 type: technique
 title: "Pale Wash"
-description: "The thin light coating over five of A Penny For Your Pottery's dark stoneware pieces — named for what the photos show, with the material left unclaimed."
+description: "The thin light coating over five of A Penny For Your Pottery's dark clay pieces — named for what the photos show, with the material left unclaimed."
 tags:
   - surface/pale-wash
 ---

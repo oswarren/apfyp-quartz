@@ -21,7 +21,7 @@ pieces to look at.
 - [[coil-ridges|Coil ridges]] — stacked coil bands left visible in the wall
 - [[crackle-glaze|Crackle glaze]] — the fine web of lines in the glaze surface
 - [[metallic-sheen|Metallic sheen]] — a pewter-like glint, described from the photos only
-- [[pale-wash|Pale wash]] — the thin light coating over dark stoneware, in the maker's own words
+- [[pale-wash|Pale wash]] — the thin light coating over dark clay, in the maker's own words
 - [[scored-marks|Scored marks]] — hatched lines cut into the clay
 - [[speckled-surfaces|Speckled surfaces]] — mineral speckling in washes, bands, and clusters
 

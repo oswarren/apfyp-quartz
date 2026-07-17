@@ -16,7 +16,7 @@ Pages here never claim a piece is in stock or sold — every page links to its l
 ## Some places to start
 
 - [[1|Piece #1]] — where the whole thing started, at one cent
-- [[range-1727-1769|The black stoneware run]] — 40 raw, sculptural dark-clay vessels, pieces 1727–1769, every listing photo reviewed
+- [[range-1727-1769|The black clay run]] — 40 raw, sculptural dark-clay vessels, pieces 1727–1769, every listing photo reviewed
 - [[2085|The abstract cups]] — functional cups inside the sequence, around #2085–2092
 - [[range-2250-2260|Pieces 2250–2260]] — a fully documented range of white crackle cups, with photography notes
 - [[by-photography-date|By photography date]] — 15 photography dates, April 2025 to June 2026
