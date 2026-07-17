@@ -365,14 +365,14 @@
   axis: surface-material
   value: slip
   original: "The hand-brushed decoration on A Penny For Your Pottery's abstract cups — slip, glaze, or mason stain depending on the piece: bold black pat"
-  status: unknown
+  status: confirmed
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: Brushed decoration is slip, glaze, or mason stain depending on the piece (batch-15). (S3 review 2026-07-17.)
+  reviewed: 2026-07-17
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []
@@ -492,14 +492,14 @@
   axis: surface-material
   value: slip
   original: "The crackled surface on A Penny For Your Pottery's pale pieces — a water-dripped decoration worked into dried clay and slips, not a glaze — "
-  status: unknown
+  status: confirmed
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: The crackle process works over dried clay and slips — the maker's water-drip account. (S3 review 2026-07-17.)
+  reviewed: 2026-07-17
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []
@@ -625,13 +625,13 @@
   axis: surface-material
   value: slip
   original: What it *is* — exposed body, gritty slip, ash, something the kiln decided — is exactly what a listing photo can't prove, so the term names t
-  status: unknown
+  status: visual-only
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
+  source: maker
+  confidence: high
+  maker_response: Slip is named only as one unconfirmed possibility; the material is left unasserted. (S3 review 2026-07-17.)
+  reviewed: 2026-07-17
   assertable: false
   private_ref: false
   exceptions: []
@@ -940,13 +940,13 @@
   axis: surface-material
   value: slip
   original: "What bubbled — glaze, slip, ash, something else in the fire — is exactly what a photo can't prove, so the pages describe the look and leave "
-  status: unknown
+  status: visual-only
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
+  source: maker
+  confidence: high
+  maker_response: Slip is named only as one unconfirmed possibility; the material is left unasserted. (S3 review 2026-07-17.)
+  reviewed: 2026-07-17
   assertable: false
   private_ref: false
   exceptions: []
@@ -5399,19 +5399,18 @@
   axis: surface-material
   value: slip
   original: Pieces 2193–2200 are the range's first bowls — a wide brushed-patch pair (2193, 2195), a charcoal-coated deep bowl (2194), a quiet blue-grey
-  status: unknown
+  status: visual-only
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
+  source: maker
+  confidence: high
+  maker_response: 2196's blue-grey coating is described as a wash; the material is not asserted. (S3 review 2026-07-17.)
+  reviewed: 2026-07-17
   assertable: false
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/ranges/range-2151-2200.md#body
+  affected_outputs: []
 - id: group:range-2201-2249:clay-body:stoneware
   claim: The range-2201-2249 family asserts clay-body "stoneware" (7 pieces)
   subject: range-2201-2249
@@ -5531,20 +5530,18 @@
   axis: surface-material
   value: slip
   original: "46 pieces of A Penny For Your Pottery from $22.01 to $22.49 — silky brushed-slip bowls, bold black brushwork, reactive mottles and bare raw "
-  status: unknown
+  status: visual-only
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
+  source: maker
+  confidence: high
+  maker_response: The brushed decoration is slip, glaze, or mason stain depending on the piece (batch-15); prose says 'brushed', not 'brushed-slip'. (S3 review 2026-07-17.)
+  reviewed: 2026-07-17
   assertable: false
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/ranges/range-2201-2249.md#body
-    - content/ranges/range-2201-2249.md#description
+  affected_outputs: []
 - id: group:range-2201-2249:surface-material:unglazed
   claim: The range-2201-2249 family asserts surface-material "unglazed" (3 pieces)
   subject: range-2201-2249
@@ -6139,19 +6136,18 @@
   axis: surface-material
   value: slip
   original: "- Pieces 2201–2249 — organic bowls, dark grit, and the crust cups: 46 pieces from silky brushed-slip bowls and bold black brushwork through "
-  status: unknown
+  status: visual-only
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
+  source: maker
+  confidence: high
+  maker_response: The brushed decoration is slip, glaze, or mason stain depending on the piece (batch-15); prose says 'brushed', not 'brushed-slip'. (S3 review 2026-07-17.)
+  reviewed: 2026-07-17
   assertable: false
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/ranges/index.md#body
+  affected_outputs: []
 - id: group:rim-band-wild-clay:clay-body:wild-clay
   claim: The glazed-rim-band pieces around 1571-1580 are wild clay bodies
   subject: rim-band-wild-clay
@@ -6684,13 +6680,13 @@
   axis: surface-material
   value: slip
   original: What the lining *is* — slip, glaze, a second clay — is exactly what a photo can't prove, so the pages describe the look and leave the materi
-  status: unknown
+  status: visual-only
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
+  source: maker
+  confidence: high
+  maker_response: Slip is named only as one unconfirmed possibility; the material is left unasserted. (S3 review 2026-07-17.)
+  reviewed: 2026-07-17
   assertable: false
   private_ref: false
   exceptions: []
@@ -6726,13 +6722,13 @@
   axis: surface-material
   value: slip
   original: "How the lines got there — trailed slip, glaze, a scratch through to something pale — is what a photo can't prove, so the pages describe the "
-  status: unknown
+  status: visual-only
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
+  source: maker
+  confidence: high
+  maker_response: Slip is named only as one unconfirmed possibility; the material is left unasserted. (S3 review 2026-07-17.)
+  reviewed: 2026-07-17
   assertable: false
   private_ref: false
   exceptions: []

@@ -212,3 +212,29 @@ were flipped in one canonical `saveRegistry` pass; the 3 piece groups by hand-ed
 
 Next: S3 the "slip" prose sweep, or the queue leaders (`forming:pulled`, the `surface-material:glaze`
 era groups). Then the writer pass over this session's 26 stale files.
+
+---
+
+## Session 5 — S3 the "slip" prose sweep (2026-07-17, with Warren)
+
+Swept every `surface-material:slip` mention (11 records). No family was newly "made slip"; the
+sweep confirmed where the word is a hedge, where it's a maker account, and where it over-specified.
+
+- **9 records → visual-only (slip not asserted).** Six were already correctly hedged — slip named
+  as one unproven possibility with the material left alone: the `dark-smears`, `froth-interior`,
+  `white-interior`, `white-threads` explainers and pieces 1951, 2001 (no prose change). Three
+  over-specified and were hedged: `range-2201-2249` + `ranges-index` "silky brushed-slip bowls" →
+  "silky brushed bowls" and "brushed slip and glaze" → "brushed decoration" (brushed decoration is
+  slip/glaze/mason-stain per batch-15, not always slip); `range-2151-2200` "a quiet blue-grey slip
+  (2196)" → "blue-grey wash" (2196's material never separately confirmed).
+- **2 records → confirmed (assertable).** `crackle-glaze` "dried clay and slips" (the maker's
+  water-drip account) and `brushed-glaze` "slip, glaze, or mason stain" (batch-15) — slip is a
+  legitimate part of both confirmed accounts; prose stands.
+
+STANDING NOTE: "slip" is never asserted as a specific material from a photo alone; it may appear
+only (a) as one hedged possibility among others, or (b) inside a maker-confirmed account. 4 prose
+hedges applied; lint 0/0, 0 stale, build clean.
+
+Next: material-adjacent looks (S5), the making-note publish decisions (S6), or the queue leaders
+(`forming:pulled`, `surface-material:glaze` era groups). Held from S4: `about.md` "Every piece is
+handbuilt" (unknown).

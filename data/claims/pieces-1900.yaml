@@ -129,13 +129,13 @@
   axis: surface-material
   value: slip
   original: What the dark grit is — body, slip, something the fire did — the photos don't say, so this page doesn't either.
-  status: unknown
+  status: visual-only
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
+  source: maker
+  confidence: high
+  maker_response: Slip is named only as one unconfirmed possibility; the material is left unasserted. (S3 review 2026-07-17.)
+  reviewed: 2026-07-17
   assertable: false
   private_ref: false
   exceptions: []
