@@ -236,6 +236,11 @@ plugins:
       links:
         Shop on Shopify: https://apennyforyourpottery.com
         Instagram: https://www.instagram.com/apennyforyourpottery/
+        Substack: https://substack.com/@apennyforyourpottery
+        # full URL duplicates baseUrl on purpose (footer renders hrefs verbatim;
+        # relative forms 404 on nested pages) — update alongside baseUrl if the
+        # site ever moves to a custom domain
+        Archive services: https://oswarren.github.io/apfyp-quartz/archive-services
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer

@@ -30,7 +30,7 @@ Not every numbered piece exists yet. On the store, pieces that haven't been made
 
 ## Where things live
 
-- **This site** is the archive and the story: piece pages, ranges, photography notes, and writing about the process. It doesn't sell anything and never states whether a piece is currently available.
+- **This site** is the archive and the story: piece pages, ranges, photography notes, and writing about the process. It doesn't sell any pieces and never states whether a piece is currently available.
 - **[The Shopify store](https://apennyforyourpottery.com)** is the store: live prices, availability, shipping, and checkout. Every piece page here links to its live listing.
 - **[Instagram — @apennyforyourpottery](https://www.instagram.com/apennyforyourpottery/)** is where pieces show up as they're made.
 
@@ -40,3 +40,7 @@ Not every numbered piece exists yet. On the store, pieces that haven't been made
 - [Ranges](ranges/) — documented stretches of the number line, piece by piece
 - [Techniques & details](techniques/) — the recurring surfaces and marks, and the pieces that carry them
 - [[by-photography-date|By photography date]] — pieces grouped by the day their listing photos were taken
+
+## How this site was built
+
+The archive you're browsing was assembled from scattered listing photographs, partial store records, and a lot of unanswered questions, not from a tidy database. The same archive-building process is now available to other artists: [Build an Archive Like This](archive-services).
