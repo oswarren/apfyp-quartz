@@ -291,6 +291,26 @@
     - content/pieces/1676.md#body
     - content/pieces/1676.md#description
     - content/pieces/1676.md#title
+- id: piece:1680:firing:salt-fired
+  claim: Piece 1680 asserts firing "salt-fired"
+  subject: 1680
+  scope: piece
+  axis: firing
+  value: salt-fired
+  original: A tall bottle in gunmetal near-black, wearing an overall metallic luster — salt-fired, the sheen left across a crackled, molten-looking wall
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1680.md#body
 - id: piece:1684:surface-material:glaze
   claim: Piece 1684 asserts surface-material "glaze"
   subject: 1684
@@ -365,6 +385,26 @@
   maker_response: The metallic sheen is a salt-firing effect, not an applied glaze (maker-confirmed 2026-07-20).
   reviewed: 2026-07-20
   assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs: []
+- id: piece:1697:firing:salt-fired
+  claim: Piece 1697 is salt-fired (the metallic sheen)
+  subject: 1697
+  scope: piece
+  members: ""
+  axis: firing
+  value: salt-fired
+  original: ""
+  status: confirmed
+  corrected_value: ""
+  superseded: ""
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []

@@ -61,6 +61,26 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/1811.md#body
+- id: piece:1816:firing:salt-fired
+  claim: Piece 1816 asserts firing "salt-fired"
+  subject: 1816
+  scope: piece
+  axis: firing
+  value: salt-fired
+  original: "**What makes 1816 catch the light like that?** In the sunlit shots the high points of its cratered wall carry a pewter sheen that tracks the"
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1816.md#body
 - id: piece:1818:forming:wedged
   claim: Piece 1818 asserts forming "wedged"
   subject: 1818
@@ -158,6 +178,26 @@
   exceptions: []
   avoid_terms: []
   affected_outputs: []
+- id: piece:1839:firing:salt-fired
+  claim: Piece 1839 asserts firing "salt-fired"
+  subject: 1839
+  scope: piece
+  axis: firing
+  value: salt-fired
+  original: "Two of the dark run's looks meet on one charcoal vessel: coppery-bronze glints — salt-fired — play across the handbuilt body, and down insid"
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1839.md#body
 - id: piece:1840:firing:salt-fired
   claim: Piece 1840 asserts firing "salt-fired"
   subject: 1840
@@ -178,6 +218,26 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/1840.md#body
+- id: piece:1841:firing:salt-fired
+  claim: Piece 1841 asserts firing "salt-fired"
+  subject: 1841
+  scope: piece
+  axis: firing
+  value: salt-fired
+  original: A dark handbuilt pot with a graphite luster — salt-fired — riding its surface.
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1841.md#body
 - id: piece:1842:clay-body:black-clay
   claim: Piece 1842 asserts clay-body "black-clay"
   subject: 1842
@@ -258,6 +318,26 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/1844.md#body
+- id: piece:1846:firing:salt-fired
+  claim: Piece 1846 asserts firing "salt-fired"
+  subject: 1846
+  scope: piece
+  axis: firing
+  value: salt-fired
+  original: "**Is that a metal finish?** Not metal — it's salt-fired, the pewter-grey luster the salt firing left over a bubbled, cratered wall."
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1846.md#body
 - id: piece:1851:firing:cone-10
   claim: Piece 1851 asserts firing "cone-10"
   subject: 1851

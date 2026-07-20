@@ -21,6 +21,26 @@
   exceptions: []
   avoid_terms: []
   affected_outputs: []
+- id: piece:1916:firing:salt-fired
+  claim: Piece 1916 asserts firing "salt-fired"
+  subject: 1916
+  scope: piece
+  axis: firing
+  value: salt-fired
+  original: The second of the footed pair — three photos this time, following the silvery metallic band — salt-fired — as it drips unevenly off the rim,
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1916.md#body
 - id: piece:1929:forming:trimmed
   claim: Piece 1929 asserts forming "trimmed"
   subject: 1929

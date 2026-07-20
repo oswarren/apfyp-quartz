@@ -89,18 +89,19 @@
   axis: firing
   value: salt-fired
   original: Salt-Fired Wild Clay Vessel with Metallic Sheen — Piece 1706
-  status: unknown
+  status: confirmed
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []
   affected_outputs:
+    - content/pieces/1706.md#body
     - content/pieces/1706.md#title
 - id: piece:1710:firing:salt-fired
   claim: Piece 1710 asserts firing "salt-fired"
@@ -142,6 +143,26 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/1710.md#title
+- id: piece:1711:firing:salt-fired
+  claim: Piece 1711 is salt-fired (the metallic sheen)
+  subject: 1711
+  scope: piece
+  members: ""
+  axis: firing
+  value: salt-fired
+  original: ""
+  status: confirmed
+  corrected_value: ""
+  superseded: ""
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs: []
 - id: piece:1713:forming:wheel-thrown
   claim: Piece 1713 asserts forming "wheel-thrown"
   subject: 1713
@@ -182,6 +203,46 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/1714.md#title
+- id: piece:1715:firing:fired
+  claim: Piece 1715 asserts firing "fired"
+  subject: 1715
+  scope: piece
+  axis: firing
+  value: fired
+  original: The dark red-brown surface has gone to a blistered, bead-covered crust, and where the light rakes across the crown it lifts to a bright silv
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: All catalog pieces are fired ceramic — safe to state as a plain baseline. — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1715.md#body
+- id: piece:1715:firing:salt-fired
+  claim: Piece 1715 asserts firing "salt-fired"
+  subject: 1715
+  scope: piece
+  axis: firing
+  value: salt-fired
+  original: The dark red-brown surface has gone to a blistered, bead-covered crust, and where the light rakes across the crown it lifts to a bright silv
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1715.md#body
 - id: piece:1717:forming:pinch
   claim: Piece 1717 asserts forming "pinch"
   subject: 1717
@@ -300,6 +361,27 @@
   exceptions: []
   avoid_terms: []
   affected_outputs: []
+- id: piece:1719:firing:salt-fired
+  claim: Piece 1719 is salt-fired (the metallic sheen)
+  subject: 1719
+  scope: piece
+  members: ""
+  axis: firing
+  value: salt-fired
+  original: ""
+  status: confirmed
+  corrected_value: ""
+  superseded: ""
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1719.md#body
 - id: piece:1719:forming:carved
   claim: Piece 1719 asserts forming "carved"
   subject: 1719
@@ -320,6 +402,48 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/1719.md#body
+- id: piece:1720:firing:salt-fired
+  claim: Piece 1720 is salt-fired (the metallic sheen)
+  subject: 1720
+  scope: piece
+  members: ""
+  axis: firing
+  value: salt-fired
+  original: ""
+  status: confirmed
+  corrected_value: ""
+  superseded: ""
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1720.md#body
+- id: piece:1721:firing:salt-fired
+  claim: Piece 1721 is salt-fired (the metallic sheen)
+  subject: 1721
+  scope: piece
+  members: ""
+  axis: firing
+  value: salt-fired
+  original: ""
+  status: confirmed
+  corrected_value: ""
+  superseded: ""
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1721.md#body
 - id: piece:1727:clay-body:black-clay
   claim: Piece 1727 asserts clay-body "black-clay"
   subject: 1727

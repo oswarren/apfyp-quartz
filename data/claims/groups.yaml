@@ -3376,7 +3376,6 @@
   exceptions: []
   avoid_terms: []
   affected_outputs:
-    - content/pieces/1846.md#body
     - content/pieces/1861.md#body
     - content/pieces/1875.md#body
 - id: group:range-1848-1899:forming:handbuilt
@@ -3577,7 +3576,6 @@
   exceptions: []
   avoid_terms: []
   affected_outputs:
-    - content/pieces/1846.md#body
     - content/pieces/1861.md#body
     - content/pieces/1875.md#body
     - content/pieces/1899.md#body
