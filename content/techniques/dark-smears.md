@@ -8,7 +8,7 @@ tags:
 
 **What is the dark material on the white cups?** Three cups in [[range-1951-2000|pieces 1951–2000]] wear the same look in three grammars: [[1951]] in bold sandy veins, [[1957]] in full marbled smears, [[1977]] in falling streaks — dark grey-brown grit riding through or over pale glaze, often textured proud of the surface, sometimes salted with pale flecks.
 
-What it *is* — exposed body, gritty slip, ash, something the kiln decided — is exactly what a listing photo can't prove, so the term names the look and the pages leave the material alone. Sparser gritty speckle belongs to the registry's sand-speckled term instead; these are swaths and gestures, not pepper.
+The term groups these cups by the look they share — dark grit riding through or over pale glaze — not by a named material. Sparser gritty speckle belongs to the registry's sand-speckled term instead; these are swaths and gestures, not pepper.
 
 ## See it on real pieces
 

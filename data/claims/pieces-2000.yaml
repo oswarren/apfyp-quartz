@@ -19,8 +19,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/pieces/2001.md#body
+  affected_outputs: []
 - id: piece:2001:surface-material:slip
   claim: Piece 2001 asserts surface-material "slip"
   subject: 2001
@@ -39,8 +38,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/pieces/2001.md#body
+  affected_outputs: []
 - id: piece:2005:clay-body:black-clay
   claim: Piece 2005 asserts clay-body "black-clay"
   subject: 2005

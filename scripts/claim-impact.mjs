@@ -5,6 +5,7 @@
 //   node scripts/claim-impact.mjs                 stale-page report (default)
 //   node scripts/claim-impact.mjs --queue [n]     next n open review items, biggest blast radius first
 //   node scripts/claim-impact.mjs --piece N       every claim covering piece N, with scope resolution
+//   node scripts/claim-impact.mjs --piece N --open   only piece N's unresolved questions (the "ask the maker" view)
 //
 // Stale report: for every corrected / rejected / never-use record, re-scan its
 // affected_outputs for wording that still needs to change — the "fix one fact, see all the
@@ -44,6 +45,24 @@ if (has("--piece")) {
     process.exit(2)
   }
   const { covering, effective } = effectiveClaims(records, n)
+
+  // --open: the "ask the maker" view — only the questions no one has answered yet, so an
+  // unknown detail becomes a question for Warren instead of a hedge on the page. Same
+  // definition of "open" as --queue: no `reviewed` date, status still unknown/deferred.
+  if (has("--open")) {
+    const open = covering
+      .filter((r) => !r.reviewed && (r.status === "unknown" || r.status === "deferred"))
+      .sort((a, b) => a.axis.localeCompare(b.axis) || a.value.localeCompare(b.value))
+    console.log(`open questions for piece ${n}: ${open.length} unresolved`)
+    for (const rec of open) {
+      const scope = rec.scope === "piece" ? "piece" : `group ${rec.subject}`
+      console.log(`  [${rec.axis}] ${rec.value} — ${scope} · ${rec.id}`)
+    }
+    if (open.length === 0)
+      console.log("  (nothing open — every claim covering this piece has been ruled)")
+    process.exit(0)
+  }
+
   console.log(`claims covering piece ${n}: ${covering.length} record(s)`)
   const effectiveIds = new Set([...effective.values()].map((r) => r.id))
   for (const rec of covering.sort(

@@ -8,7 +8,7 @@ tags:
 
 **What are the warm patches?** On several dark cups in [[range-1848-1899|pieces 1848–1899]], soft peach-to-terracotta patches sit against the near-black ground like warm light through a keyhole. [[1880]] carries sandy blush patches with one glossy bead caught inside; [[1885]] pairs its peachy patches with dusty plum washes; [[1886]] scatters them between [[white-threads|white thread-lines]].
 
-Whether a patch is bare clay showing through, a wash, or a firing effect is exactly what a photo can't prove — the pages name the color and leave the cause alone. Related-but-different warm looks stay in prose: [[1883]]'s orange-touched base under its rust-red body, and [[1895]]'s overall terracotta ground, are described on their own pages, untagged.
+The term names the warm color where it sits against the near-black ground, not the cause behind it. Related-but-different warm looks stay in prose: [[1883]]'s orange-touched base under its rust-red body, and [[1895]]'s overall terracotta ground, are described on their own pages, untagged.
 
 ## See it on real pieces
 

@@ -230,14 +230,33 @@
   axis: firing
   value: fired
   original: "**Is the surface actually metallic?** It photographs that way — pewter-bronze glints across the whole crust — but what makes the look (glaze"
-  status: unknown
+  status: confirmed
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: All catalog pieces are fired ceramic — safe to state as a plain baseline. — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs: []
+- id: piece:1718:firing:salt-fired
+  claim: Piece 1718 asserts firing "salt-fired"
+  subject: 1718
+  scope: piece
+  axis: firing
+  value: salt-fired
+  original: "**Is the surface actually metallic?** It's salt-fired: the pewter-bronze glints across the crust are what the salt firing left, wet-looking "
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []
@@ -261,8 +280,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/pieces/1718.md#body
+  affected_outputs: []
 - id: piece:1718:surface-material:glaze
   claim: Piece 1718 asserts surface-material "glaze"
   subject: 1718
@@ -270,19 +288,18 @@
   axis: surface-material
   value: glaze
   original: "**Is the surface actually metallic?** It photographs that way — pewter-bronze glints across the whole crust — but what makes the look (glaze"
-  status: unknown
+  status: rejected
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
+  source: maker
+  confidence: high
+  maker_response: The metallic sheen is a salt-firing effect, not an applied glaze (maker-confirmed 2026-07-20).
+  reviewed: 2026-07-20
   assertable: false
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/pieces/1718.md#body
+  affected_outputs: []
 - id: piece:1719:forming:carved
   claim: Piece 1719 asserts forming "carved"
   subject: 1719

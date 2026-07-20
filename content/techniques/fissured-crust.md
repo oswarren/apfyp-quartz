@@ -8,7 +8,7 @@ tags:
 
 **Why are these pots covered in cracks?** On a stretch of the red and plum vessels around [[range-1603-1651|pieces 1603–1651]], the sandy surface is webbed with deep fissures — the same pattern a mudflat makes as it dries, carried on a fired pot's wall. On the clearest pieces the fissures run rim to foot: slab-banded [[1631]], the leaning [[1632]], crumbling [[1634]], [[1635]] photographed standing on cracked ground that echoes its own skin, barrel-round [[1638]], flake-rimmed [[1644]], split-crowned [[1648]], and the torn-collared vase [[1651]].
 
-The pages record the look and stop there: the fissures are never called damage or defect, and what produced them — the body, the drying, the firing — isn't something a photo can prove, so no page guesses. Softer crazing elsewhere in the run (like [[1636]] or [[1649]]) is described in prose without the tag.
+The fissures are the look, not damage or defect — a dried-mudflat pattern carried on a fired wall. Softer crazing elsewhere in the run (like [[1636]] or [[1649]]) is described in prose without the tag.
 
 ## See it on real pieces
 

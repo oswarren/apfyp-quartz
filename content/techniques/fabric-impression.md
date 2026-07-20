@@ -8,7 +8,7 @@ tags:
 
 **Why does the clay look woven?** Because cloth touched it while it was soft. Press fabric against wet clay and the weave transfers — every thread crossing leaves its grid. On [[1757]] a canvas-like weave wraps the body; on [[1758]] the impressions cover most of the egg-shaped form, sharp in the close-up photos.
 
-Whether the cloth was a deliberate texture tool or the surface the piece rested on, the photos can't say — the pages describe the imprint, not the intent. It's [[handbuilding|handbuilding]]'s version of a fingerprint: proof the material was once soft.
+Whether the cloth was a deliberate texture tool or just the surface the piece rested on, the imprint is the same — a grid of threads pressed into once-soft clay. It's [[handbuilding|handbuilding]]'s version of a fingerprint: proof the material was once soft.
 
 ## See it on real pieces
 

@@ -572,8 +572,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/techniques/dark-smears.md#body
+  affected_outputs: []
 - id: group:dark-smears:surface-material:ash
   claim: techniques/dark-smears.md asserts surface-material "ash"
   subject: dark-smears
@@ -593,8 +592,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/techniques/dark-smears.md#body
+  affected_outputs: []
 - id: group:dark-smears:surface-material:glaze
   claim: techniques/dark-smears.md asserts surface-material "glaze"
   subject: dark-smears
@@ -636,8 +634,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/techniques/dark-smears.md#body
+  affected_outputs: []
 - id: group:discover-production-june-2026:surface-material:glaze
   claim: discover/production-june-2026.md asserts surface-material "glaze"
   subject: discover-production-june-2026
@@ -835,14 +832,14 @@
   axis: firing
   value: fired
   original: "**Why are these pots covered in cracks?** On a stretch of the red and plum vessels around pieces 1603–1651, the sandy surface is webbed with"
-  status: unknown
+  status: confirmed
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: All catalog pieces are fired ceramic — safe to state as a plain baseline. — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []
@@ -909,8 +906,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/techniques/froth-interior.md#body
+  affected_outputs: []
 - id: group:froth-interior:surface-material:glaze
   claim: techniques/froth-interior.md asserts surface-material "glaze"
   subject: froth-interior
@@ -930,8 +926,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/techniques/froth-interior.md#body
+  affected_outputs: []
 - id: group:froth-interior:surface-material:slip
   claim: techniques/froth-interior.md asserts surface-material "slip"
   subject: froth-interior
@@ -951,8 +946,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/techniques/froth-interior.md#body
+  affected_outputs: []
 - id: group:glassy-pools:surface-material:ash
   claim: techniques/glassy-pools.md asserts surface-material "ash"
   subject: glassy-pools
@@ -1312,6 +1306,26 @@
     - content/pieces/2207.md#description
     - content/pieces/2208.md#description
     - content/pieces/2209.md#description
+- id: group:metallic-sheen:firing:salt-fired
+  claim: "techniques/metallic-sheen.md: the metallic sheen is a salt-firing effect"
+  subject: metallic-sheen
+  scope: group
+  members: ""
+  axis: firing
+  value: salt-fired
+  original: ""
+  status: confirmed
+  corrected_value: ""
+  superseded: ""
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs: []
 - id: group:numbered-bases:forming:carved
   claim: techniques/numbered-bases.md asserts forming "carved"
   subject: numbered-bases
@@ -4138,7 +4152,6 @@
   exceptions: []
   avoid_terms: []
   affected_outputs:
-    - content/pieces/2001.md#body
     - content/pieces/2003.md#body
     - content/pieces/2004.md#body
     - content/pieces/2008.md#body
@@ -4468,7 +4481,6 @@
   exceptions: []
   avoid_terms: []
   affected_outputs:
-    - content/pieces/2001.md#body
     - content/pieces/2002.md#body
     - content/pieces/2004.md#body
     - content/pieces/2006.md#body
@@ -6201,8 +6213,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/techniques/rust-fissures.md#body
+  affected_outputs: []
 - id: group:rust-streak-cups:forming:wheel-thrown
   claim: The May-04/05 warm-white rust-streak cups were thrown on the wheel
   subject: rust-streak-cups
@@ -6670,8 +6681,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/techniques/white-interior.md#body
+  affected_outputs: []
 - id: group:white-interior:surface-material:slip
   claim: techniques/white-interior.md asserts surface-material "slip"
   subject: white-interior
@@ -6691,8 +6701,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/techniques/white-interior.md#body
+  affected_outputs: []
 - id: group:white-threads:surface-material:glaze
   claim: techniques/white-threads.md asserts surface-material "glaze"
   subject: white-threads
@@ -6712,8 +6721,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/techniques/white-threads.md#body
+  affected_outputs: []
 - id: group:white-threads:surface-material:slip
   claim: techniques/white-threads.md asserts surface-material "slip"
   subject: white-threads
@@ -6733,5 +6741,4 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/techniques/white-threads.md#body
+  affected_outputs: []

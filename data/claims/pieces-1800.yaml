@@ -88,14 +88,33 @@
   axis: firing
   value: fired
   original: "**Is that a metallic glaze?** The photos show a pewter-graphite luster and nothing about its cause — glaze, ash, or firing are all guesses t"
-  status: unknown
+  status: confirmed
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: All catalog pieces are fired ceramic — safe to state as a plain baseline. — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs: []
+- id: piece:1838:firing:salt-fired
+  claim: Piece 1838 asserts firing "salt-fired"
+  subject: 1838
+  scope: piece
+  axis: firing
+  value: salt-fired
+  original: "**Is that a metallic finish?** It's salt-fired: the pewter-graphite luster is what the salt firing left, following the clay's own texture ra"
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []
@@ -119,8 +138,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/pieces/1838.md#body
+  affected_outputs: []
 - id: piece:1838:surface-material:glaze
   claim: Piece 1838 asserts surface-material "glaze"
   subject: 1838
@@ -128,19 +146,38 @@
   axis: surface-material
   value: glaze
   original: "**Is that a metallic glaze?** The photos show a pewter-graphite luster and nothing about its cause — glaze, ash, or firing are all guesses t"
-  status: unknown
+  status: rejected
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
+  source: maker
+  confidence: high
+  maker_response: The metallic sheen is a salt-firing effect, not an applied glaze (maker-confirmed 2026-07-20).
+  reviewed: 2026-07-20
   assertable: false
   private_ref: false
   exceptions: []
   avoid_terms: []
+  affected_outputs: []
+- id: piece:1840:firing:salt-fired
+  claim: Piece 1840 asserts firing "salt-fired"
+  subject: 1840
+  scope: piece
+  axis: firing
+  value: salt-fired
+  original: "**Does the shine really cover the whole piece?** In every shot, yes — silvery on the broad faces, copper in patches, always tracking the sur"
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
   affected_outputs:
-    - content/pieces/1838.md#body
+    - content/pieces/1840.md#body
 - id: piece:1842:clay-body:black-clay
   claim: Piece 1842 asserts clay-body "black-clay"
   subject: 1842

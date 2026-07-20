@@ -47,8 +47,11 @@ is anti-fabrication plus an established voice. The site is public (CLAUDE.md: if
    - `corrected` → use `corrected_value`; the old value is banned (it's in `avoid_terms`).
    - `rejected` / `never-use` / `private` → never appears; remove any existing prose that
      asserts it (that is exactly what `scripts/claim-impact.mjs` lists as stale).
-   - `unknown` / `deferred` → not yet ruled: leave the page's existing hedged/visual wording,
-     do not upgrade it to a fact.
+   - `unknown` / `deferred` → not yet ruled: keep the page to visible description only and do
+     NOT upgrade it to a fact — but strip any process-voice meta-hedge ("the page doesn't
+     guess", "what a photo can't prove", "the photos can't say") down to a plain visual close.
+     The open question belongs in `/review-claims` (surface it with
+     `node scripts/claim-impact.mjs --piece N --open`), never narrated on the page. Lint E8.
 4. **Voice = the reviewed-page standard.** Observed, concrete, dry. No romance, no
    superlatives, no turning sparse facts into a story. Keep descriptions proportionate to the
    information actually available. Put a wikilink on each visible feature that has a

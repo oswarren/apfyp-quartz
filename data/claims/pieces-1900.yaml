@@ -1,6 +1,26 @@
 # APFYP claim registry — schema: data/claims/README.md
 # Machine-rewritten by scripts/extract-claims.mjs --write; comments do not survive.
 
+- id: piece:1915:firing:salt-fired
+  claim: Piece 1915 is salt-fired (the metallic sheen)
+  subject: 1915
+  scope: piece
+  members: ""
+  axis: firing
+  value: salt-fired
+  original: ""
+  status: confirmed
+  corrected_value: ""
+  superseded: ""
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs: []
 - id: piece:1929:forming:trimmed
   claim: Piece 1929 asserts forming "trimmed"
   subject: 1929
@@ -140,8 +160,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/pieces/1951.md#body
+  affected_outputs: []
 - id: piece:1956:surface-material:stain
   claim: Piece 1956 asserts surface-material "stain"
   subject: 1956

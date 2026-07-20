@@ -11,6 +11,10 @@
 //   E5  a page asserts a term forbidden by a rejected/never-use/corrected claim (data/claims/)
 //   E6  a piece carries a frontmatter tag whose mapped claim is rejected/corrected for it
 //   E7  the public claim registry or lexicon carries leak-shaped data (CLAUDE.md rule 1)
+//   E8  a piece/technique page uses a process-voice hedge in its body — customer copy narrating
+//       the site's own caution ("the page doesn't guess", "the photos can't say"). Describe the
+//       look and stop, or route the unknown to the maker via /review-claims. First-person maker
+//       hedges ("I'm not sure…") are legal. See CLAUDE.md Reviewed-page standard.
 // Warnings (exit 0, reported):
 //   W1  registry member list disagrees with the pages actually carrying the tag
 //   W2  a registered tag has fewer than 2 member pages (2-piece rule watch)
@@ -147,6 +151,33 @@ for (const { rel, text } of pages) {
     const target = m[1].trim()
     if (!basenames.has(target)) {
       errors.push(`E3 ${rel}: wikilink [[${target}]] has no matching page`)
+    }
+  }
+}
+
+// E8: process-voice hedges in customer copy. Piece/technique pages describe what's visible
+// and stop; an unknown cause/material/firing routes to the maker via /review-claims, it never
+// gets narrated on the page ("what a photo can't prove, so this page doesn't guess"). BODY ONLY
+// — editorial.claims_to_avoid in frontmatter legitimately names these gaps and must not trip.
+// Patterns target the self-referential / photo-epistemic forms only; first-person maker hedges
+// ("I'm not sure what gives it that sheen") match none of them and stay legal.
+const PROCESS_VOICE = [
+  /\b(?:the|this) page (?:doesn'?t|won'?t)\b/i, // the/this page doesn't guess/make/say/either
+  /\bdoesn'?t guess\b/i, // …doesn't guess (any subject)
+  /\bphoto(?:graph)?s?\s+can'?t?\s+(?:say|prove|tell)\b/i, // a photo(graph) can('t) prove / the photos can't say
+  /\brecords the look and nothing else\b/i,
+  /\bthe page records the look\b/i,
+]
+for (const { rel, text, isPiece, isTechniquePage } of pages) {
+  if (!isPiece && !isTechniquePage) continue
+  const body = text.replace(/^---\r?\n[\s\S]*?\r?\n---/, "")
+  for (const re of PROCESS_VOICE) {
+    const m = re.exec(body)
+    if (m) {
+      errors.push(
+        `E8 ${rel}: process-voice hedge "${m[0]}" — describe the look and stop, or route the unknown to /review-claims`,
+      )
+      break // one flag per page is enough
     }
   }
 }

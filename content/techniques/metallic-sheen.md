@@ -1,14 +1,14 @@
 ---
 type: technique
 title: "Metallic Sheen"
-description: "The pewter-like metallic luster on three pieces of A Penny For Your Pottery's wild-clay stretch — a glinting surface described from the photos only, its cause never asserted."
+description: "The pewter-like metallic luster across pieces of A Penny For Your Pottery's wild-clay stretch — a salt-firing effect: the sheen salt vapor leaves on bare clay, no applied glaze."
 tags:
   - surface/metallic-sheen
 ---
 
 **Why do these pots glint like metal?** Three pieces of the [[range-1692-1714|wild-clay stretch]] photograph with a metallic, pewter-like luster: [[1692]]'s dark chocolate upper body sparkles under the light, [[1697]] carries silvery patches beside a glassy amber-olive band at its rim, and [[1706]]'s bark-like crust shines silver on every raised ridge.
 
-The photos show the look, not the cause. Whether the sheen comes from glaze, salt, ash, or the firing itself isn't something a photograph can prove — where a store title names one ("Ash-Glazed", "Salt-Fired"), these pages quote it without confirming it.
+The sheen is a salt-firing effect: the pieces are salt-fired, and salt vapor in the kiln flashes the clay with a pewter-like metallic luster, no applied glaze involved. A piece may pair it with other surfaces — [[1697]]'s rim also carries a glassy amber-olive band the store calls "Ash-Glazed" — so each page keeps to what its own photos show.
 
 ## See it on real pieces
 

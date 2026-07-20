@@ -19,8 +19,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/pieces/1607.md#body
+  affected_outputs: []
 - id: piece:1608:forming:slab-built
   claim: Piece 1608 asserts forming "slab-built"
   subject: 1608
@@ -250,6 +249,26 @@
     - content/pieces/1671.md#body
     - content/pieces/1671.md#description
     - content/pieces/1671.md#title
+- id: piece:1673:firing:salt-fired
+  claim: Piece 1673 asserts firing "salt-fired"
+  subject: 1673
+  scope: piece
+  axis: firing
+  value: salt-fired
+  original: "**Is it metal?** No — it's salt-fired: the pewter shine an inch from the rim is what the salt firing left, not metal."
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/1673.md#body
 - id: piece:1676:clay-body:sand
   claim: Piece 1676 asserts clay-body "sand"
   subject: 1676
@@ -299,14 +318,33 @@
   axis: firing
   value: fired
   original: "**Why does the surface sparkle?** The photos show a metallic-looking luster across the dark upper body — the look is right there in the list"
-  status: unknown
+  status: confirmed
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: All catalog pieces are fired ceramic — safe to state as a plain baseline. — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs: []
+- id: piece:1692:firing:salt-fired
+  claim: Piece 1692 asserts firing "salt-fired"
+  subject: 1692
+  scope: piece
+  axis: firing
+  value: salt-fired
+  original: "**Why does the surface sparkle?** It's salt-fired: the metallic luster across the dark upper body is what the salt firing left — lumpy and a"
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
+  reviewed: 2026-07-20
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []
@@ -319,19 +357,18 @@
   axis: surface-material
   value: glaze
   original: "**Why does the surface sparkle?** The photos show a metallic-looking luster across the dark upper body — the look is right there in the list"
-  status: unknown
+  status: rejected
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
+  source: maker
+  confidence: high
+  maker_response: The metallic sheen is a salt-firing effect, not an applied glaze (maker-confirmed 2026-07-20).
+  reviewed: 2026-07-20
   assertable: false
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/pieces/1692.md#body
+  affected_outputs: []
 - id: piece:1697:surface-material:ash
   claim: Piece 1697 asserts surface-material "ash"
   subject: 1697

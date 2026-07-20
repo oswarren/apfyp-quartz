@@ -39,5 +39,4 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/pieces/19.md#body
+  affected_outputs: []
