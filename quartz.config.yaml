@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: null
   locale: en-US
-  baseUrl: oswarren.github.io/apfyp-quartz
+  baseUrl: archive.apennyforyourpottery.com
   ignorePatterns:
     - private
     - templates
@@ -240,7 +240,7 @@ plugins:
         # full URL duplicates baseUrl on purpose (footer renders hrefs verbatim;
         # relative forms 404 on nested pages) — update alongside baseUrl if the
         # site ever moves to a custom domain
-        Archive services: https://oswarren.github.io/apfyp-quartz/archive-services
+        Archive services: https://archive.apennyforyourpottery.com/archive-services
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
