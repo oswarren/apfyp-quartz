@@ -8,7 +8,7 @@ Quartz v5 site for A Penny For Your Pottery (APFYP): a 10,000-piece numbered cer
 |---|---|
 | Obsidian vault (`Desktop\claudeobsidian\claude-obsidian-main`) | **Private** knowledge/source layer. Never a publish source; material moves here → `content/` only by explicit per-page curation. |
 | This repo `content/` | Public Markdown. If it's in `content/`, it's on the internet. |
-| GitHub (`origin` = oswarren/apfyp-quartz) | Version control + deploy. Push to `main` → GitHub Actions → GitHub Pages at `oswarren.github.io/apfyp-quartz`. |
+| GitHub (`origin` = oswarren/apfyp-quartz) | Version control + deploy. Push to `main` → GitHub Actions → GitHub Pages, served at `archive.apennyforyourpottery.com` (repo name and served domain differ — the old `oswarren.github.io/apfyp-quartz` URL 301s here). |
 | Shopify (`apennyforyourpottery.com`) | **Source of truth** for checkout, price, inventory, availability, product images. We link out; we never assert. |
 
 ## Hard rules

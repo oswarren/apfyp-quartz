@@ -237,10 +237,12 @@ plugins:
         Shop on Shopify: https://apennyforyourpottery.com
         Instagram: https://www.instagram.com/apennyforyourpottery/
         Substack: https://substack.com/@apennyforyourpottery
-        # full URL duplicates baseUrl on purpose (footer renders hrefs verbatim;
-        # relative forms 404 on nested pages) — update alongside baseUrl if the
-        # site ever moves to a custom domain
-        Archive services: https://archive.apennyforyourpottery.com/archive-services
+        # root-relative on purpose: the footer renders hrefs verbatim (no slug
+        # resolution, no basePath prefix), and at a root custom domain this
+        # resolves correctly from every nested page — and survives a future
+        # domain change untouched. It was absolute under the old
+        # /apfyp-quartz subpath, where a relative form 404'd on nested pages.
+        Archive services: /archive-services
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
