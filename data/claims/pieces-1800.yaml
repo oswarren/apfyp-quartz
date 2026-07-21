@@ -185,13 +185,33 @@
   axis: firing
   value: salt-fired
   original: "Two of the dark run's looks meet on one charcoal vessel: coppery-bronze glints — salt-fired — play across the handbuilt body, and down insid"
+  status: corrected
+  corrected_value: wood-fired
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: Wood-fired, not salt-fired — 1839 was mis-swept into the metallic-sheen salt-firing family on 2026-07-20; the maker confirms it is wood-fired. The coppery-bronze glints and amber pools are wood-firing effects. (Maker correction 2026-07-21.)
+  reviewed: 2026-07-21
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms:
+    - salt-fired
+  affected_outputs: []
+- id: piece:1839:firing:wood-fired
+  claim: Piece 1839 asserts firing "wood-fired"
+  subject: 1839
+  scope: piece
+  axis: firing
+  value: wood-fired
+  original: "Two of the dark run's looks meet on one charcoal vessel: coppery-bronze glints — wood-fired — play across the handbuilt body, and down insid"
   status: confirmed
   corrected_value:
   superseded:
   source: maker
   confidence: high
-  maker_response: Maker confirms the metallic sheen is a salt-firing effect (salt-fired, not an applied glaze). — 2026-07-20
-  reviewed: 2026-07-20
+  maker_response: Wood-fired — maker-confirmed. (Maker correction 2026-07-21; 1839 was previously mis-swept into the metallic-sheen salt-firing family and is now recorded as wood-fired.)
+  reviewed: 2026-07-21
   assertable: true
   private_ref: false
   exceptions: []
