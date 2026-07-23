@@ -2,6 +2,7 @@ import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/conf
 import { componentRegistry } from "./quartz/components/registry"
 import * as ExternalPlugin from "./.quartz/plugins"
 import type { QuartzPluginData } from "@quartz-community/types"
+import ReservePicker from "./components/ReservePicker"
 
 // APFYP: hide the pieces/ file tree from the sidebar explorer. The Ledger
 // (/pieces/), tags, ranges, and techniques are the browse surfaces — a
@@ -59,6 +60,14 @@ componentRegistry.setOptionOverrides("folder-page", {
   showFolderCount: false, // each index page's own prose introduces its list
   sort: byPieceNumberThenTitle,
 })
+
+// APFYP: /reserve page behaviour. Registering the component is what gets its
+// script and styles into the site bundle — componentResources.ts collects
+// resources from every component in the registry, not only from ones placed in
+// a layout. It renders nothing (its markup is raw HTML in content/reserve.md)
+// and its script is inert on pages without the widget. See
+// components/ReservePicker.ts for why it isn't a layout component.
+componentRegistry.register("apfyp-reserve-picker", ReservePicker, "apfyp-local")
 
 const config = await loadQuartzConfig()
 
