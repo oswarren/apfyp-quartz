@@ -12,6 +12,14 @@ The [Ledger](../pieces/) lists every photographed piece by number. These pages c
 - [[by-photography-date|By photography date]] — pieces grouped by the day their listing photos were taken
 - [Ranges](../ranges/) — hand-curated stretches of the number line
 
+## Questions about the work
+
+Short answers to things people ask about the pieces:
+
+- [[numbers-on-the-bottom|What do the numbers on the bottom mean?]] — the base number is the piece's place in the series and its price
+- [[crackle-not-a-glaze|Is the white crackle a glaze?]] — the maker's water-drip process, worked into the clay, not a glaze
+- [[salt-fired-metallic-sheen|Why does some of it look metallic?]] — the pewter sheen a salt firing leaves on bare clay
+
 ## A closer look at one batch
 
 Pieces 2250–2260 are the most fully documented stretch of the series so far — every photo reviewed, with photography-date notes and a guided path:

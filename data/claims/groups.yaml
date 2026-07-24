@@ -635,6 +635,135 @@
   exceptions: []
   avoid_terms: []
   affected_outputs: []
+- id: group:discover-crackle-not-a-glaze:surface-material:glaze
+  claim: discover/crackle-not-a-glaze.md asserts surface-material "glaze"
+  subject: discover-crackle-not-a-glaze
+  scope: group
+  members: ""
+  axis: surface-material
+  value: glaze
+  original: Is Crackle Glaze Actually Glaze?
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/discover/crackle-not-a-glaze.md#body
+    - content/discover/crackle-not-a-glaze.md#description
+    - content/discover/crackle-not-a-glaze.md#title
+- id: group:discover-crackle-not-a-glaze:surface-material:slip
+  claim: discover/crackle-not-a-glaze.md asserts surface-material "slip"
+  subject: discover-crackle-not-a-glaze
+  scope: group
+  members: ""
+  axis: surface-material
+  value: slip
+  original: The white crackled surface on A Penny For Your Pottery isn't a glaze at all — it's a water-drip process worked into dried clay and slips, in
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/discover/crackle-not-a-glaze.md#body
+    - content/discover/crackle-not-a-glaze.md#description
+- id: group:discover-index:firing:salt-fired
+  claim: discover/index.md asserts firing "salt-fired"
+  subject: discover-index
+  scope: group
+  members: ""
+  axis: firing
+  value: salt-fired
+  original: — the pewter sheen a salt firing leaves on bare clay
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/discover/index.md#body
+- id: group:discover-index:surface-material:glaze
+  claim: discover/index.md asserts surface-material "glaze"
+  subject: discover-index
+  scope: group
+  members: ""
+  axis: surface-material
+  value: glaze
+  original: "- Is the white crackle a glaze?"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/discover/index.md#body
+- id: group:discover-numbers-on-the-bottom:forming:carved
+  claim: discover/numbers-on-the-bottom.md asserts forming "carved"
+  subject: discover-numbers-on-the-bottom
+  scope: group
+  members: ""
+  axis: forming
+  value: carved
+  original: "- **Incised** — carved directly into the clay, as on 2254, where the style first switches"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/discover/numbers-on-the-bottom.md#body
+- id: group:discover-numbers-on-the-bottom:forming:handbuilt
+  claim: discover/numbers-on-the-bottom.md asserts forming "handbuilt"
+  subject: discover-numbers-on-the-bottom
+  scope: group
+  members: ""
+  axis: forming
+  value: handbuilt
+  original: It isn't a mould number (each piece is handbuilt, one at a time), and it isn't an edition number in the usual sense — there's exactly one pi
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/discover/numbers-on-the-bottom.md#body
 - id: group:discover-production-june-2026:surface-material:glaze
   claim: discover/production-june-2026.md asserts surface-material "glaze"
   subject: discover-production-june-2026
@@ -656,6 +785,114 @@
   avoid_terms: []
   affected_outputs:
     - content/discover/production-june-2026.md#body
+- id: group:discover-salt-fired-metallic-sheen:clay-body:wild-clay
+  claim: discover/salt-fired-metallic-sheen.md asserts clay-body "wild-clay"
+  subject: discover-salt-fired-metallic-sheen
+  scope: group
+  members: ""
+  axis: clay-body
+  value: wild-clay
+  original: "The clearest examples run through the stretch the store lists as wild clay, pieces 1692–1714:"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/discover/salt-fired-metallic-sheen.md#body
+- id: group:discover-salt-fired-metallic-sheen:firing:fired
+  claim: discover/salt-fired-metallic-sheen.md asserts firing "fired"
+  subject: discover-salt-fired-metallic-sheen
+  scope: group
+  members: ""
+  axis: firing
+  value: fired
+  original: The shine comes from how they were fired.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/discover/salt-fired-metallic-sheen.md#body
+- id: group:discover-salt-fired-metallic-sheen:firing:kiln
+  claim: discover/salt-fired-metallic-sheen.md asserts firing "kiln"
+  subject: discover-salt-fired-metallic-sheen
+  scope: group
+  members: ""
+  axis: firing
+  value: kiln
+  original: Once the kiln reaches its top heat, salt is added to the chamber, where it vaporizes and reacts with the silica in the clay itself.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/discover/salt-fired-metallic-sheen.md#body
+- id: group:discover-salt-fired-metallic-sheen:firing:salt-fired
+  claim: discover/salt-fired-metallic-sheen.md asserts firing "salt-fired"
+  subject: discover-salt-fired-metallic-sheen
+  scope: group
+  members: ""
+  axis: firing
+  value: salt-fired
+  original: Salt Firing and the Pewter Sheen
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/discover/salt-fired-metallic-sheen.md#body
+    - content/discover/salt-fired-metallic-sheen.md#description
+    - content/discover/salt-fired-metallic-sheen.md#title
+- id: group:discover-salt-fired-metallic-sheen:surface-material:glaze
+  claim: discover/salt-fired-metallic-sheen.md asserts surface-material "glaze"
+  subject: discover-salt-fired-metallic-sheen
+  scope: group
+  members: ""
+  axis: surface-material
+  value: glaze
+  original: The metallic sheen is a salt-firing effect on bare clay — no metal, no applied glaze — and here's where to see it.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/discover/salt-fired-metallic-sheen.md#body
+    - content/discover/salt-fired-metallic-sheen.md#description
 - id: group:embedded-particles:clay-body:grog
   claim: techniques/embedded-particles.md asserts clay-body "grog"
   subject: embedded-particles
