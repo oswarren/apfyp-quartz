@@ -13,7 +13,16 @@ Quartz v5 site for A Penny For Your Pottery (APFYP): a 10,000-piece numbered cer
 
 ## Hard rules
 
-1. **Never commit**: CSV exports, `.env`, tokens (`shpat_`/`shpss_`), customer/order data, revenue figures, contact names, or anything from the vault's private notes. Pre-push check: `git diff origin/main | grep -E 'shpat_|shpss_|@gmail|\.csv'`.
+1. **Never commit**: CSV exports, `.env`, tokens (`shpat_`/`shpss_`), customer/order data, revenue figures, contact names, or anything from the vault's private notes. Pre-push check, two passes:
+   - **content** (secrets): `git diff origin/main -- ':(top,exclude)CLAUDE.md' | grep '^+' | grep -v '^+++' | grep -Pi 'shpat_|shpss_|(?<![\w.+-])(?!opensourcewarren@gmail\.com)[\w.+-]+@gmail\.com'`
+   - **paths** (export/secret files entering the tree): `git diff origin/main --name-only | grep -Ei '(^|/)\.env($|\.)|\.csv$'`
+
+   The content pass reads **added lines only** (`grep '^+'`, minus the `+++` file header). Deleting a secret is not a leak, and without this the guard fires whenever a `-` line happens to carry one of its own patterns, which is exactly what happened the first time this rule was rewritten.
+
+   Three further narrowings, all for the same reason: a guard that cries wolf gets waved through.
+   - `.csv`/`.env` match on **paths only**. Page copy may legitimately name an export file: the `/archive-services` mess section shows `products_export_1.csv` in a figcaption. The path arm covers the whole `.env.*` family (`.env.local`, `.env.production`), not just a bare `.env`.
+   - The content pass **excludes this file**, which spells the patterns out and so matches itself. The `:(top,...)` magic is load-bearing: a plain `':!CLAUDE.md'` resolves against the current directory, so running the check from inside `content/` would silently exclude nothing and the guard would fire on itself again. This file is the *only* exclusion. `.claude/agents/` is scanned like everything else, so a real token pasted into an agent file still trips.
+   - **`opensourcewarren@gmail.com` is exempt.** It is the published contact address at the bottom of `/archive-services`, deliberately public, and it would otherwise trip the guard on every push. Every *other* gmail address still trips, near-misses included: the lookbehind anchors each match attempt to the start of an address, and the lookahead then suppresses only the exact exempt one. That pair is why the content pass is `grep -P` and not `-E`, and `-i` is there because mailbox names are case-insensitive. Exempt this one address only. If a second address is ever published, add it to the alternation rather than loosening the pattern back to a bare `@gmail`.
 2. **Never edit `quartz/` internals** (or other upstream-tracked code). Customize via `quartz.config.yaml` (theme, plugins, and the `layout:` section — Quartz v5 has no quartz.layout.ts) and custom components — keeps `git merge upstream/v5` cheap. `upstream` = jackyzha0/quartz.
 3. **Never state live price/availability/inventory as fact.** Pages say "listed at $N" + link to the Shopify product. Inventory quantity in exports is unreliable by design (conflates sold with unmade).
 4. **Don't create pages for unphotographed/reserve pieces** (~93% of the catalog). Piece pages exist only for photographed pieces.
