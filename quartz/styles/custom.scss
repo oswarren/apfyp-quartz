@@ -83,33 +83,14 @@ body[data-slug="archive-services"] {
     }
   }
 
-  // --- shared vocabulary: small archival labels, thin rules, quiet lines ---
   section {
     margin: 0 0 5rem;
-  }
-  .as-kinds-label,
-  .as-opens-label,
-  .as-badge {
-    font-size: 0.72rem;
-    font-weight: $semiBoldWeight;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: var(--darkgray); // --gray fails contrast at this size on both palettes
-  }
-  .as-quiet {
-    color: var(--darkgray);
-    font-size: 0.95rem;
-    max-width: 38rem;
-  }
-  .as-voice {
-    color: var(--darkgray);
-    max-width: 38rem;
   }
   .as-intro {
     max-width: 42rem;
   }
 
-  // --- hero: words + CTA; the transformation below carries the visual ---
+  // --- hero: the headline the visitor clicked through on, and one lede line ---
   .as-hero h1 {
     font-size: clamp(2.1rem, 4.5vw, 3.1rem);
     line-height: 1.12;
@@ -120,92 +101,14 @@ body[data-slug="archive-services"] {
     font-size: 1.15rem;
     max-width: 38rem;
   }
-  .as-cta-row {
-    margin: 1.7rem 0;
-  }
-  a.as-cta {
-    display: inline-block;
-    background: var(--secondary);
-    color: var(--light);
-    padding: 0.68rem 1.35rem;
-    border-radius: 4px;
-    font-weight: $semiBoldWeight;
-  }
-  a.as-cta:hover {
-    opacity: 0.88;
-  }
-  a.as-cta .external-icon {
-    margin-left: 0.45em;
-    fill: currentColor;
-  }
-  a.as-cta:focus-visible {
-    outline: 2px solid var(--dark);
-    outline-offset: 2px;
-  }
-
-  // ==========================================================================
-  // The transformation — the visual centre of the page.
-  // Three beats, top to bottom: scattered material -> one connected record ->
-  // a public page and the body of work behind it. Real APFYP photographs do
-  // most of the explaining; prose stays short.
-  // ==========================================================================
-  .as-transform > h2 {
-    font-size: 1.7rem;
-    margin-bottom: 0.7rem;
-  }
-  .as-proof {
-    font-size: 1.05rem;
-    color: var(--dark);
-    max-width: 42rem;
-    border-left: 3px solid var(--secondary);
-    padding-left: 1.1rem;
-    margin: 1.5rem 0 3rem;
-  }
-
-  .as-beat-head {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin: 0 0 1.4rem;
-  }
-  .as-num {
-    flex: none;
-    width: 1.9rem;
-    height: 1.9rem;
-    border-radius: 50%;
-    background: var(--secondary);
-    color: var(--light);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--headerFont);
-    font-weight: $semiBoldWeight;
-    font-size: 0.95rem;
-  }
-  .as-beat-title {
-    font-family: var(--headerFont);
-    color: var(--dark);
-    font-size: 1.18rem;
-    font-weight: $semiBoldWeight;
-    line-height: 1.25;
-  }
   .as-beat-note {
     max-width: 40rem;
     color: var(--darkgray);
     margin: 1.2rem 0 0;
   }
 
-  // the down-arrow spine between beats
-  .as-flow {
-    text-align: center;
-    color: var(--gray);
-    font-size: 1.6rem;
-    line-height: 1;
-    margin: 2.4rem 0;
-  }
-
-  // beat 1 — the scattered photographs, shown large; filenames recede to
-  // small captions (supporting evidence, no longer the main visual idea)
+  // --- the mess: real photographs shown large, filenames receding to small
+  // code-font captions (supporting evidence, not the main visual idea)
   .as-shots {
     display: flex;
     flex-wrap: wrap;
@@ -233,211 +136,8 @@ body[data-slug="archive-services"] {
     margin-top: 0.45rem;
     overflow-wrap: anywhere;
   }
-  // the other kinds of starting material — a quiet, subordinate cluster so
-  // different makers can recognise their own pile without it competing with
-  // the real Piece 2250 photographs above
-  .as-kinds {
-    margin-top: 1.9rem;
-    padding-top: 1.3rem;
-    border-top: 1px solid var(--lightgray);
-    max-width: 44rem;
-  }
-  .as-kinds-label {
-    display: block;
-    margin-bottom: 0.75rem;
-  }
-  .as-kinds-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 0.6rem;
-  }
-  .as-kinds-list li {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    color: var(--darkgray);
-    border: 1px solid var(--lightgray);
-    border-radius: 999px;
-    padding: 0.25rem 0.8rem;
-  }
 
-  // beat 2 — the connected record
-  .as-record-row {
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  .as-record-img {
-    width: min(280px, 100%);
-    height: auto;
-    margin: 0;
-    border: 1px solid var(--lightgray);
-    border-radius: 2px;
-  }
-  .as-record {
-    flex: 1 1 300px;
-    margin: 0;
-    max-width: 34rem;
-    border-left: 1px solid var(--lightgray);
-    padding-left: 1.6rem;
-  }
-  .as-record dt {
-    font-size: 0.72rem;
-    font-weight: $semiBoldWeight;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: var(--darkgray); // --gray fails contrast at this size
-    margin-top: 1rem;
-  }
-  .as-record dt:first-of-type {
-    margin-top: 0;
-  }
-  .as-record dd {
-    margin: 0.15rem 0 0;
-  }
-
-  // beat 3 — the payoff: the finished page + the body of work it opens into
-  .as-public {
-    display: flex;
-    gap: 2.5rem;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-bottom: 2.6rem;
-  }
-  a.as-public-page {
-    flex: 0 1 340px;
-    display: block;
-    text-decoration: none;
-    border: 1px solid var(--lightgray);
-    border-radius: 5px;
-    overflow: hidden;
-    background: var(--light);
-  }
-  a.as-public-page img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
-    margin: 0;
-    border-radius: 0;
-    border-bottom: 1px solid var(--lightgray);
-  }
-  .as-public-meta {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-    padding: 0.85rem 1rem 1rem;
-  }
-  .as-public-title {
-    font-family: var(--headerFont);
-    color: var(--dark);
-    font-weight: $semiBoldWeight;
-    font-size: 1rem;
-  }
-  .as-public-cue {
-    color: var(--secondary);
-    font-size: 0.9rem;
-    font-weight: $semiBoldWeight;
-  }
-  a.as-public-page:hover {
-    border-color: var(--gray);
-  }
-  a.as-public-page:hover .as-public-cue {
-    color: var(--tertiary);
-  }
-  // the "opens into" paths — one record branching outward
-  .as-opens {
-    flex: 1 1 240px;
-  }
-  .as-opens-label {
-    display: block;
-    margin-bottom: 0.7rem;
-  }
-  .as-opens-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .as-opens-list li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid var(--lightgray);
-  }
-  .as-opens-list li:first-child {
-    border-top: 1px solid var(--lightgray);
-  }
-  .as-opens-list li::before {
-    content: "→";
-    color: var(--gray);
-    margin-right: 0.6rem;
-  }
-  // the neighbours — eleven real pieces, side by side: the body of work made
-  // visible, and visibly more expansive than the three fragments up top
-  .as-range {
-    margin: 0;
-  }
-  .as-range-strip {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.55rem;
-    margin-bottom: 0.9rem;
-  }
-  a.as-neighbor {
-    flex: 1 1 78px;
-    max-width: 108px;
-    display: block;
-    text-decoration: none;
-  }
-  a.as-neighbor img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
-    margin: 0;
-    border: 1px solid var(--lightgray);
-    border-radius: 2px;
-  }
-  a.as-neighbor span {
-    display: block;
-    text-align: center;
-    font-family: var(--codeFont);
-    font-size: 0.72rem;
-    color: var(--darkgray);
-    margin-top: 0.25rem;
-  }
-  a.as-neighbor:hover img {
-    border-color: var(--secondary);
-  }
-  .as-range figcaption {
-    color: var(--darkgray);
-    font-size: 0.92rem;
-    max-width: 44rem;
-    margin-top: 0.4rem;
-  }
-
-  // --- three outcomes ---
-  .as-outcomes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin: 1.6rem 0;
-  }
-  .as-outcome {
-    border-top: 1px solid var(--lightgray);
-    padding-top: 1rem;
-  }
-  .as-outcome h3 {
-    font-size: 1.05rem;
-    margin: 0.2rem 0 0.5rem;
-  }
-  .as-outcome p {
-    font-size: 0.95rem;
-    margin: 0;
-  }
-
-  // --- offers ---
+  // --- the one offer ---
   .as-offer {
     border-top: 1px solid var(--lightgray);
     padding-top: 1.2rem;
@@ -459,19 +159,6 @@ body[data-slug="archive-services"] {
     font-weight: $normalWeight;
     color: var(--darkgray);
     font-size: 0.95rem;
-  }
-  .as-offer-quiet {
-    font-size: 0.92rem;
-    color: var(--darkgray);
-  }
-  .as-offer-quiet h3 {
-    font-size: 0.95rem;
-  }
-  .as-badge {
-    border: 1px solid var(--lightgray);
-    padding: 0.1rem 0.45rem;
-    border-radius: 3px;
-    font-size: 0.62rem;
   }
 
   // Text scraps that sit in the same pile as the photographs. Same card and
@@ -517,8 +204,8 @@ body[data-slug="archive-services"] {
 // ============================================================================
 // APFYP: /about closing postscript. Quiet by design: it should read as the last
 // thing on the page, not a callout, so no background, border, or padding box.
-// Just space above plus the muted aside idiom the service page already uses
-// (--darkgray at 0.95rem, cf. .as-quiet). Scoped under body[data-slug="about"]
+// Just space above, --darkgray, and 0.95rem, the muted-aside values used
+// elsewhere on the site. Scoped under body[data-slug="about"]
 // so no other page picks it up. The block is a contiguous HTML island in
 // about.md (a blank line inside would split the CommonMark HTML block), which
 // is why the copy sits in <p> tags rather than Markdown.
