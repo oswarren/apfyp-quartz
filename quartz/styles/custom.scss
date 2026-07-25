@@ -473,4 +473,61 @@ body[data-slug="archive-services"] {
     border-radius: 3px;
     font-size: 0.62rem;
   }
+
+  // Text scraps that sit in the same pile as the photographs. Same card and
+  // same code-font filename caption as .as-shot, sized for words instead of a
+  // 3/4 crop, so a note and a photo read as equal members of one unsorted pile.
+  .as-fragment {
+    flex: 1 1 240px;
+    max-width: 300px;
+    margin: 0;
+  }
+  .as-fragment-body,
+  .as-fragment-fields {
+    border: 1px solid var(--lightgray);
+    border-radius: 2px;
+    background: none;
+    color: var(--dark);
+    padding: 0.85rem 0.95rem;
+    margin: 0;
+  }
+  .as-fragment-body {
+    font-size: 0.85rem;
+    line-height: 1.45;
+  }
+  .as-fragment-fields {
+    font-family: var(--codeFont);
+    font-size: 0.72rem;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+  .as-fragment figcaption {
+    font-family: var(--codeFont);
+    font-size: 0.7rem;
+    color: var(--darkgray);
+    margin-top: 0.45rem;
+    overflow-wrap: anywhere;
+  }
+  .as-email {
+    margin: 2.2rem 0 0;
+  }
+}
+
+// ============================================================================
+// APFYP: /about closing postscript. Quiet by design: it should read as the last
+// thing on the page, not a callout, so no background, border, or padding box.
+// Just space above plus the muted aside idiom the service page already uses
+// (--darkgray at 0.95rem, cf. .as-quiet). Scoped under body[data-slug="about"]
+// so no other page picks it up. The block is a contiguous HTML island in
+// about.md (a blank line inside would split the CommonMark HTML block), which
+// is why the copy sits in <p> tags rather than Markdown.
+// ============================================================================
+body[data-slug="about"] {
+  .about-postscript {
+    margin-top: 2.5rem;
+    max-width: 38rem;
+    color: var(--darkgray);
+    font-size: 0.95rem;
+  }
 }
