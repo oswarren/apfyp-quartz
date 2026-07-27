@@ -90,7 +90,9 @@ body[data-slug="archive-services"] {
     max-width: 42rem;
   }
 
-  // --- hero: the headline the visitor clicked through on, and one lede line ---
+  // --- hero: the headline the visitor clicked through on, the promise, and
+  // the detail line under it. Three sizes so the eye lands in that order:
+  // headline, then what you get, then what you have to do about it.
   .as-hero h1 {
     font-size: clamp(2.1rem, 4.5vw, 3.1rem);
     line-height: 1.12;
@@ -100,6 +102,15 @@ body[data-slug="archive-services"] {
   .as-lede {
     font-size: 1.15rem;
     max-width: 38rem;
+  }
+  // Supporting detail: body size and the secondary text color, sharing the
+  // lede's measure so the hero keeps one right edge. Same treatment as
+  // .as-beat-note, which is the other "read this second" line on the page.
+  .as-hero-detail {
+    font-size: 1rem;
+    max-width: 38rem;
+    color: var(--darkgray);
+    margin: 1.1rem 0 0;
   }
   .as-beat-note {
     max-width: 40rem;
