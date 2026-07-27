@@ -37,8 +37,8 @@ Variant SKU</pre><figcaption>products_export_1.csv</figcaption></figure>
 
 <section class="as-start">
 <div class="as-offer">
-<h3>Archive Pilot, <span class="as-price">$750</span></h3>
+<h3>Archive Build, <span class="as-price">$750</span></h3>
 <p>Send everything you have. There is no limit on how much you send. Within two weeks you get a live public site with a page for each work, cross-linked by material, method, and series, plus the private archive underneath it. One round of revisions on structure and on what stays private.</p>
 </div>
-<p class="as-email"><a href="mailto:opensourcewarren@gmail.com">opensourcewarren@gmail.com</a></p>
+<p class="as-email">Email me at <a href="mailto:opensourcewarren@gmail.com">opensourcewarren@gmail.com</a> with a link to wherever your files live. Drive, Dropbox, a shared folder, anything. If they are not anywhere yet, just say hello and I will send you somewhere to put them.</p>
 </section>
