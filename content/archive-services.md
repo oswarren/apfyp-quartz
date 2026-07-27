@@ -12,7 +12,7 @@ quartz/styles/custom.scss under body[data-slug="archive-services"]. -->
 
 <section class="as-hero">
 <h1>For people with more ideas than places to put them.</h1>
-<p class="as-lede">You send me the folder. You get a website where every piece you choose has its own page, connected to the others, that people can browse and buy from.</p>
+<p class="as-lede">You send me the folder. You get a website where every piece you choose has its own page, connected to the others, that people can browse, linked through to wherever you already sell.</p>
 <p class="as-hero-detail">Camera roll, Google Drive, old hard drive, a shop export, notes you wrote to yourself. Whatever state it is in, send it. You do not need to sort it first. I read through it, work out what connects to what, and build a private archive you keep plus a public site made from the parts you choose.</p>
 </section>
 
