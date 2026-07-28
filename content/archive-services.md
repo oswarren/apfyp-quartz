@@ -1,7 +1,7 @@
 ---
 type: archive-services
 title: "Artist Archive Services"
-description: "Turn photographs, notes, unfinished projects, and scattered records into a connected private archive and a public website."
+description: "Send me your files in whatever state they are in. Two weeks later you have a website with a page for every work you have made, cross-linked. $750."
 ---
 
 <!-- Editing note: each <section> below must stay one contiguous HTML block.
