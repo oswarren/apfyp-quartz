@@ -85,6 +85,7 @@ Explainer slugs = the tag leaf verbatim (`surface/scored-marks` → `techniques/
 - **Before every content merge**: `node scripts/lint-taxonomy.mjs` (registry-legal tags, provenance, wikilinks, and claim-registry checks E5/E6/E7 — exit 1 blocks) + the leak grep from rule 1. After editing pages to reconcile a maker ruling, run `node scripts/extract-claims.mjs --write` then `node scripts/claim-impact.mjs` to confirm no stale pages remain.
 - Piece-page generation: `node scripts/generate-pieces.mjs <csv-path> --survey` to audit an export, `--range A-B [--write]` to generate a reviewable batch. The CSV lives in the vault's `.raw/`, never in this repo. Pages without `generated: true` are curated and never touched by the script. When extending the catalog, start the new range one piece before the previous boundary (e.g. after 2261-2263, next batch is 2263-2400) so the boundary page's Next link refreshes.
 - Conventional commits; `content:` prefix for page-only changes.
+- **Always pass `-R oswarren/apfyp-quartz` to `gh`.** This is a fork, and `gh` resolves the repo from the remotes, where `upstream` = jackyzha0/quartz wins. `gh repo view` here reports `jackyzha0/quartz`, so a bare `gh pr create` opens a pull request against the public Quartz project, and a bare `gh run list` shows upstream's CI instead of this site's deploys. The flag is not optional on any `gh` command that reads or writes repo state.
 
 ## Project agents (`.claude/agents/`)
 
