@@ -229,3 +229,17 @@ body[data-slug="about"] {
     font-size: 0.95rem;
   }
 }
+
+// ============================================================================
+// APFYP: no external-link arrow on mailto links, site-wide.
+// The crawl-links plugin classes every non-relative href as .external and
+// injects the arrow SVG, which counts mailto: as external. That reads fine on
+// a bare address, but /archive-services now puts the address mid-sentence,
+// where the arrow lands between the address and the next word.
+// mailto: only, matched on the href so it holds anywhere the address appears.
+// Real external links keep their arrows: this cannot reach an http(s) href.
+// The SVG is aria-hidden, so hiding it costs a screen reader nothing.
+// ============================================================================
+a[href^="mailto:"] .external-icon {
+  display: none;
+}
