@@ -223,3 +223,65 @@
   affected_outputs:
     - content/pieces/2280.md#body
     - content/pieces/2280.md#tags
+- id: piece:2282:other:collage-sourcing
+  claim: Piece 2282's fourth listing image (a collage with outdoor rock photographs) indicates clay sourcing or provenance
+  subject: 2282
+  scope: piece
+  axis: intent
+  value: intentional
+  original: collage that includes outdoor photographs of a rock outcrop and a hand-held stone
+  status: rejected
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: The collage images are just for fun. They carry no sourcing, provenance, material, or location meaning. (2026-08-03 boulder ruling.)
+  reviewed: 2026-08-03
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs: []
+- id: piece:2283:surface-material:nepheline-syenite
+  claim: Piece 2283's pale veining is nepheline syenite, placed on the closed form and run with water
+  subject: 2283
+  scope: piece
+  axis: surface-material
+  value: nepheline-syenite
+  original: nepheline syenite was placed atop the closed form and water was dripped onto it
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: Nepheline syenite was placed atop of the (at the time) closed form, and water was dripped onto it. (2026-08-03 boulder ruling.)
+  reviewed: 2026-08-03
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2283.md#body
+    - content/pieces/2283.md#description
+    - content/pieces/2283.md#title
+- id: piece:2289:firing:thermal-shock
+  claim: Piece 2289's pale areas are the interior of the clay, exposed by controlled thermal shock
+  subject: 2289
+  scope: piece
+  axis: firing
+  value: thermal-shock
+  original: the inside of the clay exposed by controlled thermal shock
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: The pale areas are the inside of the clay, exposed by controlled thermal shock. (2026-08-03 boulder ruling.)
+  reviewed: 2026-08-03
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2289.md#body
+    - content/pieces/2289.md#description

@@ -91,6 +91,10 @@ terms:
   - value: tenmoku
     axis: surface-material
     match: [tenmoku]
+  - value: nepheline-syenite
+    axis: surface-material
+    match: [nepheline syenite, nepheline-syenite, nepheline]
+    note: maker-confirmed for 2283 (2026-08-03 boulder ruling) — assertable there, a claim anywhere else
   - value: stain
     axis: surface-material
     match: [stained, staining]
@@ -190,6 +194,10 @@ terms:
   - value: flashing
     axis: firing
     match: [flashing]
+  - value: thermal-shock
+    axis: firing
+    match: [thermal shock, thermal-shock]
+    note: maker-confirmed for 2289 (2026-08-03 boulder ruling) — assertable there, a claim anywhere else
 
   # ---- intent ----
   - value: intentional

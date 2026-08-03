@@ -314,6 +314,26 @@
   avoid_terms:
     - stoneware
   affected_outputs: []
+- id: group:boulders-2280-2289:intent:pierced-hole-rod
+  claim: The single crown hole on the July 16 boulders serves the rod/bamboo removable carrying handle recorded for the pierced cups 1770-1778
+  subject: boulders-2280-2289
+  scope: group
+  members: 2281, 2283, 2284, 2285, 2287, 2288, 2289
+  axis: intent
+  value: intentional
+  original: the holes take a rod/bamboo as a removable carrying handle (batch-17 owner note)
+  status: rejected
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: The single crown hole does not serve the same rod/bamboo purpose as the 1770-1778 cups. What it is for is not stated. (2026-08-03 boulder ruling.)
+  reviewed: 2026-08-03
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs: []
 - id: group:brushed-glaze:surface-material:glaze
   claim: techniques/brushed-glaze.md asserts surface-material "glaze"
   subject: brushed-glaze
@@ -1411,6 +1431,49 @@
   affected_outputs:
     - content/techniques/pale-swipes.md#body
     - content/techniques/pale-swipes.md#description
+- id: group:pale-veining:firing:thermal-shock
+  claim: techniques/pale-veining.md asserts firing "thermal-shock"
+  subject: pale-veining
+  scope: group
+  members: ""
+  axis: firing
+  value: thermal-shock
+  original: Its neighbor 2289 carries pale markings that photograph similarly, and the two were grouped together on looks when this batch was first revi
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: 2289 pale areas are the inside of the clay, exposed by controlled thermal shock — which is why it is not a pale-veining member. (2026-08-03 boulder ruling; same fact as piece:2289:firing:thermal-shock.)
+  reviewed: 2026-08-03
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/techniques/pale-veining.md#body
+- id: group:pale-veining:surface-material:nepheline-syenite
+  claim: techniques/pale-veining.md asserts surface-material "nepheline-syenite"
+  subject: pale-veining
+  scope: group
+  members: ""
+  axis: surface-material
+  value: nepheline-syenite
+  original: The pale cream veining on boulder 2283 of A Penny For Your Pottery — nepheline syenite set on the closed form and run down it with water.
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: Nepheline syenite was placed atop of the (at the time) closed form of 2283, and water was dripped onto it. (2026-08-03 boulder ruling; same fact as piece:2283:surface-material:nepheline-syenite, restated on the technique page.)
+  reviewed: 2026-08-03
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/techniques/pale-veining.md#body
+    - content/techniques/pale-veining.md#description
 - id: group:pale-wash:surface-material:glaze
   claim: The pale wash coating is glaze — settled thin glaze from the bottom of its bucket
   subject: pale-wash
@@ -5712,6 +5775,85 @@
   avoid_terms: []
   affected_outputs:
     - content/ranges/range-2261-2263.md#body
+- id: group:range-2280-2289:firing:thermal-shock
+  claim: ranges/range-2280-2289.md asserts firing "thermal-shock"
+  subject: range-2280-2289
+  scope: group
+  members: ""
+  axis: firing
+  value: thermal-shock
+  original: "2289, the largest of the nine, is opened up: controlled thermal shock has broken its dark surface through to the paler clay inside."
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: 2289 pale areas are the inside of the clay, exposed by controlled thermal shock. (2026-08-03 boulder ruling; same fact as piece:2289:firing:thermal-shock, restated on the range page.)
+  reviewed: 2026-08-03
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/ranges/range-2280-2289.md#body
+- id: group:range-2280-2289:forming:handbuilt
+  claim: The range-2280-2289 family asserts forming "handbuilt" (8 pieces)
+  subject: range-2280-2289
+  scope: group
+  members: 2281-2285, 2287-2289
+  axis: forming
+  value: handbuilt
+  original: "**What is piece 2281?** A closed charcoal boulder, handbuilt in bare clay with one hole bored through its crown, the 2,281st of 10,000 in th"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2281.md#body
+    - content/pieces/2281.md#tags
+    - content/pieces/2282.md#body
+    - content/pieces/2282.md#tags
+    - content/pieces/2283.md#body
+    - content/pieces/2283.md#tags
+    - content/pieces/2284.md#body
+    - content/pieces/2284.md#tags
+    - content/pieces/2285.md#body
+    - content/pieces/2285.md#tags
+    - content/pieces/2287.md#body
+    - content/pieces/2287.md#tags
+    - content/pieces/2288.md#body
+    - content/pieces/2288.md#tags
+    - content/pieces/2289.md#body
+    - content/pieces/2289.md#tags
+    - content/ranges/range-2280-2289.md#body
+- id: group:range-2280-2289:surface-material:nepheline-syenite
+  claim: ranges/range-2280-2289.md asserts surface-material "nepheline-syenite"
+  subject: range-2280-2289
+  scope: group
+  members: ""
+  axis: surface-material
+  value: nepheline-syenite
+  original: 2283 is crossed edge to edge with cream veining — nepheline syenite set on the closed form and run down it with water.
+  status: confirmed
+  corrected_value:
+  superseded:
+  source: maker
+  confidence: high
+  maker_response: Nepheline syenite was placed atop of the (at the time) closed form of 2283, and water was dripped onto it. (2026-08-03 boulder ruling; same fact as piece:2283:surface-material:nepheline-syenite, restated on the range page.)
+  reviewed: 2026-08-03
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/ranges/range-2280-2289.md#body
 - id: group:range-2334-2335:forming:handbuilt
   claim: ranges/range-2334-2335.md asserts forming "handbuilt"
   subject: range-2334-2335
