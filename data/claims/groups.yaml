@@ -4611,7 +4611,9 @@
     - content/pieces/2071.md#body
     - content/pieces/2084.md#body
     - content/pieces/2084.md#description
+    - content/pieces/2084.md#title
     - content/pieces/2100.md#body
+    - content/ranges/range-2051-2100.md#body
 - id: group:range-2051-2100:forming:handbuilt
   claim: The batch-13 chawan run (2055-2067 and kin) is handbuilt — tagged in batch-13, but the batch-15 ruling found concentric throwing rings and turned feet on closely similar chawans; needs maker re-confirmation
   subject: range-2051-2100
@@ -4719,6 +4721,7 @@
     - content/pieces/2083.md#description
     - content/pieces/2083.md#tags
     - content/pieces/2084.md#body
+    - content/pieces/2084.md#description
     - content/pieces/2084.md#tags
     - content/pieces/2093.md#body
     - content/pieces/2093.md#description
@@ -4863,7 +4866,6 @@
     - content/pieces/2078.md#body
     - content/pieces/2081.md#body
     - content/pieces/2081.md#description
-    - content/pieces/2093.md#body
     - content/pieces/2096.md#body
     - content/pieces/2096.md#description
     - content/pieces/2097.md#body

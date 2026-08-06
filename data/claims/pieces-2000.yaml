@@ -448,6 +448,47 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/2074.md#body
+- id: piece:2082:surface-material:glaze
+  claim: Piece 2082 asserts surface-material "glaze"
+  subject: 2082
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: "Piece 2082 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a tall handbuilt cup under mottled blue-green washes, carrying "
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2082.md#body
+    - content/pieces/2082.md#description
+- id: piece:2082:surface-material:unglazed
+  claim: Piece 2082 asserts surface-material "unglazed"
+  subject: 2082
+  scope: piece
+  axis: surface-material
+  value: unglazed
+  original: "The two overhead views go the other way entirely: the interior is bare grey-brown clay, unglazed, turning in spiral forming rings, with one "
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2082.md#body
 - id: piece:2085:surface-material:unglazed
   claim: Piece 2085 asserts surface-material "unglazed"
   subject: 2085
@@ -489,6 +530,47 @@
   affected_outputs:
     - content/pieces/2089.md#body
     - content/pieces/2089.md#description
+- id: piece:2090:forming:handbuilt
+  claim: Piece 2090 asserts forming "handbuilt"
+  subject: 2090
+  scope: piece
+  axis: forming
+  value: handbuilt
+  original: tag technique/handbuilt
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2090.md#tags
+- id: piece:2091:surface-material:glaze
+  claim: Piece 2091 asserts surface-material "glaze"
+  subject: 2091
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: Piece 2091 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a waisted handmade cup under pale blue wash streaks, carrying h
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2091.md#body
+    - content/pieces/2091.md#description
 - id: piece:2092:surface-material:glaze
   claim: Piece 2092 asserts surface-material "glaze"
   subject: 2092
@@ -528,8 +610,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/pieces/2095.md#body
+  affected_outputs: []
 - id: piece:2096:clay-body:sand
   claim: Piece 2096 asserts clay-body "sand"
   subject: 2096
