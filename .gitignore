@@ -14,6 +14,13 @@ replit.nix
 .env
 .env.*
 *.csv
+# Vault-shaped directories must never enter this repo: they are the private
+# layer's names, and their presence would also arm the claude-obsidian
+# plugin's PostToolUse auto-commit hook. .vault-meta/auto-commit.disabled is
+# the local marker that disarms that hook regardless.
+.vault-meta/
+wiki/
+.raw/
 .claude/settings.local.json
 .quartz/
 quartz/cli/tui/dist/

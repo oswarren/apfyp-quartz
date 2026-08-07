@@ -29,16 +29,13 @@
 // CSV disagreements with them are reported as drift. Nothing is ever deleted.
 
 import { parse } from "csv-parse/sync"
+import { createHash } from "node:crypto"
 import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 
-const PIECES_DIR = path.join(
-  path.dirname(fileURLToPath(import.meta.url)),
-  "..",
-  "content",
-  "pieces",
-)
+const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
+const PIECES_DIR = path.join(REPO_ROOT, "content", "pieces")
 const HANDLE_RE = /^pottery-piece-(\d+)$/
 const RESERVE_RE = /not yet made/i
 const STORE_BASE = "https://apennyforyourpottery.com/products/"
@@ -58,19 +55,40 @@ const CSV_TAG_ALLOWLIST = new Map([
 
 const args = process.argv.slice(2)
 const rangeFlagIdx = args.indexOf("--range")
+const jsonFlagIdx = args.indexOf("--json")
 const csvPath = args.find(
-  (a, i) => !a.startsWith("--") && (rangeFlagIdx === -1 || i !== rangeFlagIdx + 1),
+  (a, i) =>
+    !a.startsWith("--") &&
+    (rangeFlagIdx === -1 || i !== rangeFlagIdx + 1) &&
+    (jsonFlagIdx === -1 || i !== jsonFlagIdx + 1),
 )
 const survey = args.includes("--survey")
 const write = args.includes("--write")
 const includeReserve = args.includes("--include-reserve")
 const range = rangeFlagIdx !== -1 ? parseRange(args[rangeFlagIdx + 1]) : null
+const jsonPath = jsonFlagIdx !== -1 ? args[jsonFlagIdx + 1] : null
 
 if (!csvPath || (!survey && !range)) {
   console.error(
-    "usage: node scripts/generate-pieces.mjs <csv-path> (--survey | --range A-B [--write] [--include-reserve])",
+    "usage: node scripts/generate-pieces.mjs <csv-path> (--survey | --range A-B [--write] [--include-reserve]) [--json <path>]",
   )
   process.exit(1)
+}
+if (jsonFlagIdx !== -1 && (!jsonPath || jsonPath.startsWith("--"))) {
+  console.error("--json needs a file path")
+  process.exit(1)
+}
+if (jsonPath) {
+  // The report is a near-complete derivative of the private export (all
+  // handles, statuses, prices, the CSV's absolute path) — same rule as the
+  // CSV itself: it must never land inside the public repo. Case-insensitive
+  // compare on Windows.
+  const norm = (x) => (process.platform === "win32" ? path.resolve(x).toLowerCase() : path.resolve(x))
+  const rel = path.relative(norm(REPO_ROOT), norm(jsonPath))
+  if (rel === "" || (!rel.startsWith("..") && !path.isAbsolute(rel))) {
+    console.error(`--json must point OUTSIDE this repo (use the vault's ingest-run dir)`)
+    process.exit(1)
+  }
 }
 
 function parseRange(s) {
@@ -96,7 +114,8 @@ function toCents(s) {
   return Number(m[1]) * 100 + Number((m[2] ?? "0").padEnd(2, "0"))
 }
 
-const rows = parse(fs.readFileSync(csvPath), { columns: true, bom: true })
+const csvBytes = fs.readFileSync(csvPath)
+const rows = parse(csvBytes, { columns: true, bom: true })
 
 const products = new Map() // handle -> product
 for (const row of rows) {
@@ -230,6 +249,96 @@ function frontmatterOf(file) {
   return m ? m[1] : ""
 }
 
+// ---------- machine-readable report (--json) ----------
+// Sidecar only: the human stdout report and all Markdown generation are
+// unchanged whether or not --json is passed. Consumers (the vault's
+// ingest-export skill) branch on this instead of parsing prose.
+
+// Same date rule renderPage applies inline: a photo date holds only when
+// every dated filename agrees; disagreement voids it (mixed dates).
+function photoDates(p) {
+  const dates = [...new Set(p.images.map((img) => extractDate(img.src)).filter(Boolean))]
+  return {
+    productionDate: dates.length === 1 ? dates[0] : null,
+    mixedDates: dates.length > 1 ? dates : null,
+  }
+}
+
+function visualStatusOf(head) {
+  return /^visual_status:\s*['"]?([\w-]+)['"]?\s*\r?$/m.exec(head)?.[1] ?? null
+}
+
+function buildReport(extra) {
+  // csvBytes captured at parse time: the recorded hash always describes the
+  // exact bytes that produced this report, not the file as it is "now".
+  const qualified = pieces.filter((p) => p.qualified)
+  return {
+    schema: "apfyp-generate-pieces/1",
+    generated_at: new Date().toISOString(),
+    mode: survey ? "survey" : "range",
+    csv: {
+      path: path.resolve(csvPath),
+      basename: path.basename(csvPath),
+      bytes: csvBytes.length,
+      sha256: createHash("sha256").update(csvBytes).digest("hex"),
+    },
+    flags: { include_reserve: includeReserve, write, range },
+    summary: {
+      products_in_csv: products.size,
+      numbered_pieces: pieces.length,
+      with_images: pieces.filter((p) => p.product.images.length > 0).length,
+      reserve_template: reserveCount,
+      made_template: madeTemplateCount,
+      qualified: qualified.length,
+      qualified_range: qualified.length
+        ? [qualified[0].n, qualified[qualified.length - 1].n]
+        : null,
+      local_pages: localPages.size,
+      local_pages_curated: [...localPages.values()].filter((l) => !l.generated).length,
+    },
+    pieces: pieces.map(({ n, product: p, qualified: q, reasons }) => {
+      const local = localPages.get(n)
+      const { productionDate, mixedDates } = photoDates(p)
+      return {
+        n,
+        handle: p.handle,
+        qualified: q,
+        exclusion_reasons: reasons,
+        price_cents: p.priceCents,
+        expected_price_cents: n,
+        store_title: p.title,
+        store_tags: p.storeTags ?? [],
+        status: p.status,
+        published: p.published,
+        variant_rows: p.variantRows,
+        images: p.images,
+        dropped_images: p.droppedImages ?? 0,
+        production_date: productionDate,
+        mixed_dates: mixedDates,
+        page: local
+          ? {
+              file: local.file,
+              owner: local.generated ? "generator" : "curated",
+              visual_status: visualStatusOf(local.head),
+            }
+          : null,
+      }
+    }),
+    anomalies,
+    unknown_store_tags: Object.fromEntries(unknownStoreTags),
+    local_pages_missing_from_csv: [...localPages.keys()]
+      .filter((n) => !pieces.some((p) => p.n === n))
+      .sort((a, b) => a - b),
+    ...extra,
+  }
+}
+
+function writeReport(extra = {}) {
+  if (!jsonPath) return
+  fs.writeFileSync(jsonPath, JSON.stringify(buildReport(extra), null, 2) + "\n")
+  console.error(`json report -> ${jsonPath}`)
+}
+
 // ---------- survey mode ----------
 
 if (survey) {
@@ -258,6 +367,7 @@ if (survey) {
     const sorted = [...unknownStoreTags.entries()].sort((a, b) => b[1] - a[1]).slice(0, 15)
     for (const [t, c] of sorted) console.log(`  ${t} (x${c})`)
   }
+  writeReport()
   process.exit(0)
 }
 
@@ -341,7 +451,8 @@ function renderPage(n, p, willExist) {
         .replace(/^[.,;:\s–—-]+|[.,;:\s–—-]+$/g, "")
         .trim()
     : ""
-  const title = bespokeCore ? `${bespokeCore} — Piece ${n}` : `Piece ${n}`
+  // Site copy carries no em dashes (CLAUDE.md Reviewed-page standard rule 7).
+  const title = bespokeCore ? `${bespokeCore} (Piece ${n})` : `Piece ${n}`
   const firstImage = p.images[0]
   const alt =
     firstImage.alt || `Listing photo of handmade ceramic piece ${n} from A Penny For Your Pottery.`
@@ -359,7 +470,7 @@ function renderPage(n, p, willExist) {
   // the axes the export actually provides. No visual adjectives.
   const imgClause = `${p.images.length} photo${p.images.length === 1 ? "" : "s"} on its listing`
   const photoClause = productionDate ? `photographed ${monthName(productionDate)}, ` : ""
-  const description = `Piece ${n} of 10,000 in A Penny For Your Pottery's numbered ceramic series — listed at $${price}, ${photoClause}${imgClause}.`
+  const description = `Piece ${n} of 10,000 in A Penny For Your Pottery's numbered ceramic series, listed at $${price}, ${photoClause}${imgClause}.`
 
   // Tags the CSV is allowed to set: batch date + registry-allowlisted store tags.
   const tags = []
@@ -379,7 +490,7 @@ function renderPage(n, p, willExist) {
   const count = p.images.length
   let photosPara
   if (productionDate) {
-    photosPara = `Its ${count > 1 ? `${count} listing photos were` : "single listing photo was"} taken on ${longDate(productionDate)} — [see everything photographed that day](../tags/batch/${productionDate}).`
+    photosPara = `Its ${count > 1 ? `${count} listing photos were` : "single listing photo was"} taken on ${longDate(productionDate)}. [See everything photographed that day](../tags/batch/${productionDate}).`
   } else if (dates.length > 1) {
     // Mixed capture dates: the files DO carry dates, they just disagree — so
     // make no capture-date claim in either direction, and no batch link.
@@ -392,7 +503,7 @@ function renderPage(n, p, willExist) {
   }
   // Body quoting only — the frontmatter title keeps the raw text (JSON-escaped).
   if (bespokeCore) photosPara += ` On the store it's listed as "${bespokeCore.replace(/"/g, "'")}."`
-  const statusPara = `This page is a ledger entry — the short form. Piece pages grow into full descriptions once their listing photos have been reviewed up close; [the documented ranges](../ranges/) collect the pieces that have. Until then, the ${count === 1 ? "photo does" : "photos do"} the talking.`
+  const statusPara = `This page is a ledger entry: the short form. Piece pages grow into full descriptions once their listing photos have been reviewed up close; [the documented ranges](../ranges/) collect the pieces that have. Until then, the ${count === 1 ? "photo does" : "photos do"} the talking.`
 
   const lines = [
     "---",
@@ -457,6 +568,7 @@ let updated = 0
 let unchanged = 0
 const skippedCurated = []
 const drift = []
+const driftRecords = [] // structured mirror of `drift` for --json
 
 for (const { n, product: p } of targets) {
   const local = localPages.get(n)
@@ -468,10 +580,12 @@ for (const { n, product: p } of targets) {
       drift.push(
         `#${n}: curated page says ${fmtPrice(pagePriceCents)}, CSV says ${fmtPrice(p.priceCents)}`,
       )
+      driftRecords.push({ n, field: "price", page: pagePriceCents, csv: p.priceCents })
     }
     const imgCount = (local.head.match(/^ {2}- https?:/gm) ?? []).length
     if (imgCount && imgCount !== p.images.length) {
       drift.push(`#${n}: curated page lists ${imgCount} images, CSV has ${p.images.length}`)
+      driftRecords.push({ n, field: "image_count", page: imgCount, csv: p.images.length })
     }
     continue
   }
@@ -508,3 +622,19 @@ if (disqualified.length) {
   for (const p of disqualified.slice(0, 20)) console.log(`    #${p.n}: ${p.reasons.join("; ")}`)
   if (disqualified.length > 20) console.log(`    ... and ${disqualified.length - 20} more`)
 }
+
+writeReport({
+  range_result: {
+    in_range: inRange.length,
+    qualified_in_range: targets.length,
+    created,
+    updated,
+    unchanged,
+    skipped_curated: skippedCurated,
+    drift: driftRecords,
+    mixed_dates: targets
+      .filter((t) => t.product.mixedDates)
+      .map((t) => ({ n: t.n, dates: t.product.mixedDates })),
+    not_qualified: disqualified.map((p) => ({ n: p.n, reasons: p.reasons })),
+  },
+})

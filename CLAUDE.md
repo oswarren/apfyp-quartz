@@ -11,6 +11,21 @@ Quartz v5 site for A Penny For Your Pottery (APFYP): a 10,000-piece numbered cer
 | GitHub (`origin` = oswarren/apfyp-quartz) | Version control + deploy. Push to `main` → GitHub Actions → GitHub Pages, served at `archive.apennyforyourpottery.com` (repo name and served domain differ — the old `oswarren.github.io/apfyp-quartz` URL 301s here). |
 | Shopify (`apennyforyourpottery.com`) | **Source of truth** for checkout, price, inventory, availability, product images. We link out; we never assert. |
 
+## Folder layout & access rules (verified 2026-08-06)
+
+| What | Path |
+|---|---|
+| Public Quartz repo | `%USERPROFILE%\Projects\apfyp-quartz` |
+| Private Claude-Obsidian tooling vault | `%USERPROFILE%\Desktop\claudeobsidian\claude-obsidian-main` |
+| Obsidian app-level vault root | `%USERPROFILE%\Desktop\claudeobsidian` (the app opens this folder; the tooling vault sits inside it) |
+| Shopify CSV exports + private APFYP source material | `%USERPROFILE%\Desktop\claudeobsidian\claude-obsidian-main\.raw` |
+| Ingested private APFYP knowledge | `%USERPROFILE%\Desktop\claudeobsidian\claude-obsidian-main\wiki` |
+
+- The Quartz repo and the private tooling vault are **separate folders** — no symlink, junction, or automatic synchronization connects them.
+- The `.obsidian/` folder inside `apfyp-quartz` (git-ignored) only allows the public repo to be opened as a standalone Obsidian vault. It is **not** the private APFYP knowledge vault.
+- Claude-Obsidian agents (`claude-obsidian:*`) launched from `apfyp-quartz` inherit this repo as their working directory — the **wrong root** for their `.raw/` and `wiki/` conventions. Run them from the tooling vault, or pass absolute vault paths explicitly.
+- Do not copy material from the private vault into this public repo unless it has been deliberately selected and is appropriate for public use. Preserve its provenance and verification status when applicable.
+
 ## Hard rules
 
 1. **Never commit**: CSV exports, `.env`, tokens (`shpat_`/`shpss_`), customer/order data, revenue figures, contact names, or anything from the vault's private notes. Pre-push check, two passes:
@@ -61,6 +76,7 @@ Buy links: `https://apennyforyourpottery.com/products/{shopify_handle}`; handles
 4. Footer nav: `Previous/Next (where neighbor pages exist) · [[range-…|Full range]]` plus a discover/date link when one exists.
 5. Full registry tags + per-piece `editorial.claims_to_avoid`.
 6. **No process voice.** Customer copy never narrates the site's own caution — no "this page doesn't guess", "the page records the look and nothing else", or "what a photo can't prove". When a cause, material, or firing is unknown, describe only what's visible and **stop**; the open question goes to the maker via `/review-claims` (it becomes his answer on the page, or nothing), never onto the page as a hedge. Same failure family as the pulled "how this catalog is documented" meta-page — remove the internal vocabulary, don't explain it. First-person maker hedges ("I'm not sure what gives it that sheen") are fine. Lint **E8** enforces this; `node scripts/claim-impact.mjs --piece N --open` lists a page's unresolved questions to ask.
+7. **No em dashes in site copy.** New or retrofitted prose on piece, technique, range, and discover pages (titles included) uses commas, parentheses, colons, or sentence breaks instead. The generator template was de-em-dashed 2026-08-07, so machine output complies by construction. Historical pages are not rewritten retroactively just to enforce this.
 
 Explainer slugs = the tag leaf verbatim (`surface/scored-marks` → `techniques/scored-marks.md`). When a review batch approves new feature terms, they get explainer pages in the same pass so piece prose has link targets, and the run gets a `ranges/range-A-B.md` page as its grouping path (photography-date grouping is impossible when image filenames carry no timestamps).
 
@@ -83,13 +99,14 @@ Explainer slugs = the tag leaf verbatim (`surface/scored-marks` → `techniques/
 - Local preview: `npx quartz build --serve` (default port 8080). Plain build check: `npx quartz build`.
 - Content-only changes: build locally → merge. Config/layout/workflow/script changes: run the `code-reviewer` agent on the diff first.
 - **Before every content merge**: `node scripts/lint-taxonomy.mjs` (registry-legal tags, provenance, wikilinks, and claim-registry checks E5/E6/E7 — exit 1 blocks) + the leak grep from rule 1. After editing pages to reconcile a maker ruling, run `node scripts/extract-claims.mjs --write` then `node scripts/claim-impact.mjs` to confirm no stale pages remain.
+- **Shopify export ingestion starts in the private vault, not here.** The end-to-end workflow (survey → image cache → mandatory visual review → vault knowledge pass → grouped approval → public generation → preview → publish approval) is the vault's `.claude/skills/ingest-export/` skill; trigger it from a Claude Code session opened in the vault with "Ingest the CSV file in .raw: \<filename\>". If someone asks for it from this repo, tell them to switch to the vault instead of half-running it from the wrong root. This repo owns the deterministic halves the skill calls by absolute path: `generate-pieces.mjs` (`--json` sidecar for machine-readable surveys) and `fetch-piece-images.mjs` (private image cache; refuses to write inside this repo).
 - Piece-page generation: `node scripts/generate-pieces.mjs <csv-path> --survey` to audit an export, `--range A-B [--write]` to generate a reviewable batch. The CSV lives in the vault's `.raw/`, never in this repo. Pages without `generated: true` are curated and never touched by the script. When extending the catalog, start the new range one piece before the previous boundary (e.g. after 2261-2263, next batch is 2263-2400) so the boundary page's Next link refreshes.
 - Conventional commits; `content:` prefix for page-only changes.
 - **Always pass `-R oswarren/apfyp-quartz` to `gh`.** This is a fork, and `gh` resolves the repo from the remotes, where `upstream` = jackyzha0/quartz wins. `gh repo view` here reports `jackyzha0/quartz`, so a bare `gh pr create` opens a pull request against the public Quartz project, and a bare `gh run list` shows upstream's CI instead of this site's deploys. The flag is not optional on any `gh` command that reads or writes repo state.
 
 ## Project agents (`.claude/agents/`)
 
-Adapted from [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) — only these five are installed by design; don't add more without asking.
+Adapted from [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) — only these six are installed by design; don't add more without asking.
 
 | Agent | Use for |
 |---|---|
