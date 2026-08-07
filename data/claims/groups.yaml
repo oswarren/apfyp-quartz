@@ -64,6 +64,28 @@
   avoid_terms: []
   affected_outputs:
     - content/about.md#body
+- id: group:aug5-reshoot-2081-2095:forming:handbuilt
+  claim: The ten August 5 re-shoot pieces of products_export2081 carry forming "handbuilt"
+  subject: aug5-reshoot-2081-2095
+  scope: group
+  members: 2081, 2082, 2083, 2084, 2086, 2089, 2090, 2093, 2094, 2095
+  axis: forming
+  value: handbuilt
+  original: tag technique/handbuilt (batch-3 and batch-13 visual reviews)
+  status: corrected
+  corrected_value: wheel-thrown
+  superseded: unknown -> corrected (2026-08-07)
+  source: maker
+  confidence: high
+  maker_response: The pieces uploaded in this export are all wheel thrown. (2026-08-07 vault-ingest grouped review; scope is exactly these ten pieces, not 2085/2088/2091/2092 or the rest of batch-13.)
+  reviewed: 2026-08-07
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms:
+    - handbuilt
+    - hand-built
+  affected_outputs: []
 - id: group:bare-clay:clay-body:black-clay
   claim: techniques/bare-clay.md asserts clay-body "black-clay"
   subject: bare-clay
@@ -4711,27 +4733,6 @@
     - content/pieces/2080.md#body
     - content/pieces/2080.md#description
     - content/pieces/2080.md#tags
-    - content/pieces/2081.md#body
-    - content/pieces/2081.md#description
-    - content/pieces/2081.md#tags
-    - content/pieces/2082.md#body
-    - content/pieces/2082.md#description
-    - content/pieces/2082.md#tags
-    - content/pieces/2083.md#body
-    - content/pieces/2083.md#description
-    - content/pieces/2083.md#tags
-    - content/pieces/2084.md#body
-    - content/pieces/2084.md#description
-    - content/pieces/2084.md#tags
-    - content/pieces/2093.md#body
-    - content/pieces/2093.md#description
-    - content/pieces/2093.md#tags
-    - content/pieces/2094.md#body
-    - content/pieces/2094.md#description
-    - content/pieces/2094.md#tags
-    - content/pieces/2095.md#body
-    - content/pieces/2095.md#description
-    - content/pieces/2095.md#tags
     - content/pieces/2096.md#body
     - content/pieces/2096.md#description
     - content/pieces/2096.md#tags
@@ -4890,12 +4891,9 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/2085.md#tags
-    - content/pieces/2086.md#tags
     - content/pieces/2088.md#tags
-    - content/pieces/2089.md#tags
     - content/pieces/2091.md#tags
     - content/pieces/2092.md#tags
-    - content/ranges/range-2085-2092.md#body
 - id: group:range-2085-2092:surface-material:glaze
   claim: ranges/range-2085-2092.md asserts surface-material "glaze"
   subject: range-2085-2092

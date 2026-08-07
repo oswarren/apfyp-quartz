@@ -509,6 +509,26 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/2085.md#body
+- id: piece:2086:surface-material:glaze
+  claim: Piece 2086 asserts surface-material "glaze"
+  subject: 2086
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: "![Top-down view into a handmade ceramic cup, pale glossy interior with a faint spiral at the floor and black glaze tracking one edge of the "
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2086.md#body
 - id: piece:2089:surface-material:glaze
   claim: Piece 2089 asserts surface-material "glaze"
   subject: 2089
@@ -537,19 +557,20 @@
   axis: forming
   value: handbuilt
   original: tag technique/handbuilt
-  status: unknown
-  corrected_value:
-  superseded:
+  status: corrected
+  corrected_value: wheel-thrown
+  superseded: unknown -> corrected (2026-08-07)
   source: ai-inference
   confidence: low
-  maker_response:
-  reviewed:
+  maker_response: The pieces uploaded in this export are all wheel thrown. (2026-08-07 vault-ingest grouped review.)
+  reviewed: 2026-08-07
   assertable: false
   private_ref: false
   exceptions: []
-  avoid_terms: []
-  affected_outputs:
-    - content/pieces/2090.md#tags
+  avoid_terms:
+    - handbuilt
+    - hand-built
+  affected_outputs: []
 - id: piece:2091:surface-material:glaze
   claim: Piece 2091 asserts surface-material "glaze"
   subject: 2091
