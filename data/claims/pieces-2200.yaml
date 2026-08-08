@@ -285,3 +285,44 @@
   affected_outputs:
     - content/pieces/2289.md#body
     - content/pieces/2289.md#description
+- id: piece:2292:surface-material:glaze
+  claim: Piece 2292 asserts surface-material "glaze"
+  subject: 2292
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: "![Unglazed terracotta-red ceramic bowl with an uneven, undulating rim, a dark glaze line at the rim, and a glossy ivory-cream glazed interio"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2292.md#body
+- id: piece:2292:surface-material:unglazed
+  claim: Piece 2292 asserts surface-material "unglazed"
+  subject: 2292
+  scope: piece
+  axis: surface-material
+  value: unglazed
+  original: "Piece 2292 of 10,000 in A Penny For Your Pottery's numbered ceramic series: an unglazed terracotta-red bowl with a glossy ivory-cream interi"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2292.md#body
+    - content/pieces/2292.md#description

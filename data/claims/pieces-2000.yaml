@@ -672,3 +672,43 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/2098.md#body
+- id: piece:2099:surface-material:glaze
+  claim: Piece 2099 asserts surface-material "glaze"
+  subject: 2099
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: "![Close view of a cream ceramic tumbler, a blue-black glaze wash pooling and running over its lower body with small dark specks scattered th"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2099.md#body
+- id: piece:2099:surface-material:unglazed
+  claim: Piece 2099 asserts surface-material "unglazed"
+  subject: 2099
+  scope: piece
+  axis: surface-material
+  value: unglazed
+  original: The base is largely unglazed buff clay with concentric ring impressions at its center, "2099" hand-inscribed in black, and a partial black a
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2099.md#body

@@ -64,6 +64,28 @@
   avoid_terms: []
   affected_outputs:
     - content/about.md#body
+- id: group:aug-reshoot-2099-2187:forming
+  claim: The August 5-7 re-shoot span pieces (the export4 reviewed span plus new 2181) carry forming "handbuilt" or unruled forming
+  subject: aug-reshoot-2099-2187
+  scope: group
+  members: 2099, 2101, 2102, 2104, 2107, 2109, 2110, 2111, 2112, 2113, 2114, 2116, 2121, 2123, 2124, 2128, 2131, 2132, 2133, 2134, 2135, 2136, 2137, 2138, 2139, 2142, 2143, 2148, 2149, 2150, 2151, 2153, 2154, 2155, 2156, 2157, 2158, 2159, 2160, 2167, 2172, 2173, 2174, 2175, 2176, 2177, 2178, 2179, 2180, 2181, 2182, 2183, 2184, 2185, 2186, 2187
+  axis: forming
+  value: handbuilt
+  original: tag technique/handbuilt on 21 members (batch-13/14 visual reviews); forming unruled on the rest
+  status: corrected
+  corrected_value: wheel-thrown
+  superseded: unknown -> corrected (2026-08-08)
+  source: maker
+  confidence: high
+  maker_response: Wheel-thrown extends to the whole re-shot span, 2099-2187 plus new 2181. (2026-08-08 export4 vault-ingest grouped review; 2292 explicitly excluded; 2085/2088/2091/2092 remain unruled.)
+  reviewed: 2026-08-08
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms:
+    - handbuilt
+    - hand-built
+  affected_outputs: []
 - id: group:aug5-reshoot-2081-2095:forming:handbuilt
   claim: The ten August 5 re-shoot pieces of products_export2081 carry forming "handbuilt"
   subject: aug5-reshoot-2081-2095
@@ -4742,9 +4764,6 @@
     - content/pieces/2098.md#body
     - content/pieces/2098.md#description
     - content/pieces/2098.md#tags
-    - content/pieces/2099.md#body
-    - content/pieces/2099.md#description
-    - content/pieces/2099.md#tags
     - content/pieces/2100.md#tags
     - content/ranges/range-2051-2100.md#body
 - id: group:range-2051-2100:forming:pinch
@@ -4986,83 +5005,24 @@
   exceptions: []
   avoid_terms: []
   affected_outputs:
-    - content/pieces/2101.md#body
-    - content/pieces/2101.md#description
-    - content/pieces/2101.md#tags
-    - content/pieces/2102.md#body
-    - content/pieces/2102.md#description
-    - content/pieces/2102.md#tags
     - content/pieces/2103.md#body
     - content/pieces/2103.md#description
     - content/pieces/2103.md#tags
-    - content/pieces/2104.md#body
-    - content/pieces/2104.md#description
-    - content/pieces/2104.md#tags
     - content/pieces/2105.md#body
     - content/pieces/2105.md#description
     - content/pieces/2105.md#tags
-    - content/pieces/2107.md#body
-    - content/pieces/2107.md#description
-    - content/pieces/2107.md#tags
-    - content/pieces/2109.md#body
-    - content/pieces/2109.md#description
-    - content/pieces/2109.md#tags
-    - content/pieces/2110.md#body
-    - content/pieces/2110.md#description
-    - content/pieces/2110.md#tags
-    - content/pieces/2111.md#body
-    - content/pieces/2111.md#description
-    - content/pieces/2111.md#tags
-    - content/pieces/2112.md#body
-    - content/pieces/2112.md#description
-    - content/pieces/2112.md#tags
-    - content/pieces/2113.md#body
-    - content/pieces/2113.md#description
-    - content/pieces/2113.md#tags
-    - content/pieces/2114.md#body
-    - content/pieces/2114.md#description
-    - content/pieces/2114.md#tags
     - content/pieces/2115.md#body
     - content/pieces/2115.md#description
     - content/pieces/2115.md#tags
-    - content/pieces/2116.md#body
-    - content/pieces/2116.md#description
-    - content/pieces/2116.md#tags
     - content/pieces/2117.md#body
     - content/pieces/2117.md#description
     - content/pieces/2117.md#tags
     - content/pieces/2119.md#body
     - content/pieces/2119.md#description
     - content/pieces/2119.md#tags
-    - content/pieces/2121.md#body
-    - content/pieces/2121.md#description
-    - content/pieces/2121.md#tags
-    - content/pieces/2123.md#body
-    - content/pieces/2123.md#description
-    - content/pieces/2123.md#tags
-    - content/pieces/2124.md#body
-    - content/pieces/2124.md#description
-    - content/pieces/2124.md#tags
-    - content/pieces/2128.md#body
-    - content/pieces/2128.md#description
-    - content/pieces/2128.md#tags
     - content/pieces/2130.md#body
     - content/pieces/2130.md#description
     - content/pieces/2130.md#tags
-    - content/pieces/2131.md#body
-    - content/pieces/2131.md#description
-    - content/pieces/2131.md#tags
-    - content/pieces/2132.md#body
-    - content/pieces/2132.md#description
-    - content/pieces/2132.md#tags
-    - content/pieces/2135.md#body
-    - content/pieces/2135.md#description
-    - content/pieces/2135.md#tags
-    - content/pieces/2136.md#body
-    - content/pieces/2136.md#tags
-    - content/pieces/2137.md#body
-    - content/pieces/2137.md#description
-    - content/pieces/2137.md#tags
 - id: group:range-2101-2150:forming:trimmed
   claim: The range-2101-2150 family asserts forming "trimmed" (4 pieces)
   subject: range-2101-2150
@@ -5854,6 +5814,49 @@
   avoid_terms: []
   affected_outputs:
     - content/ranges/range-2280-2289.md#body
+- id: group:range-2290-2292:surface-material:glaze
+  claim: ranges/range-2290-2292.md asserts surface-material "glaze"
+  subject: range-2290-2292
+  scope: group
+  members: ""
+  axis: surface-material
+  value: glaze
+  original: Its wall is deep terracotta-red bare clay, finely pitted and set with small pale embedded flecks; its rim runs uneven and undulating, ringed
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/ranges/range-2290-2292.md#body
+- id: group:range-2290-2292:surface-material:unglazed
+  claim: ranges/range-2290-2292.md asserts surface-material "unglazed"
+  subject: range-2290-2292
+  scope: group
+  members: ""
+  axis: surface-material
+  value: unglazed
+  original: The unglazed terracotta-red bowl 2292 ($22.92) of A Penny For Your Pottery stands alone in this range, its two preceding numbers reserved an
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/ranges/range-2290-2292.md#body
+    - content/ranges/range-2290-2292.md#description
 - id: group:range-2334-2335:forming:handbuilt
   claim: ranges/range-2334-2335.md asserts forming "handbuilt"
   subject: range-2334-2335
@@ -6300,6 +6303,27 @@
   exceptions: []
   avoid_terms: []
   affected_outputs: []
+- id: group:ranges-index:surface-material:unglazed
+  claim: ranges/index.md asserts surface-material "unglazed"
+  subject: ranges-index
+  scope: group
+  members: ""
+  axis: surface-material
+  value: unglazed
+  original: "- Pieces 2290–2292 — the terracotta bowl: an unglazed red-bodied bowl with a glossy ivory interior, standing alone before a long reserved st"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/ranges/index.md#body
 - id: group:rim-band-wild-clay:clay-body:wild-clay
   claim: The glazed-rim-band pieces around 1571-1580 are wild clay bodies
   subject: rim-band-wild-clay

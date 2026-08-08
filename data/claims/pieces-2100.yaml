@@ -21,6 +21,67 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/2102.md#body
+- id: piece:2109:surface-material:glaze
+  claim: Piece 2109 asserts surface-material "glaze"
+  subject: 2109
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: "Piece 2109 of 10,000 in A Penny For Your Pottery's numbered ceramic series: a cream cup with a broad pale-turquoise wash under an opaque bla"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2109.md#body
+    - content/pieces/2109.md#description
+- id: piece:2109:surface-material:unglazed
+  claim: Piece 2109 asserts surface-material "unglazed"
+  subject: 2109
+  scope: piece
+  axis: surface-material
+  value: unglazed
+  original: The base is flat unglazed cream clay with "2109" handwritten in black, black and turquoise wrapping over the foot edge around it.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2109.md#body
+- id: piece:2113:surface-material:unglazed
+  claim: Piece 2113 asserts surface-material "unglazed"
+  subject: 2113
+  scope: piece
+  axis: surface-material
+  value: unglazed
+  original: The interior floor is grey-tan with faint ring marks and a few small dark specks; the base is a bare unglazed off-white disc with "2113" han
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2113.md#body
 - id: piece:2118:firing:scorched
   claim: Piece 2118 asserts firing "scorched"
   subject: 2118
@@ -326,6 +387,46 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/2180.md#body
+- id: piece:2181:surface-material:glaze
+  claim: Piece 2181 asserts surface-material "glaze"
+  subject: 2181
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: "![Base of ceramic cup 2181 seen from above: unglazed buff clay with a handwritten 2181, a thin black glaze drip and small blue speckling nea"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2181.md#body
+- id: piece:2181:surface-material:unglazed
+  claim: Piece 2181 asserts surface-material "unglazed"
+  subject: 2181
+  scope: piece
+  axis: surface-material
+  value: unglazed
+  original: "![Base of ceramic cup 2181 seen from above: unglazed buff clay with a handwritten 2181, a thin black glaze drip and small blue speckling nea"
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2181.md#body
 - id: piece:2188:clay-body:sand
   claim: Piece 2188 asserts clay-body "sand"
   subject: 2188
