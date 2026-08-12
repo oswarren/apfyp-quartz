@@ -48,14 +48,14 @@
   axis: forming
   value: trimmed
   original: A trimmed foot ring closes the case for the wheel.
-  status: unknown
+  status: confirmed
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
-  assertable: false
+  source: maker
+  confidence: high
+  maker_response: Confirmed wheel-thrown (products_export5 grouped review). Ruled per piece for the seven pieces reviewed in that run (1926, 1928, 1929, 1930, 1933, 1934, 1937); the 1901-1950 span carried no forming ruling before this and the ruling is NOT extended to unreviewed pieces in the span. Noted at ruling time, 1930's base is rounded and footring-less with no concentric rings, unlike its six siblings, so it was the weakest visual fit; the maker's answer stands over the inference.
+  reviewed: 2026-08-12
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []
