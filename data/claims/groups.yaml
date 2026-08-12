@@ -1203,6 +1203,49 @@
   avoid_terms: []
   affected_outputs:
     - content/techniques/handbuilding.md#body
+- id: group:handbuilt-handle:forming:handbuilt
+  claim: techniques/handbuilt-handle.md asserts forming "handbuilt"
+  subject: handbuilt-handle
+  scope: group
+  members: ""
+  axis: forming
+  value: handbuilt
+  original: Handbuilt Handles
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/techniques/handbuilt-handle.md#body
+    - content/techniques/handbuilt-handle.md#title
+- id: group:handbuilt-handle:forming:pinch
+  claim: techniques/handbuilt-handle.md asserts forming "pinch"
+  subject: handbuilt-handle
+  scope: group
+  members: ""
+  axis: forming
+  value: pinch
+  original: Each loop is built and attached by hand, with pinch marks and join seams left showing, some pierced wide, some twisted like rope.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/techniques/handbuilt-handle.md#body
 - id: group:incised-word:surface-material:glaze
   claim: techniques/incised-word.md asserts surface-material "glaze"
   subject: incised-word
@@ -1702,8 +1745,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/techniques/pulled-handle.md#body
+  affected_outputs: []
 - id: group:pulled-handle:forming:pulled
   claim: techniques/pulled-handle.md asserts forming "pulled"
   subject: pulled-handle
@@ -1712,20 +1754,18 @@
   axis: forming
   value: pulled
   original: Pulled Handles
-  status: unknown
+  status: rejected
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
+  source: maker
+  confidence: high
+  maker_response: Rejected. Maker states these handles are handbuilt and no handle in the catalog has ever been pulled (products_export5 grouped review, 2026-08-12). The detail/pulled-handle tag was renamed detail/handbuilt-handle across 46 pages in the same pass, and no page asserts a pulled handle any more.
+  reviewed: 2026-08-12
   assertable: false
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/techniques/pulled-handle.md#body
-    - content/techniques/pulled-handle.md#title
+  affected_outputs: []
 - id: group:range-1-20:forming:coil
   claim: ranges/range-1-20.md asserts forming "coil"
   subject: range-1-20
@@ -3976,6 +4016,7 @@
     - content/pieces/1953.md#description
     - content/pieces/1953.md#tags
     - content/pieces/1954.md#body
+    - content/pieces/1954.md#description
     - content/pieces/1954.md#tags
     - content/pieces/1955.md#body
     - content/pieces/1955.md#description
@@ -4143,28 +4184,18 @@
   axis: forming
   value: pulled
   original: Piece 1954 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a sand-speckled rock-textured cup with a pulled handle, the fir
-  status: unknown
+  status: rejected
   corrected_value:
   superseded:
-  source: ai-inference
-  confidence: low
-  maker_response:
-  reviewed:
+  source: maker
+  confidence: high
+  maker_response: Rejected. Maker states these handles are handbuilt and no handle in the catalog has ever been pulled (products_export5 grouped review, 2026-08-12). The detail/pulled-handle tag was renamed detail/handbuilt-handle across 46 pages in the same pass, and no page asserts a pulled handle any more.
+  reviewed: 2026-08-12
   assertable: false
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/pieces/1954.md#body
-    - content/pieces/1954.md#description
-    - content/pieces/1971.md#body
-    - content/pieces/1971.md#description
-    - content/pieces/1986.md#body
-    - content/pieces/1986.md#description
-    - content/pieces/1992.md#body
-    - content/pieces/1992.md#description
-    - content/pieces/1994.md#body
-    - content/pieces/1999.md#body
+  affected_outputs: []
 - id: group:range-1951-2000:surface-material:glaze
   claim: The range-1951-2000 family asserts surface-material "glaze" (17 pieces)
   subject: range-1951-2000
@@ -4533,36 +4564,7 @@
   exceptions: []
   avoid_terms: []
   affected_outputs:
-    - content/pieces/2002.md#body
-    - content/pieces/2003.md#body
-    - content/pieces/2006.md#body
-    - content/pieces/2007.md#body
-    - content/pieces/2010.md#body
-    - content/pieces/2010.md#description
     - content/pieces/2011.md#body
-    - content/pieces/2012.md#body
-    - content/pieces/2015.md#body
-    - content/pieces/2020.md#body
-    - content/pieces/2022.md#body
-    - content/pieces/2022.md#description
-    - content/pieces/2023.md#body
-    - content/pieces/2032.md#body
-    - content/pieces/2032.md#description
-    - content/pieces/2034.md#body
-    - content/pieces/2040.md#body
-    - content/pieces/2042.md#body
-    - content/pieces/2042.md#description
-    - content/pieces/2044.md#body
-    - content/pieces/2044.md#description
-    - content/pieces/2045.md#body
-    - content/pieces/2045.md#description
-    - content/pieces/2046.md#body
-    - content/pieces/2046.md#description
-    - content/pieces/2047.md#body
-    - content/pieces/2048.md#body
-    - content/pieces/2048.md#description
-    - content/pieces/2049.md#body
-    - content/pieces/2050.md#body
 - id: group:range-2001-2050:surface-material:glaze
   claim: The range-2001-2050 family asserts surface-material "glaze" (16 pieces)
   subject: range-2001-2050
@@ -4813,14 +4815,7 @@
   exceptions: []
   avoid_terms: []
   affected_outputs:
-    - content/pieces/2051.md#body
-    - content/pieces/2051.md#description
-    - content/pieces/2052.md#body
-    - content/pieces/2052.md#description
     - content/pieces/2058.md#body
-    - content/pieces/2065.md#body
-    - content/pieces/2065.md#description
-    - content/pieces/2068.md#body
 - id: group:range-2051-2100:surface-material:crawl
   claim: The range-2051-2100 family asserts surface-material "crawl" (5 pieces)
   subject: range-2051-2100
@@ -4844,7 +4839,6 @@
     - content/pieces/2055.md#body
     - content/pieces/2056.md#body
     - content/pieces/2057.md#body
-    - content/pieces/2058.md#body
     - content/pieces/2064.md#body
 - id: group:range-2051-2100:surface-material:glaze
   claim: The range-2051-2100 family asserts surface-material "glaze" (15 pieces)
@@ -6619,6 +6613,27 @@
   avoid_terms: []
   affected_outputs:
     - content/techniques/speckled-surfaces.md#body
+- id: group:studded-handle:forming:handbuilt
+  claim: techniques/studded-handle.md asserts forming "handbuilt"
+  subject: studded-handle
+  scope: group
+  members: ""
+  axis: forming
+  value: handbuilt
+  original: "**Why does the handle have beads on it?** Two reviewed cups carry handbuilt handles whose spines are studded with dark glossy beads or nubs "
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/techniques/studded-handle.md#body
 - id: group:studded-handle:forming:pulled
   claim: techniques/studded-handle.md asserts forming "pulled"
   subject: studded-handle
@@ -6638,8 +6653,7 @@
   private_ref: false
   exceptions: []
   avoid_terms: []
-  affected_outputs:
-    - content/techniques/studded-handle.md#body
+  affected_outputs: []
 - id: group:surface-nodules:clay-body:black-clay
   claim: techniques/surface-nodules.md asserts clay-body "black-clay"
   subject: surface-nodules
@@ -6908,6 +6922,26 @@
   maker_response: Slip is named only as one unconfirmed possibility; the material is left unasserted. (S3 review 2026-07-17.)
   reviewed: 2026-07-17
   assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs: []
+- id: group:export5-reviewed-1901-1950:forming:wheel-thrown
+  claim: The seven products_export5-reviewed pieces of the 1901-1950 span assert forming "wheel-thrown" (7 pieces)
+  subject: export5-reviewed-1901-1950
+  scope: group
+  members: 1926, 1928, 1929, 1930, 1933, 1934, 1937
+  axis: forming
+  value: wheel-thrown
+  original: ""
+  status: confirmed
+  corrected_value: ""
+  superseded: ""
+  source: maker
+  confidence: high
+  maker_response: Confirmed wheel-thrown (products_export5 grouped review, 2026-08-12). Scope is the seven pieces reviewed in that run and no others; Warren was offered a whole-span ruling and chose the reviewed pieces instead. The 1901-1950 span carried no forming ruling before this. Recorded caveat, 1930's base is rounded and footring-less with no concentric rings, the same signature set as confirmed-handbuilt 1975, so it was the weakest visual fit; the maker's answer stands over the inference. No page asserts this yet; the ruling is recorded so it need not be re-asked.
+  reviewed: 2026-08-12
+  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []
