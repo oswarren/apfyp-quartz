@@ -224,6 +224,25 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/2128.md#body
+- id: piece:2129:forming:wheel-thrown
+  claim: Piece 2129 forming ruled wheel-thrown at first review
+  subject: 2129
+  scope: piece
+  axis: forming
+  value: wheel-thrown
+  original: ""
+  status: confirmed
+  corrected_value: ""
+  superseded: ""
+  source: maker
+  confidence: high
+  maker_response: Ruled wheel-thrown in the products_export grouped review (2026-08-14), at the piece's first review; the private record notes interior concentric rings and a raised trimmed-profile foot ring. Recorded as a claims_to_avoid ground-truth note on the first public page; not asserted in prose, no technique tag applied.
+  reviewed: 2026-08-14
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs: []
 - id: piece:2139:surface-material:oxide
   claim: Piece 2139 asserts surface-material "oxide"
   subject: 2139

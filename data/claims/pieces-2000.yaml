@@ -592,13 +592,13 @@
   affected_outputs:
     - content/pieces/2091.md#body
     - content/pieces/2091.md#description
-- id: piece:2092:surface-material:glaze
-  claim: Piece 2092 asserts surface-material "glaze"
+- id: piece:2092:clay-body:sand
+  claim: Piece 2092 asserts clay-body "sand"
   subject: 2092
   scope: piece
-  axis: surface-material
-  value: glaze
-  original: Piece 2092 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a handmade cup with handwritten glaze text on both sides over a
+  axis: clay-body
+  value: sand
+  original: Piece 2092 — the sand-collared jar
   status: unknown
   corrected_value:
   superseded:
@@ -611,8 +611,27 @@
   exceptions: []
   avoid_terms: []
   affected_outputs:
+    - content/pieces/2092.md#title
+- id: piece:2092:surface-material:glaze
+  claim: Piece 2092 asserts surface-material "glaze"
+  subject: 2092
+  scope: piece
+  axis: surface-material
+  value: glaze
+  original: Piece 2092 of 10,000 in A Penny For Your Pottery's numbered ceramic series — a handmade cup with handwritten glaze text on both sides over a
+  status: unknown
+  corrected_value:
+  superseded: object superseded 2026-08-14 — the listing was re-purposed to a different piece (maker ruling, products_export grouped review); this record described the earlier glaze-text cup
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
     - content/pieces/2092.md#body
-    - content/pieces/2092.md#description
 - id: piece:2095:firing:flashing
   claim: Piece 2095 asserts firing "flashing"
   subject: 2095
