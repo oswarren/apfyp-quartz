@@ -68,7 +68,7 @@
   claim: The August 5-7 re-shoot span pieces (the export4 reviewed span plus new 2181) carry forming "handbuilt" or unruled forming
   subject: aug-reshoot-2099-2187
   scope: group
-  members: 2099, 2101, 2102, 2104, 2107, 2109, 2110, 2111, 2112, 2113, 2114, 2116, 2121, 2123, 2124, 2128, 2131, 2132, 2133, 2134, 2135, 2136, 2137, 2138, 2139, 2142, 2143, 2148, 2149, 2150, 2151, 2153, 2154, 2155, 2156, 2157, 2158, 2159, 2160, 2167, 2172, 2173, 2174, 2175, 2176, 2177, 2178, 2179, 2180, 2181, 2182, 2183, 2184, 2185, 2186, 2187, 2115, 2119, 2130
+  members: 2099, 2101, 2102, 2104, 2107, 2109, 2110, 2111, 2112, 2113, 2114, 2116, 2121, 2123, 2124, 2128, 2131, 2132, 2133, 2134, 2135, 2136, 2137, 2138, 2139, 2142, 2143, 2148, 2149, 2150, 2151, 2153, 2154, 2155, 2156, 2157, 2158, 2159, 2160, 2167, 2172, 2173, 2174, 2175, 2176, 2177, 2178, 2179, 2180, 2181, 2182, 2183, 2184, 2185, 2186, 2187, 2115, 2119, 2130, 2103
   axis: forming
   value: handbuilt
   original: tag technique/handbuilt on 21 members (batch-13/14 visual reviews); forming unruled on the rest
@@ -77,7 +77,7 @@
   superseded: unknown -> corrected (2026-08-08)
   source: maker
   confidence: high
-  maker_response: Wheel-thrown extends to the whole re-shot span, 2099-2187 plus new 2181. (2026-08-08 export4 vault-ingest grouped review; 2292 explicitly excluded; 2085/2088/2091/2092 remain unruled. Extended 2026-08-10 in the 4th-export grouped review — members 2115, 2119, 2130 added and their pages' technique/handbuilt removed, completing the span sweep; 2103/2105/2117 still tagged, left for a future round.)
+  maker_response: Wheel-thrown extends to the whole re-shot span, 2099-2187 plus new 2181. (2026-08-08 export4 vault-ingest grouped review; 2292 explicitly excluded; 2085/2088/2091/2092 remain unruled. Extended 2026-08-10 in the 4th-export grouped review — members 2115, 2119, 2130 added and their pages' technique/handbuilt removed, completing the span sweep; 2103/2105/2117 still tagged, left for a future round. Extended again 2026-08-14 in the products_export grouped review — member 2103 added and its page's technique/handbuilt removed; 2105/2117 remain.)
   reviewed: 2026-08-08
   assertable: false
   private_ref: false
@@ -90,7 +90,7 @@
   claim: The ten August 5 re-shoot pieces of products_export2081 carry forming "handbuilt"
   subject: aug5-reshoot-2081-2095
   scope: group
-  members: 2081, 2082, 2083, 2084, 2086, 2089, 2090, 2093, 2094, 2095
+  members: 2081, 2082, 2083, 2084, 2086, 2089, 2090, 2093, 2094, 2095, 2088
   axis: forming
   value: handbuilt
   original: tag technique/handbuilt (batch-3 and batch-13 visual reviews)
@@ -99,7 +99,7 @@
   superseded: unknown -> corrected (2026-08-07)
   source: maker
   confidence: high
-  maker_response: The pieces uploaded in this export are all wheel thrown. (2026-08-07 vault-ingest grouped review; scope is exactly these ten pieces, not 2085/2088/2091/2092 or the rest of batch-13.)
+  maker_response: The pieces uploaded in this export are all wheel thrown. (2026-08-07 vault-ingest grouped review; scope is exactly these ten pieces, not 2085/2088/2091/2092 or the rest of batch-13. Extended 2026-08-14 in the products_export grouped review — member 2088 added on Warren's ruling with its first private record; 2085/2091 remain unruled, 2092's identity was superseded the same day.)
   reviewed: 2026-08-07
   assertable: false
   private_ref: false
@@ -804,6 +804,26 @@
   avoid_terms: []
   affected_outputs:
     - content/techniques/embedded-particles.md#body
+- id: group:export5-reviewed-1901-1950:forming:wheel-thrown
+  claim: The seven products_export5-reviewed pieces of the 1901-1950 span assert forming "wheel-thrown" (7 pieces)
+  subject: export5-reviewed-1901-1950
+  scope: group
+  members: 1926, 1928, 1929, 1930, 1933, 1934, 1937
+  axis: forming
+  value: wheel-thrown
+  original: ""
+  status: confirmed
+  corrected_value: ""
+  superseded: ""
+  source: maker
+  confidence: high
+  maker_response: Confirmed wheel-thrown (products_export5 grouped review, 2026-08-12). Scope is the seven pieces reviewed in that run and no others; Warren was offered a whole-span ruling and chose the reviewed pieces instead. The 1901-1950 span carried no forming ruling before this. Recorded caveat, 1930's base is rounded and footring-less with no concentric rings, the same signature set as confirmed-handbuilt 1975, so it was the weakest visual fit; the maker's answer stands over the inference. No page asserts this yet; the ruling is recorded so it need not be re-asked.
+  reviewed: 2026-08-12
+  assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs: []
 - id: group:fabric-impression:clay-body:black-clay
   claim: techniques/fabric-impression.md asserts clay-body "black-clay"
   subject: fabric-impression
@@ -4880,6 +4900,27 @@
     - content/pieces/2096.md#body
     - content/pieces/2096.md#description
     - content/pieces/2097.md#body
+- id: group:range-2085-2092:clay-body:sand
+  claim: ranges/range-2085-2092.md asserts clay-body "sand"
+  subject: range-2085-2092
+  scope: group
+  members: ""
+  axis: clay-body
+  value: sand
+  original: 2092's listing was re-photographed on [August 13, 2026] and now shows a small sand-collared jar; its page describes the current photos.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/ranges/range-2085-2092.md#body
 - id: group:range-2085-2092:forming:handbuilt
   claim: The range-2085-2092 family asserts forming "handbuilt" (6 pieces)
   subject: range-2085-2092
@@ -4901,9 +4942,7 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/2085.md#tags
-    - content/pieces/2088.md#tags
     - content/pieces/2091.md#tags
-    - content/pieces/2092.md#tags
 - id: group:range-2085-2092:surface-material:glaze
   claim: ranges/range-2085-2092.md asserts surface-material "glaze"
   subject: range-2085-2092
@@ -4996,9 +5035,6 @@
   exceptions: []
   avoid_terms: []
   affected_outputs:
-    - content/pieces/2103.md#body
-    - content/pieces/2103.md#description
-    - content/pieces/2103.md#tags
     - content/pieces/2105.md#body
     - content/pieces/2105.md#description
     - content/pieces/2105.md#tags
@@ -6922,26 +6958,6 @@
   maker_response: Slip is named only as one unconfirmed possibility; the material is left unasserted. (S3 review 2026-07-17.)
   reviewed: 2026-07-17
   assertable: false
-  private_ref: false
-  exceptions: []
-  avoid_terms: []
-  affected_outputs: []
-- id: group:export5-reviewed-1901-1950:forming:wheel-thrown
-  claim: The seven products_export5-reviewed pieces of the 1901-1950 span assert forming "wheel-thrown" (7 pieces)
-  subject: export5-reviewed-1901-1950
-  scope: group
-  members: 1926, 1928, 1929, 1930, 1933, 1934, 1937
-  axis: forming
-  value: wheel-thrown
-  original: ""
-  status: confirmed
-  corrected_value: ""
-  superseded: ""
-  source: maker
-  confidence: high
-  maker_response: Confirmed wheel-thrown (products_export5 grouped review, 2026-08-12). Scope is the seven pieces reviewed in that run and no others; Warren was offered a whole-span ruling and chose the reviewed pieces instead. The 1901-1950 span carried no forming ruling before this. Recorded caveat, 1930's base is rounded and footring-less with no concentric rings, the same signature set as confirmed-handbuilt 1975, so it was the weakest visual fit; the maker's answer stands over the inference. No page asserts this yet; the ruling is recorded so it need not be re-asked.
-  reviewed: 2026-08-12
-  assertable: true
   private_ref: false
   exceptions: []
   avoid_terms: []
