@@ -46,6 +46,6 @@ Not every numbered piece exists yet. On the store, pieces that haven't been made
 The archive you're browsing was assembled from scattered listing photographs, partial store records, and a lot of unanswered questions, not from a tidy database.
 
 <div class="about-postscript">
-<p>This site is built out of my own messy notes, half-finished writing, and phone photos with camera filenames. I made something that takes them in and links them together. I can do the same with yours.</p>
-<p><a href="/archive-services">For people with more ideas than places to put them →</a></p>
+<p>This site is built out of my own messy notes, half-finished writing, and phone photos with camera filenames. I made something that takes them in and links them together.</p>
+<p>I also built <a href="https://www.glazesnap.com/">GlazeSnap</a>: upload a photo of a ceramic surface and find commercial glazes worth testing.</p>
 </div>

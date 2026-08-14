@@ -15,7 +15,8 @@
 // loadQuartzLayout() itself, so the documented `export const layout` override
 // in quartz.ts is not consulted). Placing a repo-local component on the page
 // would mean shipping a local plugin package; the widget markup is instead
-// raw HTML in the page, the same pattern as content/archive-services.md.
+// raw HTML in the page, the same pattern as the postscript island in
+// content/about.md.
 //
 // Registered in quartz.ts. The script is inert on every other page.
 
