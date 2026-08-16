@@ -527,3 +527,23 @@
   avoid_terms: []
   affected_outputs:
     - content/pieces/2193.md#body
+- id: piece:2198:surface-material:stain
+  claim: Piece 2198 asserts surface-material "stain"
+  subject: 2198
+  scope: piece
+  axis: surface-material
+  value: stain
+  original: "Piece 2198 of 10,000 in A Penny For Your Pottery's numbered ceramic series, a pale flaring bowl with a dark patch at the foot and a stained "
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2198.md#description
