@@ -45,3 +45,23 @@
     - content/pieces/2335.md#body
     - content/pieces/2335.md#description
     - content/pieces/2335.md#tags
+- id: piece:2355:clay-body:black-clay
+  claim: Piece 2355 asserts clay-body "black-clay"
+  subject: 2355
+  scope: piece
+  axis: clay-body
+  value: black-clay
+  original: The underside is bare, near-black clay, marked with a handwritten "2355" in pale pigment; in the lower right of the base, away from the nume
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2355.md#body
