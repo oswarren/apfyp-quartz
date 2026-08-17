@@ -720,6 +720,27 @@
   avoid_terms: []
   affected_outputs:
     - content/discover/production-june-2026.md#body
+- id: group:dragged-comb:forming:slab-built
+  claim: techniques/dragged-comb.md asserts forming "slab-built"
+  subject: dragged-comb
+  scope: group
+  members: ""
+  axis: forming
+  value: slab-built
+  original: "Raised directional striations dragged across the surface, seen on pieces 2374 and 2377 of A Penny For Your Pottery's slab run, with earlier "
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/techniques/dragged-comb.md#description
 - id: group:embedded-particles:clay-body:grog
   claim: techniques/embedded-particles.md asserts clay-body "grog"
   subject: embedded-particles
@@ -5915,6 +5936,176 @@
   avoid_terms: []
   affected_outputs:
     - content/ranges/range-2334-2335.md#body
+- id: group:range-2338-2386:forming:slab-built
+  claim: The range-2338-2386 family asserts forming "slab-built" (48 pieces)
+  subject: range-2338-2386
+  scope: group
+  members: 2338-2368, 2370-2386
+  axis: forming
+  value: slab-built
+  original: Piece 2338, cream trails on a dark slab
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2338.md#body
+    - content/pieces/2338.md#description
+    - content/pieces/2338.md#title
+    - content/pieces/2339.md#body
+    - content/pieces/2339.md#description
+    - content/pieces/2339.md#title
+    - content/pieces/2340.md#body
+    - content/pieces/2340.md#description
+    - content/pieces/2341.md#body
+    - content/pieces/2341.md#description
+    - content/pieces/2341.md#title
+    - content/pieces/2342.md#body
+    - content/pieces/2342.md#description
+    - content/pieces/2342.md#title
+    - content/pieces/2343.md#body
+    - content/pieces/2343.md#description
+    - content/pieces/2344.md#body
+    - content/pieces/2344.md#description
+    - content/pieces/2344.md#title
+    - content/pieces/2345.md#body
+    - content/pieces/2345.md#description
+    - content/pieces/2345.md#title
+    - content/pieces/2346.md#body
+    - content/pieces/2346.md#description
+    - content/pieces/2346.md#title
+    - content/pieces/2347.md#body
+    - content/pieces/2347.md#description
+    - content/pieces/2347.md#title
+    - content/pieces/2348.md#body
+    - content/pieces/2348.md#description
+    - content/pieces/2348.md#title
+    - content/pieces/2349.md#body
+    - content/pieces/2349.md#description
+    - content/pieces/2349.md#title
+    - content/pieces/2350.md#body
+    - content/pieces/2350.md#description
+    - content/pieces/2350.md#title
+    - content/pieces/2351.md#body
+    - content/pieces/2351.md#description
+    - content/pieces/2351.md#title
+    - content/pieces/2352.md#body
+    - content/pieces/2352.md#description
+    - content/pieces/2352.md#title
+    - content/pieces/2353.md#body
+    - content/pieces/2353.md#description
+    - content/pieces/2353.md#title
+    - content/pieces/2354.md#body
+    - content/pieces/2354.md#description
+    - content/pieces/2354.md#title
+    - content/pieces/2355.md#body
+    - content/pieces/2355.md#description
+    - content/pieces/2355.md#title
+    - content/pieces/2356.md#body
+    - content/pieces/2356.md#description
+    - content/pieces/2356.md#title
+    - content/pieces/2357.md#body
+    - content/pieces/2357.md#description
+    - content/pieces/2357.md#title
+    - content/pieces/2358.md#body
+    - content/pieces/2358.md#description
+    - content/pieces/2358.md#title
+    - content/pieces/2359.md#body
+    - content/pieces/2359.md#description
+    - content/pieces/2359.md#title
+    - content/pieces/2360.md#body
+    - content/pieces/2360.md#description
+    - content/pieces/2360.md#title
+    - content/pieces/2361.md#body
+    - content/pieces/2361.md#description
+    - content/pieces/2361.md#title
+    - content/pieces/2362.md#body
+    - content/pieces/2362.md#description
+    - content/pieces/2363.md#body
+    - content/pieces/2363.md#description
+    - content/pieces/2363.md#title
+    - content/pieces/2364.md#body
+    - content/pieces/2364.md#description
+    - content/pieces/2365.md#body
+    - content/pieces/2365.md#description
+    - content/pieces/2365.md#title
+    - content/pieces/2366.md#body
+    - content/pieces/2366.md#description
+    - content/pieces/2367.md#body
+    - content/pieces/2367.md#description
+    - content/pieces/2368.md#body
+    - content/pieces/2368.md#description
+    - content/pieces/2370.md#body
+    - content/pieces/2370.md#description
+    - content/pieces/2371.md#body
+    - content/pieces/2371.md#description
+    - content/pieces/2371.md#title
+    - content/pieces/2372.md#body
+    - content/pieces/2372.md#description
+    - content/pieces/2373.md#body
+    - content/pieces/2373.md#description
+    - content/pieces/2373.md#title
+    - content/pieces/2374.md#body
+    - content/pieces/2374.md#description
+    - content/pieces/2375.md#body
+    - content/pieces/2375.md#description
+    - content/pieces/2375.md#title
+    - content/pieces/2376.md#body
+    - content/pieces/2376.md#description
+    - content/pieces/2376.md#title
+    - content/pieces/2377.md#body
+    - content/pieces/2377.md#description
+    - content/pieces/2377.md#title
+    - content/pieces/2378.md#body
+    - content/pieces/2378.md#description
+    - content/pieces/2379.md#body
+    - content/pieces/2379.md#description
+    - content/pieces/2380.md#body
+    - content/pieces/2380.md#description
+    - content/pieces/2381.md#body
+    - content/pieces/2381.md#description
+    - content/pieces/2382.md#body
+    - content/pieces/2382.md#description
+    - content/pieces/2383.md#body
+    - content/pieces/2383.md#description
+    - content/pieces/2384.md#body
+    - content/pieces/2384.md#description
+    - content/pieces/2385.md#body
+    - content/pieces/2385.md#description
+    - content/pieces/2386.md#body
+    - content/pieces/2386.md#description
+    - content/pieces/2386.md#title
+- id: group:range-2338-2386:surface-material:unglazed
+  claim: The range-2338-2386 family asserts surface-material "unglazed" (3 pieces)
+  subject: range-2338-2386
+  scope: group
+  members: 2348, 2350, 2353
+  axis: surface-material
+  value: unglazed
+  original: A strip of bare, unglazed cream clay runs along one edge, visible in both top views.
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/pieces/2348.md#body
+    - content/pieces/2350.md#body
+    - content/pieces/2353.md#body
+    - content/pieces/2353.md#description
 - id: group:range-541-619:clay-body:sand
   claim: The range-541-619 family asserts clay-body "sand" (7 pieces)
   subject: range-541-619
@@ -6273,6 +6464,27 @@
   maker_response: Confirmed handbuilt across all production eras (S4 review). The batch-13 chawans 2051-2100 are handbuilt as tagged; wheel-thrown pieces (rust-streak cups and the batch-15 thrown chawans) were correctly withheld from this tag and are unaffected.
   reviewed: 2026-07-15
   assertable: true
+  private_ref: false
+  exceptions: []
+  avoid_terms: []
+  affected_outputs:
+    - content/ranges/index.md#body
+- id: group:ranges-index:forming:slab-built
+  claim: ranges/index.md asserts forming "slab-built"
+  subject: ranges-index
+  scope: group
+  members: ""
+  axis: forming
+  value: slab-built
+  original: "- Pieces 2338–2386 — the flat slabs: forty-eight square slab pieces photographed in one August morning, the catalog's first non-vessel run, "
+  status: unknown
+  corrected_value:
+  superseded:
+  source: ai-inference
+  confidence: low
+  maker_response:
+  reviewed:
+  assertable: false
   private_ref: false
   exceptions: []
   avoid_terms: []
